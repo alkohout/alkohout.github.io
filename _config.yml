@@ -1,5 +1,5 @@
-title: Your Website Title
-description: A brief description of your website.
+title: Alison Kohout's Projects 
+description: A record of Alison's past and current projects 
 baseurl: "" # Keep this empty for GitHub Pages to work properly
 url: "https://alkohout.github.io" # Your GitHub Pages URL
 theme: jekyll-theme-cayman # Replace with your chosen theme
