@@ -13,13 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
 title: Alison Kohout
 email: kohoutal@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A summary of my interests and work
 url: "https://alkohout.github.io"
 repository: "alkohout/alkohout.github.io"
-github_username: username
+github_username: alkohout 
 minimal_mistakes_skin: default
 search: true
 
@@ -66,7 +67,7 @@ plugins:
 
 author:
   name   : "Alison Kohout"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/kohout.jpeg"
   bio    : "Data enthusiast"
   links:
     - label: "GitHub"
