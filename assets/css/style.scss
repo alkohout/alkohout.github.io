@@ -1,29 +1,17 @@
 
-/*
-Full screen background 
-body {
-  background-image: url('/assets/images/wave_ice_buoy.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-*/
+---
+---
 
-/* 
-Tiled background 
-body {
-  background-image: url('/assets/images/your-image.jpg');
-  background-repeat: repeat;
-}
-*/
+@import "{{ site.theme }}";
 
-/* With overlay for better text readability */
 body {
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
-  ), url('/assets/images/wave_ice_buoy.jpeg');
+  ), url('../images/wave_ice_buoy.jpeg');
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .post-content {
