@@ -30,7 +30,7 @@ Our research revealed several significant discoveries about wave-ice interaction
 
 ## Impact
 
-Our research had significant implications across multiple areas:
+Our research has had significant implications across multiple areas:
 
 ### Scientific Understanding
 - Provided first comprehensive evidence of large waves occuring in sea ice
@@ -41,12 +41,6 @@ Our research had significant implications across multiple areas:
 - Highlighted need to include wave-ice interactions in climate models
 - Improved accuracy of sea-ice predictions
 - Helped explain accelerated ice loss observations
-
-### Future Predictions
-- Suggests sea ice may be more vulnerable than previously thought
-- Indicates potential for faster ice loss in warming climate
-- Points to importance of autumn storms in ice extent
-- Helps explain observed changes in sea ice
 
 ### Broader Implications
 - Maritime Operations & Safety
