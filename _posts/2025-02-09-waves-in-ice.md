@@ -77,7 +77,8 @@ Our research had significant implications across multiple areas:
 - Created framework for future studies
 
 ## Publication Details
-Published in Nature (2014)  
+Published in *Nature* (2014)  
 **Title**: "Storm-induced sea-ice breakup and the implications for ice extent"  
+**Authors**: Alison Kohout, Mike Williams, Sam Dean, Mike Meylan
 **DOI**: [10.1038/nature13262](https://doi.org/10.1038/nature13262)
-Kohout, A., Williams, M., Dean, S. et al. Storm-induced sea-ice breakup and the implications for ice extent. Nature 509, 604–607 (2014). https://doi.org/10.1038/nature13262
+**Citation**: Kohout, A., Williams, M., Dean, S. *et al.* Storm-induced sea-ice breakup and the implications for ice extent. *Nature* **509**, 604–607 (2014). 
