@@ -76,9 +76,6 @@ Our research had significant implications across multiple areas:
 - Developed new techniques for studying wave-ice interactions
 - Created framework for future studies
 
-## Further Reading
-For the complete research, please visit the [original publication in Nature](link-to-your-paper).
-
 ## Publication Details
 Published in Nature (2014)  
 **Title**: "Storm-induced sea-ice breakup and the implications for ice extent"  
