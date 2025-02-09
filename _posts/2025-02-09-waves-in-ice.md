@@ -10,7 +10,6 @@ tags:
   - waves
   - climate
   - antarctica
-hide_meta: true
 ---
 
 # Storm-induced sea-ice breakup and the implications for ice extent
