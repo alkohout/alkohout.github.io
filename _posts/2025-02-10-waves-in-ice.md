@@ -1,8 +1,9 @@
 ---
+layout: post
 title: "Waves in ice"
-date: 2025-02-10T10:00:30-04:00
+date: 2025-02-10
 categories:
-  - Blog 
+  - blog 
 tags:
   - waves 
   - ice 
