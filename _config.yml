@@ -18,7 +18,6 @@ title: Alison Kohout
 email: kohoutal@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A summary of my interests and work
-show_excerpts: false
 url: "https://alkohout.github.io"
 repository: "alkohout/alkohout.github.io"
 github_username: alkohout 
@@ -28,6 +27,7 @@ search: true
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
+show_excerpts: false
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
