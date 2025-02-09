@@ -52,9 +52,5 @@ Our research has had significant implications across multiple areas:
   - Better understanding of ecosystem changes
   - Improved basis for conservation strategies
 
-### Research Methods
-- Developed new techniques for studying wave-ice interactions
-- Created framework for future studies
-
 ## Publication Details
-Kohout, A., Williams, M., Dean, S. *et al.* Storm-induced sea-ice breakup and the implications for ice extent. *Nature* **509**, 604–607 (2014). 
+[Kohout, A., Williams, M., Dean, S. *et al.* Storm-induced sea-ice breakup and the implications for ice extent. *Nature* **509**, 604–607 (2014).](https://www.nature.com/articles/nature13262)
