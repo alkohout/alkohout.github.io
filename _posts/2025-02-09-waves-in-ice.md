@@ -9,7 +9,6 @@ tags:
   - antarctica
 ---
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,6 +24,13 @@ tags:
         .waves-post {
             background-image: url('/assets/images/background.jpg');
             background-size: cover;
+            background-attachment: fixed;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            background-position: center center;
+            color: #FFFFFF;
+	    /*
+            background-size: cover;
             background-position: center;
             background-attachment: fixed;
             min-height: 100vh; /* Ensures background covers full viewport */
@@ -32,6 +38,7 @@ tags:
             justify-content: center;
             align-items: center;
             text-align: left;
+	    */
             color: #333; /* Text color for contrast */
         }
         .waves-content {
