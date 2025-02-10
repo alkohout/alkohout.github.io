@@ -21,11 +21,12 @@ tags:
   padding: 20px;
 }
 
-.waves-content {
+/*.waves-content {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 20px;
   border-radius: 10px;
 }
+*/
 </style>
 
 <div class="waves-post">
