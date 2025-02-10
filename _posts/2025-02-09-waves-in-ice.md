@@ -2,8 +2,6 @@
 layout: post
 title: "Storm-induced sea-ice breakup and the implications for ice extent"
 date: 2025-02-09
-categories:
-  - research
 tags:
   - sea ice
   - waves
