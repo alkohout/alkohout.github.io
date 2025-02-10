@@ -27,10 +27,12 @@ tags:
             background-attachment: scroll;
             background-repeat: no-repeat;
 	    /*
-            background-attachment: fixed;
-            min-height: 100vh; /* Ensures background covers full viewport */
-	    */
+            background-size: cover;
             background-position: center;
+            background-attachment: fixed;
+	    */
+            min-height: 100vh; /* Ensures background covers full viewport */
+            background-position: bottom center;
             display: flex;
             justify-content: center;
             align-items: center;
