@@ -23,7 +23,7 @@ tags:
         }
         .waves-post {
             background-image: url('/assets/images/background.jpg');
-            background-size: cover;
+            background-size: contain;
             background-attachment: scroll;
             background-repeat: no-repeat;
             background-position: center center;
