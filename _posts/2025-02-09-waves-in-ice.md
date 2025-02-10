@@ -4,7 +4,6 @@ title: "Storm-induced sea-ice breakup and the implications for ice extent"
 date: 2025-02-09
 categories:
   - research
-  - publications
 tags:
   - sea ice
   - waves
@@ -17,7 +16,7 @@ tags:
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
-  ), url('../assets/images/background.jpg');
+  ), url('/assets/images/background.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
