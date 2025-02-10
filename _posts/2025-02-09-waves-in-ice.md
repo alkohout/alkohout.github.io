@@ -22,7 +22,7 @@ tags:
             background-color: #f4f4f9;
         }
         .waves-post {
-            background-image: url('/assets/images/background');
+            background-image: url('/assets/images/background.jp2');
             background-size: cover;
             background-attachment: scroll;
             background-repeat: no-repeat;
