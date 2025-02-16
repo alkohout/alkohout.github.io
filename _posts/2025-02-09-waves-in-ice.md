@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Waves - in - Ice"
@@ -12,6 +11,7 @@ tags:
   - antarctica
 ---
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
