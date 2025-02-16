@@ -10,6 +10,7 @@ tags:
   - waves
   - climate
   - antarctica
+permalink:/research/discoveries/
 ---
 
 <html lang="en">
