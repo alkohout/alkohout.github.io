@@ -8,16 +8,21 @@ body {
 }
 
 .hero {
-    background-image: url('/assets/images/wave_ice_buoy.jpg'); /* Add a background image */
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    background-image: url('/assets/images/background.jp2');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff;
     position: relative;
+    background-attachment: fixed;
+    min-height: 100vh; /* Ensures background covers full viewport */
+    background-position: bottom center;
+    color: #333; /* Text color for contrast */
 }
 
 .hero::before {
