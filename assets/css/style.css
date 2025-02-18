@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #777777;
+    color: #BBBBBB;
 }
 
 .hero {
@@ -21,7 +21,7 @@ body {
     /*background-attachment: fixed;*/
     min-height: 100vh; /* Ensures background covers full viewport */
     background-position: bottom center;
-    color: #777777; /* Text color for contrast */
+    color: #BBBBBB; /* Text color for contrast */
     justify-content: center;
 }
 
