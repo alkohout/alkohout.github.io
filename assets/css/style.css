@@ -9,7 +9,7 @@ body {
 .hero {
     background-size: cover;
     background-position: center;
-    background-image: url('/assets/images/background.jp2');
+    background-image: url('/assets/images/background');
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
