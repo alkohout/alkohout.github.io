@@ -40,7 +40,7 @@ body {
 
 @media (max-width: 768px) {
     .hero {
-        color: #888888; /* Lighter text color for smaller screens */
+        color: #DDDDDD; /* Lighter text color for smaller screens */
     }
 }
 
