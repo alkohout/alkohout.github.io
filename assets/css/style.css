@@ -18,7 +18,7 @@ body {
     align-items: center;
     text-align: center;
     position: relative;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     min-height: 100vh; /* Ensures background covers full viewport */
     background-position: bottom center;
     color: #333; /* Text color for contrast */
