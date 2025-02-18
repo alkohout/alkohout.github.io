@@ -22,6 +22,7 @@ body {
     min-height: 100vh; /* Ensures background covers full viewport */
     background-position: bottom center;
     color: #333; /* Text color for contrast */
+    justify-content: center;
 }
 
 .hero::before {
