@@ -3,13 +3,6 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333333;
-}
-
-@media (max-width: 768px) {
-    body {
-        color: #888888; /* Lighter text color for smaller screens */
-    }
 }
 
 .hero {
@@ -44,6 +37,13 @@ body {
     position: relative;
     z-index: 1;
 }
+
+@media (max-width: 768px) {
+    .hero {
+        color: #888888; /* Lighter text color for smaller screens */
+    }
+}
+
 
 .btn {
     display: inline-block;
