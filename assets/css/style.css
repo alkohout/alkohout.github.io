@@ -3,7 +3,13 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #DDDDDD;
+    color: #555555;
+}
+
+@media (max-width: 768px) {
+    body {
+        color: #888888; /* Lighter text color for smaller screens */
+    }
 }
 
 .hero {
