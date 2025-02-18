@@ -38,7 +38,7 @@ body {
     z-index: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 412px) {
     .hero {
         color: #DDDDDD; /* Lighter text color for smaller screens */
     }
