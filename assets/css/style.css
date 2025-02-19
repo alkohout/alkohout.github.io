@@ -93,12 +93,12 @@ footer {
     text-align: center;
     padding: 20px 0;
     background-color: #005f99;
-    color: #fff;
+    color: #DDDDDD;
 }
 
 /* Default link color */
 .project a {
-    color: #F0F0F0; /* Change this to your desired color */
+    color: #DDDDDD; /* Change this to your desired color */
     text-decoration: none; /* Removes the underline */
 }
 
