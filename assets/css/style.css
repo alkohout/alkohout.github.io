@@ -82,8 +82,7 @@ body {
     padding: 20px;
     border-radius: 5px;
     transition: transform 0.3s;
-    /*color: #f4f4f9*/
-    /*color: #DDDDDD; Lighter text color for smaller screens */
+    color: #DDDDDD; Lighter text color for smaller screens */
 }
 
 .project:hover {
