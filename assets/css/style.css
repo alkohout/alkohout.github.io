@@ -98,22 +98,22 @@ footer {
 
 /* Default link color */
 a {
-    color: #DDDDDD; /* Change this to your desired color */
+    color: #FOFOFO; /* Change this to your desired color */
     text-decoration: none; /* Removes the underline */
 }
 
 /* Link color on hover */
 a:hover {
-    color: #BBBBBB; /* Change this to your desired hover color */
+    color: #CCCCCC; /* Change this to your desired hover color */
     text-decoration: underline; /* Adds underline on hover */
 }
 
 /* Visited link color */
 a:visited {
-    color: #999999; /* Change this to your desired visited color */
+    color: #BOBOBO; /* Change this to your desired visited color */
 }
 
 /* Active link color */
 a:active {
-    color: #666666; /* Change this to your desired active color */
+    color: #888888; /* Change this to your desired active color */
 }
