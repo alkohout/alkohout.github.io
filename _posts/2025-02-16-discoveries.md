@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Scientific discoveries"
+title: "Highlights"
 date: 2025-02-16
 categories:
   - research 
@@ -9,14 +9,14 @@ tags:
   - waves
   - climate
   - antarctica
-permalink: /projects/waves-in-ice/discoveries/
+permalink: /projects/waves-in-ice/highlights/
 ---
 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waves - in - ice</title>
+    <title>Highlights</title>
     <style>
         body, html {
             margin: 0;
@@ -54,7 +54,7 @@ permalink: /projects/waves-in-ice/discoveries/
             color: #005f99;
         }
         a {
-            color: #0066cc;
+            color: #005f99;
             text-decoration: none;
         }
         a:hover {
@@ -66,7 +66,7 @@ permalink: /projects/waves-in-ice/discoveries/
 
 <div class="post">
     <div class="content">
-        <h1>Significant Discoveries</h1>
+        <h1>Waves - in - ice: Highlights</h1>
         <h3>Wave attenuation</h3>
         <ul>
             <li>Waves can travel 100's of kilometers into sea ice regions.</li>
