@@ -100,10 +100,11 @@ tags:
         </nav>
     </header>
 
-<section id="home" class="waves-post">
+<section id="home" class="hero-wave">
+</section">
+<section id="sensor-design" class="waves-post">
     <div class="waves-content">
         <h1>Waves in Ice</h1>
-        <a href="https://github.com/alkohout/waves-in-ice.git" target="_blank" class="btn">View Code on GitHub</a>
         <p>Exploring the impact of waves on sea ice through innovative sensor technology and data analysis. Our research revealed several significant <a href="https://alkohout.github.io/projects/waves-in-ice/highlights/">discoveries</a>. There were several phases of this research:</p>
 
 	<h2><a href="https://alkohout.github.io/projects/waves-in-ice/WIIOS/"> Developing the Waves in Ice Operating System (WIIOS)</a> </h2>

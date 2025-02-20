@@ -33,6 +33,25 @@ nav ul li a {
     font-weight: bold;
 }
 
+.hero-wave {
+    background-size: cover;
+    background-position: center;
+    background-image: url('/assets/images/Waves-in-Ice.mp4');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    /*background-attachment: fixed;*/
+    min-height: 100vh; /* Ensures background covers full viewport */
+    background-position: bottom center;
+    color: #444444;  Text color for contrast 
+    justify-content: center;
+}
+
 .hero {
     background-size: cover;
     background-position: center;
