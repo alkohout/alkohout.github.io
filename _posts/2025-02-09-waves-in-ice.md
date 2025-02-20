@@ -59,6 +59,32 @@ tags:
         a:hover {
             text-decoration: underline;
         }
+	header {
+	    background-color: #005f99;
+	    color: #fff;
+	    padding: 10px 0;
+	    position: sticky;
+	    top: 0;
+	    width: 100%;
+	    z-index: 1000;
+	}
+
+	nav ul {
+	    list-style: none;
+	    display: flex;
+	    justify-content: center;
+	    padding: 0;
+	}
+
+	nav ul li {
+	    margin: 0 15px;
+	}
+
+	nav ul li a {
+	    color: #fff;
+	    text-decoration: none;
+	    font-weight: bold;
+	}
     </style>
 </head>
 <body>
@@ -73,7 +99,6 @@ tags:
             </ul>
         </nav>
     </header>
-
 
 <section id="home" class="waves-post">
     <div class="waves-content">
