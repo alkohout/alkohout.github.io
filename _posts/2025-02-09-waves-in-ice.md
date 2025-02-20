@@ -101,7 +101,7 @@ tags:
     </header>
 
 <section id="home" class="hero-wave">
-</section">
+</section>
 <section id="sensor-design" class="waves-post">
     <div class="waves-content">
         <h1>Waves in Ice</h1>
