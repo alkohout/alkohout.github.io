@@ -53,7 +53,7 @@ tags:
             color: #005f99;
         }
         a {
-            color: #0066cc;
+            color: #005f99;
             text-decoration: none;
         }
         a:hover {
