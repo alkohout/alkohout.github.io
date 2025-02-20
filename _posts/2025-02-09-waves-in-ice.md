@@ -100,7 +100,11 @@ tags:
         </nav>
     </header>
 
-<section id="home" class="hero-wave">
+<section id="home" class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="/assets/videos/Waves-in-Ice.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 </section>
 <section id="sensor-design" class="waves-post">
     <div class="waves-content">
