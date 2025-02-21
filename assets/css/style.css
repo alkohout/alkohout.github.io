@@ -109,7 +109,6 @@ nav ul li a {
 
 .projects {
     padding: 40px 20px;
-    max-width: 1000px;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 10px;
@@ -144,8 +143,8 @@ footer {
 
 section {
     padding: 40px 20px;
-    max-width: 1000px;
     margin: 0 auto;
+    width: 100%;
 }
 
 /* Default link color */
