@@ -18,12 +18,6 @@ tags:
     <title>Waves - in - ice</title>
     <link rel="stylesheet" href="/assets/css/style.css"> 
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-        }
         .waves-post {
             background-image: url('/assets/images/background.jpg');
             background-size: cover;
