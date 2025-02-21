@@ -65,7 +65,7 @@ nav ul li a {
 
 @media (orientation: portrait) {
     .hero-video {
-        width: 50%; /* Ensure the video fits within the screen width */
+        width: 100%; /* Ensure the video fits within the screen width */
         height: auto; /* Maintain aspect ratio */
     }
 }
