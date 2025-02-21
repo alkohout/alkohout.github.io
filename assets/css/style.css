@@ -54,7 +54,7 @@ nav ul li a {
 
 .hero-video {
     position: absolute;
-    top: 50%;
+    top: 100%;
     left: 50%;
     width: 100%;
     height: auto;
