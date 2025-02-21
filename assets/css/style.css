@@ -61,13 +61,7 @@ nav ul li a {
     object-fit: cover;
     transform: translate(-50%, -50%);
     z-index: 0;
-}
-
-@media (orientation: portrait) {
-    .hero-video {
-        width: 100%; /* Ensure the video fits within the screen width */
-        height: auto; /* Maintain aspect ratio */
-    }
+    background-color: #005f99;
 }
 
 
@@ -88,6 +82,13 @@ nav ul li a {
 @media (max-width: 412px) {
     .hero {
         color: #DDDDDD; /* Lighter text color for smaller screens */
+    }
+}
+
+@media (orientation: portrait) {
+    .hero-video {
+        width: 100%; /* Ensure the video fits within the screen width */
+        height: auto; /* Maintain aspect ratio */
     }
 }
 
@@ -149,22 +150,22 @@ section {
 
 /* Default link color */
 .project a {
-    color: #DDDDDD; /* Change this to your desired color */
-    text-decoration: none; /* Removes the underline */
+    color: #DDDDDD; 
+    text-decoration: none; 
 }
 
 /* Link color on hover */
 .project a:hover {
-    color: #CCCCCC; /* Change this to your desired hover color */
-    text-decoration: underline; /* Adds underline on hover */
+    color: #CCCCCC; 
+    text-decoration: underline; 
 }
 
 /* Visited link color */
 .project a:visited {
-    color: #B0B0B0; /* Change this to your desired visited color */
+    color: #B0B0B0; 
 }
 
 /* Active link color */
 .project a:active {
-    color: #888888; /* Change this to your desired active color */
+    color: #888888; 
 }

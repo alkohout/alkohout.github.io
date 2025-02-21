@@ -19,7 +19,10 @@ tags:
     <link rel="stylesheet" href="/assets/css/style.css"> 
     <style>
         .waves-post {
-            background-color: #005f99;
+            background-image: url('/assets/images/background.jpg');
+            background-size: cover;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
  	    width: 100%
             /*min-height: 100vh; Ensures background covers full viewport */
             background-position: bottom center;
