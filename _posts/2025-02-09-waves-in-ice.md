@@ -45,7 +45,6 @@ tags:
             background-color: rgba(255, 255, 255, 0.9);
             padding: 20px;
             border-radius: 10px;
-            max-width: 800px;
             margin: 40px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
@@ -59,15 +58,6 @@ tags:
         a:hover {
             text-decoration: underline;
         }
-	header {
-	    background-color: #005f99;
-	    color: #fff;
-	    padding: 10px 0;
-	    position: sticky;
-	    top: 0;
-	    width: 100%;
-	    z-index: 1000;
-	}
 
 	nav ul {
 	    list-style: none;
