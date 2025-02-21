@@ -28,12 +28,8 @@ tags:
             background-size: cover;
             background-attachment: scroll;
             background-repeat: no-repeat;
-	    /*
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-	    */
-            min-height: 100vh; /* Ensures background covers full viewport */
+ 	    width: 100%
+            /*min-height: 100vh; Ensures background covers full viewport */
             background-position: bottom center;
             display: flex;
             justify-content: center;
@@ -59,22 +55,6 @@ tags:
             text-decoration: underline;
         }
 
-	nav ul {
-	    list-style: none;
-	    display: flex;
-	    justify-content: center;
-	    padding: 0;
-	}
-
-	nav ul li {
-	    margin: 0 15px;
-	}
-
-	nav ul li a {
-	    color: #fff;
-	    text-decoration: none;
-	    font-weight: bold;
-	}
     </style>
 </head>
 <body>
