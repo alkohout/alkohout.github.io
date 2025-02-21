@@ -56,7 +56,6 @@ tags:
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
                 <li><a href="#sensor-design">Sensor Design</a></li>
                 <li><a href="#data-collection">Data Collection</a></li>
                 <li><a href="#data-analysis">Data Analysis</a></li>
@@ -65,7 +64,7 @@ tags:
         </nav>
     </header>
 
-<section id="home" class="hero">
+<section class="hero-video">
         <video autoplay muted controls class="hero-video">
             <source src="/assets/videos/Waves-in-Ice.mp4" type="video/mp4">
             Your browser does not support the video tag.
