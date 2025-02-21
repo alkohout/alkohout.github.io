@@ -64,8 +64,8 @@ tags:
         </nav>
     </header>
 
-<section class="hero-video">
-        <video autoplay muted controls class="hero-video">
+<section class="wave_video">
+        <video autoplay muted controls >
             <source src="/assets/videos/Waves-in-Ice.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
