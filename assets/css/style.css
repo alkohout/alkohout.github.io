@@ -50,6 +50,8 @@ nav ul li a {
     background-position: bottom center;
     color: #444444;  Text color for contrast 
     justify-content: center;
+    margin: 0 ;
+    padding: 0;
 }
 
 .hero-video {
