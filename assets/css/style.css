@@ -33,6 +33,18 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Media query for smaller screens */
+@media (max-width: 412px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adjust margin for vertical layout */
+    }
+}
+
 .hero {
     background-size: cover;
     background-position: center;
