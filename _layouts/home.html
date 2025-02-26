@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-    <header>
+    <div class="hover-area">
+    <header class="hidden-header">
         <nav>
             <ul>
                 <li><a href="#sensor-design">Home</a></li>
@@ -47,5 +48,6 @@
     <footer>
         <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
     </footer>
+    </div>
 </body>
 </html>

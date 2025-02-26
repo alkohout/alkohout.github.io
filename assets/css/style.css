@@ -6,6 +6,28 @@ body {
     color: #444444;  Text color for contrast 
 }
 
+.hover-area {
+    position: relative;
+    height: 100vh;
+}
+
+.hidden-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #005f99;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+
+.hover-area:hover .hidden-header {
+    opacity: 1;
+    visibility: visible;
+}
+
 header {
     background-color: #005f99;
     color: #DDDDDD;
