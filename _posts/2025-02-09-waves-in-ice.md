@@ -39,7 +39,7 @@ tags:
         </video>
     </section>
     <section id="sensor-design" class="topics">
-      <div class="topic">
+      <div class="topic.inverse">
         <h1>Waves in Ice</h1>
         <p>Exploring the impact of waves on sea ice through innovative sensor technology and data analysis. Our research revealed several significant <a href="https://alkohout.github.io/projects/waves-in-ice/highlights/">discoveries</a>. There were several phases of this research:</p>
 
