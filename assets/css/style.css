@@ -188,24 +188,51 @@ section {
     width: 100%;
 }
 
-/* Default link color */
 .topic a {
     color: #DDDDDD; 
     text-decoration: none; 
 }
 
-/* Link color on hover */
 .topic a:hover {
     color: #CCCCCC; 
     text-decoration: underline; 
 }
 
-/* Visited link color */
 .topic a:visited {
     color: #B0B0B0; 
 }
 
-/* Active link color */
 .topic a:active {
     color: #888888; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #005f99;
+    margin: 0 0 10px; 
+    font-weight: bold; 
+}
+
+h1 {
+    font-size: 2.5em; 
+}
+
+h2 {
+    font-size: 2em; 
+}
+
+h3 {
+    font-size: 1.75em; 
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1em; 
+    font-weight: normal; 
 }
