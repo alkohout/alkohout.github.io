@@ -170,6 +170,12 @@ nav ul li a {
     transform: translateY(-10px);
 }
 
+.topic.inverse {
+    background-color: #DDDDDD; 
+    color: #005f99;
+}
+
+
 footer {
     text-align: center;
     padding: 20px 0;
