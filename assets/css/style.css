@@ -212,6 +212,14 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold; 
 }
 
+.topic h1, .topic h2, .topic h3, .topic h4, .topic h5, .topic h6 {
+    color: #DDDDDD; /* Match the link color in .topic */
+}
+
+.topic.inverse h1, .topic.inverse h2, .topic.inverse h3, .topic.inverse h4, .topic.inverse h5, .topic.inverse h6 {
+    color: #005f99; /* Match the inverse link color */
+}
+
 h1 {
     font-size: 2.5em; 
 }
