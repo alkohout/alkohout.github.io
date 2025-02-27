@@ -141,7 +141,7 @@ nav ul li a {
     background-color: #004080;
 }
 
-.projects {
+.topics {
     padding: 40px 20px;
     margin: 0 auto;
     background-color: #fff;
@@ -149,22 +149,23 @@ nav ul li a {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.project-list {
+.topic-list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.project {
+.topic {
     flex: 1 1 calc(50% - 20px);
     background-color: #005f99;
     padding: 20px;
     border-radius: 5px;
     transition: transform 0.3s;
     color: #DDDDDD; Lighter text color for smaller screens */
+    margin: 40px;
 }
 
-.project:hover {
+.topic:hover {
     transform: translateY(-10px);
 }
 
@@ -181,23 +182,23 @@ section {
 }
 
 /* Default link color */
-.project a {
+.topic a {
     color: #DDDDDD; 
     text-decoration: none; 
 }
 
 /* Link color on hover */
-.project a:hover {
+.topic a:hover {
     color: #CCCCCC; 
     text-decoration: underline; 
 }
 
 /* Visited link color */
-.project a:visited {
+.topic a:visited {
     color: #B0B0B0; 
 }
 
 /* Active link color */
-.project a:active {
+.topic a:active {
     color: #888888; 
 }
