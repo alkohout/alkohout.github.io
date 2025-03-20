@@ -117,6 +117,9 @@ nav ul li a {
     .hero {
         color: #DDDDDD; /* Lighter text color for smaller screens */
     }
+    .dark-header {
+        color: #DDDDDD; /* Lighter text color for smaller screens */
+    }
 }
 
 @media (orientation: portrait) {
