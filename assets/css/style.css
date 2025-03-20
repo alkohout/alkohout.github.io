@@ -114,10 +114,7 @@ nav ul li a {
 }
 
 @media (max-width: 412px) {
-    .hero {
-        color: #DDDDDD; /* Lighter text color for smaller screens */
-    }
-    .dark-header {
+    .hero .dark-header {
         color: #DDDDDD; /* Lighter text color for smaller screens */
     }
 }
