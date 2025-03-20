@@ -146,6 +146,7 @@ nav ul li a {
 }
 
 .topics {
+    width: 80%;
     padding: 40px 20px;
     margin: 20 auto;
     background-color: #fff;
