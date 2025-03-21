@@ -253,3 +253,8 @@ h6 {
     font-size: 1em; 
     font-weight: normal; 
 }
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
