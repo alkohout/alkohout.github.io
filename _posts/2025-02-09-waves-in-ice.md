@@ -20,9 +20,10 @@ tags:
 </head>
 <body>
     <header>
-        <a href="https:/alkohout.github.io">Alison Kohout</a>
         <nav>
             <ul>
+                <li><a href="https:/alkohout.github.io">Alison Kohout</a></li>
+                <li><a href="#Home">Home</a></li>
                 <li><a href="#sensor-design">Sensor Design</a></li>
                 <li><a href="#data-collection">Data Collection</a></li>
                 <li><a href="#data-analysis">Data Analysis</a></li>
