@@ -179,7 +179,6 @@ nav ul li a {
     color: #005f99;
 }
 
-
 footer {
     width: 100%;
     text-align: center;
@@ -193,21 +192,21 @@ section {
     width: 100%;
 }
 
-.topic a {
+.topic a, .topic_inverse a {
     color: #DDDDDD; 
     text-decoration: none; 
 }
 
-.topic a:hover {
+.topic a:hover, .topic_inverse a:hover {
     color: #CCCCCC; 
     text-decoration: underline; 
 }
 
-.topic a:visited {
+.topic a:visited, .topic_inverse a:visited {
     color: #B0B0B0; 
 }
 
-.topic a:active {
+.topic a:active, topic_inverse a:active {
     color: #888888; 
 }
 
