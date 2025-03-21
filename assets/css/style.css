@@ -154,7 +154,7 @@ nav ul li a {
 }
 
 .topic-list {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     gap: 20px;
 }
