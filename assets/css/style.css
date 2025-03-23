@@ -117,7 +117,7 @@ nav ul li a {
 
 @media (max-width: 412px) {
     .hero .dark-header {
-        color: #666666; /* Lighter text color for smaller screens */
+        color: #777777; /* Lighter text color for smaller screens */
     }
 }
 
@@ -217,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dark-header {
-    color: #888888;
+    color: #777777;
 }
 
 .topic h1, .topic h2, .topic h3, .topic h4, .topic h5, .topic h6 {
