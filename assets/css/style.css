@@ -117,7 +117,7 @@ nav ul li a {
 
 @media (max-width: 412px) {
     .hero .dark-header {
-        color: #DDDDDD; /* Lighter text color for smaller screens */
+        color: #CCCCCC; /* Lighter text color for smaller screens */
     }
 }
 
