@@ -110,14 +110,14 @@ nav ul li a {
 
 .hero-content {
     width: 100%;
-    color: #333333;  Text color for contrast 
+    color: #CCCCCC;  Text color for contrast 
     position: relative;
     z-index: 1;
 }
 
 @media (max-width: 412px) {
     .hero .dark-header {
-        color: #DDDDDD; /* Lighter text color for smaller screens */
+        color: #CCCCCC; /* Lighter text color for smaller screens */
     }
 }
 
