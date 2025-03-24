@@ -43,15 +43,15 @@ tags:
       <div class="topic-list">
         <div class="topic inverse">
           <h3>Waves in Ice</h3>
-          <p>Exploring the impact of waves on sea ice through <a href="https://alkohout.github.io/projects/waves-in-ice/WIIOS/">innovative sensor technology</a> and <a href="https://alkohout.github.io/projects/waves-in-ice/data_analysis/">data analysis</a>. Our research revealed several significant <a href="https://alkohout.github.io/projects/waves-in-ice/highlights/">discoveries</a>. </p>
+          <p>Exploring the impact of waves on sea ice through <a href="https://alkohout.github.io/projects/waves-in-ice/WIIOS/">innovative sensor technology</a> and <a href="https://alkohout.github.io/projects/waves-in-ice/data_analysis/">data analysis</a>. 
 
           <h4>Highlights</h4>
-          <h5>Wave attenuation</h5>
+          <h6>Wave attenuation</h6>
           <ul>
             <li>Waves can travel 100's of kilometers into sea ice regions.</li>
             <li>Wave energy can decrease linearly with distance into the ice pack.</li>
           </ul>
-          <h5>Climate Implications</h5>
+          <h6>Climate Implications</h6>
           <ul>
             <li>Process can accelerate sea-ice retreat.</li>
             <li>Traditional climate models may underestimate ice loss.</li>
@@ -60,21 +60,21 @@ tags:
 
           <h4>Impact</h4>
           <p>Our research has had significant implications across multiple areas:</p>
-            <h5>Scientific Understanding</h5>
+            <h6>Scientific Understanding</h6>
             <ul>
                 <li>Provided first comprehensive evidence of large waves occurring in sea ice.</li>
                 <li>Challenged existing models.</li>
                 <li>Demonstrated importance of wave action in sea-ice extent predictions.</li>
             </ul>
 
-            <h5>Climate Modeling</h5>
+            <h6>Climate Modeling</h6>
             <ul>
                 <li>Highlighted need to include wave-ice interactions in climate models.</li>
                 <li>Improved accuracy of sea-ice predictions.</li>
                 <li>Helped explain accelerated ice loss observations.</li>
             </ul>
 
-            <h5>Broader Implications</h5>
+            <h6>Broader Implications</h6>
             <ul>
                 <li><strong>Maritime Operations & Safety:</strong> Better prediction of ice conditions, improved risk assessment for shipping, and enhanced safety protocols for polar operations.</li>
                 <li><strong>Environmental Protection:</strong> Better understanding of ecosystem changes and improved basis for conservation strategies.</li>

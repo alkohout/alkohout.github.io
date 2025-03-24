@@ -216,16 +216,16 @@ section {
 }
 
 .topic.inverse a:hover{
-    color: #00436B;
+    color: #002A5F;
     text-decoration: underline; 
 }
 
 .topic.inverse a:visited{
-    color: #004276; 
+    color: #002A5F; 
 }
 
 .topic.inverse a:active{
-    color: #004d88; 
+    color: #002A5F; 
 }
 
 h1, h2, h3, h4, h5, h6 {
