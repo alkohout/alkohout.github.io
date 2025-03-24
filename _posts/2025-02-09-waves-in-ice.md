@@ -76,8 +76,8 @@ tags:
 
             <h6>Broader Implications</h6>
             <ul>
-                <li><strong>Maritime Operations & Safety:</strong> Better prediction of ice conditions, improved risk assessment for shipping, and enhanced safety protocols for polar operations.</li>
-                <li><strong>Environmental Protection:</strong> Better understanding of ecosystem changes and improved basis for conservation strategies.</li>
+                <li>Maritime Operations & Safety: Better prediction of ice conditions, improved risk assessment for shipping, and enhanced safety protocols for polar operations.</li>
+                <li>Environmental Protection: Better understanding of ecosystem changes and improved basis for conservation strategies.</li>
             </ul>
 
           <h5>Publications and Media</h5>
