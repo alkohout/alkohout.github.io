@@ -45,7 +45,42 @@ tags:
           <h3>Waves in Ice</h3>
           <p>Exploring the impact of waves on sea ice through <a href="https://alkohout.github.io/projects/waves-in-ice/WIIOS/">innovative sensor technology</a> and <a href="https://alkohout.github.io/projects/waves-in-ice/data_analysis/">data analysis</a>. Our research revealed several significant <a href="https://alkohout.github.io/projects/waves-in-ice/highlights/">discoveries</a>. </p>
 
-          <h3>Publications and Media</h3>
+          <h4>Highlights</h4>
+          <h5>Wave attenuation</h5>
+          <ul>
+            <li>Waves can travel 100's of kilometers into sea ice regions.</li>
+            <li>Wave energy can decrease linearly with distance into the ice pack.</li>
+          </ul>
+          <h5>Climate Implications</h5>
+          <ul>
+            <li>Process can accelerate sea-ice retreat.</li>
+            <li>Traditional climate models may underestimate ice loss.</li>
+            <li>Findings suggest need to revise sea-ice predictions.</li>
+          </ul>
+
+          <h4>Impact</h4>
+          <p>Our research has had significant implications across multiple areas:</p>
+            <h5>Scientific Understanding</h5>
+            <ul>
+                <li>Provided first comprehensive evidence of large waves occurring in sea ice.</li>
+                <li>Challenged existing models.</li>
+                <li>Demonstrated importance of wave action in sea-ice extent predictions.</li>
+            </ul>
+
+            <h5>Climate Modeling</h5>
+            <ul>
+                <li>Highlighted need to include wave-ice interactions in climate models.</li>
+                <li>Improved accuracy of sea-ice predictions.</li>
+                <li>Helped explain accelerated ice loss observations.</li>
+            </ul>
+
+            <h5>Broader Implications</h5>
+            <ul>
+                <li><strong>Maritime Operations & Safety:</strong> Better prediction of ice conditions, improved risk assessment for shipping, and enhanced safety protocols for polar operations.</li>
+                <li><strong>Environmental Protection:</strong> Better understanding of ecosystem changes and improved basis for conservation strategies.</li>
+            </ul>
+
+          <h4>Publications and Media</h4>
           <p><a href="https://www.nature.com/articles/nature13262" target="_blank">Kohout, A., Williams, M., Dean, S. <em>et al.</em> Storm-induced sea-ice breakup and the implications for ice extent. <em>Nature</em> <strong>509</strong>, 604–607 (2014).</a></p>
         </div>
       </div>
