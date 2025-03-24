@@ -43,7 +43,7 @@ tags:
       <div class="topic-list">
         <div class="topic inverse">
           <h3>Waves in Ice</h3>
-          <p>Exploring the impact of waves on sea ice through <a href="https://alkohout.github.io/projects/waves-in-ice/WIIOS/">innovative sensor technology</a> and <a href="https://alkohout.github.io/projects/waves-in-ice/data_analysis/">data analysis</a>. Our research revealed several significant <a href="https://alkohout.github.io/projects/waves-in-ice/highlights/">discoveries</a>. 
+          <p>Exploring the impact of waves on sea ice through <a href="https://alkohout.github.io/projects/waves-in-ice/WIIOS/">innovative sensor technology</a> and <a href="https://alkohout.github.io/projects/waves-in-ice/data_analysis/">data analysis</a>. Our research revealed several significant <a href="https://alkohout.github.io/projects/waves-in-ice/highlights/">discoveries</a>. </p>
 
           <h3>Publications and Media</h3>
           <p><a href="https://www.nature.com/articles/nature13262" target="_blank">Kohout, A., Williams, M., Dean, S. <em>et al.</em> Storm-induced sea-ice breakup and the implications for ice extent. <em>Nature</em> <strong>509</strong>, 604–607 (2014).</a></p>

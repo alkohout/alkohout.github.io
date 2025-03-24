@@ -192,22 +192,40 @@ section {
     width: 100%;
 }
 
-.topic a, .topic.inverse a {
+.topic a {
     color: #DDDDDD; 
     text-decoration: none; 
 }
 
-.topic a:hover, .topic.inverse a:hover {
+.topic a:hover{
     color: #CCCCCC; 
     text-decoration: underline; 
 }
 
-.topic a:visited, .topic.inverse a:visited {
+.topic a:visited{
     color: #B0B0B0; 
 }
 
-.topic a:active, topic.inverse a:active {
+.topic a:active{
     color: #888888; 
+}
+
+.topic.inverse a {
+    color: #005182; 
+    text-decoration: none; 
+}
+
+.topic.inverse a:hover{
+    color: #00436B;
+    text-decoration: underline; 
+}
+
+.topic.inverse a:visited{
+    color: #003454; 
+}
+
+.topic.inverse a:active{
+    color: #00436B; 
 }
 
 h1, h2, h3, h4, h5, h6 {
