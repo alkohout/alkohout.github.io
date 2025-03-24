@@ -192,21 +192,21 @@ section {
     width: 100%;
 }
 
-.topic a, .topic_inverse a {
+.topic a, .topic.inverse a {
     color: #DDDDDD; 
     text-decoration: none; 
 }
 
-.topic a:hover, .topic_inverse a:hover {
+.topic a:hover, .topic.inverse a:hover {
     color: #CCCCCC; 
     text-decoration: underline; 
 }
 
-.topic a:visited, .topic_inverse a:visited {
+.topic a:visited, .topic.inverse a:visited {
     color: #B0B0B0; 
 }
 
-.topic a:active, topic_inverse a:active {
+.topic a:active, topic.inverse a:active {
     color: #888888; 
 }
 
