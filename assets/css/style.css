@@ -211,7 +211,7 @@ section {
 }
 
 .topic.inverse a {
-    color: #005182; 
+    color: #004d88; 
     text-decoration: none; 
 }
 
@@ -221,11 +221,11 @@ section {
 }
 
 .topic.inverse a:visited{
-    color: #003454; 
+    color: #004276; 
 }
 
 .topic.inverse a:active{
-    color: #00436B; 
+    color: #004d88; 
 }
 
 h1, h2, h3, h4, h5, h6 {
