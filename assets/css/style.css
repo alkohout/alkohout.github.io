@@ -95,7 +95,7 @@ nav ul li a {
     z-index: 0;
 }
 
-.hero.no-background {
+.no-background {
     background-image: none; 
 }
 

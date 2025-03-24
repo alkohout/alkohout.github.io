@@ -33,7 +33,7 @@ tags:
     </header>
 
     <main>
-    <section class="hero.no-background">
+    <section class="hero no-background">
         <video autoplay muted controls class="hero-video">
             <source src="/assets/videos/Waves-in-Ice.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -43,7 +43,7 @@ tags:
       <div class="topic-list">
         <div class="topic inverse">
           <h3>Waves in Ice</h3>
-          <p>Exploring the impact of waves on sea ice through <a href="https://alkohout.github.io/projects/waves-in-ice/WIIOS/">innovative sensor technology</a> and <a href="https://alkohout.github.io/projects/waves-in-ice/data_analysis/">data analysis</a>. 
+          <p>Exploring the impact of waves on sea ice through <a href="https://alkohout.github.io/projects/waves-in-ice/WIIOS/">innovative sensor technology</a> and <a href="https://alkohout.github.io/projects/waves-in-ice/data_analysis/">data analysis</a>.</p>
 
           <h4>Highlights</h4>
           <h6>Wave attenuation</h6>
@@ -53,7 +53,7 @@ tags:
           </ul>
           <h6>Climate Implications</h6>
           <ul>
-            <li>Process can accelerate sea-ice retreat.</li>
+            <li>Potential for accelerated sea-ice retreat.</li>
             <li>Traditional climate models may underestimate ice loss.</li>
             <li>Findings suggest need to revise sea-ice predictions.</li>
           </ul>
