@@ -33,7 +33,7 @@ tags:
     </header>
 
     <main>
-    <section class="hero no-background">
+    <section class="hero.no-background">
         <video autoplay muted controls class="hero-video">
             <source src="/assets/videos/Waves-in-Ice.mp4" type="video/mp4">
             Your browser does not support the video tag.
