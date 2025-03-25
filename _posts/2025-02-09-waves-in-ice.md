@@ -33,13 +33,13 @@ tags:
     </header>
 
     <main>
-    <section class="hero.no-background">
+    <section id="home" class="hero.no-background">
         <video autoplay muted controls class="hero-video">
             <source src="/assets/videos/Waves-in-Ice.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </section>
-    <section id="sensor-design" class="topics">
+    <section class="topics">
       <div class="topic-list">
         <div class="topic inverse">
           <h3>Waves in Ice</h3>
