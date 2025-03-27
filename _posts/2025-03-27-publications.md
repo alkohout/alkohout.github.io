@@ -28,7 +28,7 @@ permalink: /projects/waves-in-ice/publications/
                 <li><a href="https://alkohout.github.io/projects/waves-in-ice/WIIOS/">Sensor Design</a></li>
                 <li><a href="https://alkohout.github.io/projects/waves-in-ice/data_collection/">Data Collection</a></li>
                 <li><a href="https://alkohout.github.io/projects/waves-in-ice/data_analysis/">Data Analysis</a></li>
-                <li><a href="https://alkohout.github.io/projects/waves-in-ice/publications/>Publications</a></li>
+                <li><a href="https://alkohout.github.io/projects/waves-in-ice/publications/">Publications</a></li>
             </ul>
         </nav>
     </header>
