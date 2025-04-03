@@ -316,3 +316,16 @@ h6 {
     right: 0;
 }
 
+.zoomable {
+    height: 150px;
+    width: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.zoomable.zoomed {
+    transform: scale(1.1); /* Zoom in by 10% */
+}
