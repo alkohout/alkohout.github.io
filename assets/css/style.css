@@ -327,5 +327,5 @@ h6 {
 }
 
 .zoomable.zoomed {
-    transform: scale(2); /* Zoom in by 10% */
+    transform: scale(2); /* Zoom in by 200% */
 }
