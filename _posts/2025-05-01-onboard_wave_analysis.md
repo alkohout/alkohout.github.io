@@ -39,36 +39,30 @@ permalink: /projects/waves-in-ice/WIIOS/wave_analysis/
        <div class="topic-list">
         <div class="topic inverse">
           <h3>Implementation of Real-Time Spectral Analysis for Wave Motion Processing </h3>
-	  <h5> Technical Implementation Overview:</h5>
 	  <p>
 	  I developed a C-based signal processing system for analyzing wave motion data with the following key components:
-	  </p> </ul> 
+	  </p> 
 	  <li>Data Acquisition & Preprocessing: </li>
 		  <p>
 		  <ul>
 		  <li>Implemented 640-second burst sampling at 64Hz from IMU and Kistler accelerometer</li>
+	  	  <li>Designed digital filtering system using:<li>
+			<ul>
+			  <li>Low-pass 2nd order Butterworth filter (0.5Hz cutoff)</li>
+			  <li>Downsampling to 2Hz</li>
+			  <li>High-pass filtering for displacement calculations</li>
+			<\ul>
 		  </ul>
-	  <li>Designed digital filtering system using:<li>
-		<ul>
-		  <li>Low-pass 2nd order Butterworth filter (0.5Hz cutoff)</li>
-		  <li>Downsampling to 2Hz</li>
-		  <li>High-pass filtering for displacement calculations</li>
-		<\ul>
 	  <li>Spectral Analysis Core:</li>
 		<ul>
 		  <li>Implemented Welch's method for power spectral density estimation:</li>
 		  <li>256-second segments with 50% overlap</li>
 		  <li>10% cosine windowing</li>
 		  <li>Detrending algorithms for each segment</li>
+		  <li>Spectral moment calculations</li>
 		</ul>
-	  <li>Developed spectral moment calculations for:</li>
-		<ul>
-		  <li>Wave height (Hs) derivation from zeroth moment</li>
-		  <li>Peak period (Tp) computation from power spectrum</li>
-		</ul>
-	  <li>Quality Control System:</li>
-		<ul>
-		  <li>Designed automated data validation: </li>
+	  <li>Automated Quality Control System:</li>
+		ul>
 		  <li>Statistical validation tests</li>
 		  <li>Spike detection algorithms</li>
 		  <li>Consecutive data change monitoring</li>
