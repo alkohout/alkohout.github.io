@@ -49,13 +49,10 @@ tags:
           <h6>Wave attenuation</h6>
           <ul>
             <li>Waves can travel 100's of kilometers into sea ice regions.</li>
-            <li>Wave energy can decrease linearly with distance into the ice pack.</li>
           </ul>
           <h6>Climate Implications</h6>
           <ul>
             <li>Potential for accelerated sea-ice retreat.</li>
-            <li>Traditional climate models may underestimate ice loss.</li>
-            <li>Findings suggest need to revise sea-ice predictions.</li>
           </ul>
 
           <h5>Impact</h5>
