@@ -34,66 +34,65 @@ permalink: /projects/waves-in-ice/WIIOS/wave_analysis/
     </header>
 
     <main>
-    </section>
-    <section class="topics">
-       <div class="topic-list">
-        <div class="topic inverse">
-          <h3>Implementation of Real-Time Spectral Analysis for Wave Motion Processing </h3>
-	  <p>
-	  I developed a C-based signal processing system for analyzing wave motion data with the following key components:
-	  </p> 
-	  <li>Data Acquisition & Preprocessing: </li>
-		  <p>
-		  <ul>
-		  <li>Implemented 640-second burst sampling at 64Hz from IMU and Kistler accelerometer</li>
-	  	  <li>Designed digital filtering system using:<li>
-			<ul>
-			  <li>Low-pass 2nd order Butterworth filter (0.5Hz cutoff)</li>
-			  <li>Downsampling to 2Hz</li>
-			  <li>High-pass filtering for displacement calculations</li>
-			<\ul>
-		  </ul>
-	  <li>Spectral Analysis Core:</li>
-		<ul>
-		  <li>Implemented Welch's method for power spectral density estimation:</li>
-		  <li>256-second segments with 50% overlap</li>
-		  <li>10% cosine windowing</li>
-		  <li>Detrending algorithms for each segment</li>
-		  <li>Spectral moment calculations</li>
-		</ul>
-	  <li>Automated Quality Control System:</li>
-		ul>
-		  <li>Statistical validation tests</li>
-		  <li>Spike detection algorithms</li>
-		  <li>Consecutive data change monitoring</li>
-		</ul>
-	  <li>Real-time Processing Optimized for embedded system constraints</li>
-		<ul>
-		  <li>Dual-core Edison processor</li>
-		  <li>1GB RAM limitation</li>
-		  <li>32GB SD storage management</li>
-		</ul>
-	  <li>Technical Skills Demonstrated:</li>
-		<ul>
-		  <li>Digital Signal Processing</li>
-		  <li>Real-time embedded systems programming</li>
-		  <li>Statistical analysis</li>
-		  <li>Data validation algorithms</li>
-		  <li>Sensor integration</li>
-		  <li>Memory optimization</li>
-		</ul>
-	  </p>
-	  <p>
-	  This implementation showcases both advanced programming skills and mathematical expertise in spectral analysis and signal processing.
-	  </p>
-        </div>
-       </div>
-    </section>
+        <section class="topics">
+            <div class="topic-list">
+                <div class="topic inverse">
+                    <h3>Implementation of Real-Time Spectral Analysis for Wave Motion Processing</h3>
+                    <p>I developed a C-based signal processing system for analyzing wave motion data with the following key components:</p>
+                    
+                    <h4>Data Acquisition & Preprocessing:</h4>
+                    <ul>
+                        <li>Implemented 640-second burst sampling at 64Hz from IMU and Kistler accelerometer</li>
+                        <li>Designed digital filtering system using:
+                            <ul>
+                                <li>Low-pass 2nd order Butterworth filter (0.5Hz cutoff)</li>
+                                <li>Downsampling to 2Hz</li>
+                                <li>High-pass filtering for displacement calculations</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h4>Spectral Analysis Core:</h4>
+                    <ul>
+                        <li>Implemented Welch's method for power spectral density estimation:</li>
+                        <li>256-second segments with 50% overlap</li>
+                        <li>10% cosine windowing</li>
+                        <li>Detrending algorithms for each segment</li>
+                        <li>Spectral moment calculations</li>
+                    </ul>
+
+                    <h4>Automated Quality Control System:</h4>
+                    <ul>
+                        <li>Statistical validation tests</li>
+                        <li>Spike detection algorithms</li>
+                        <li>Consecutive data change monitoring</li>
+                    </ul>
+
+                    <h4>Real-time Processing:</h4>
+                    <ul>
+                        <li>Dual-core Edison processor</li>
+                        <li>1GB RAM limitation</li>
+                        <li>32GB SD storage management</li>
+                    </ul>
+
+                    <h4>Technical Skills Demonstrated:</h4>
+                    <ul>
+                        <li>Digital Signal Processing</li>
+                        <li>Real-time embedded systems programming</li>
+                        <li>Statistical analysis</li>
+                        <li>Data validation algorithms</li>
+                        <li>Sensor integration</li>
+                        <li>Memory optimization</li>
+                    </ul>
+
+                    <p>This implementation showcases both advanced programming skills and mathematical expertise in spectral analysis and signal processing.</p>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
         <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
     </footer>
-
 </body>
 </html>
-
