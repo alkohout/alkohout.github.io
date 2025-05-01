@@ -61,7 +61,7 @@ permalink: /projects/waves-in-ice/WIIOS/wave_analysis/
                         <li>Spectral moment calculations</li>
                     </ul>
 
-                    <h5>Automated Quality Control System:</h5>
+                    <h5>Automated Quality Control System: <a href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/qc.c">(github)</a></h5>
                     <ul>
                         <li>Statistical validation tests</li>
                         <li>Spike detection algorithms</li>
