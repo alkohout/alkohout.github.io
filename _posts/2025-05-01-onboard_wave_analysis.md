@@ -40,7 +40,7 @@ permalink: /projects/waves-in-ice/WIIOS/wave_analysis/
                     <h3>Implementation of Real-Time Spectral Analysis for Wave Motion Processing</h3>
                     <p>I developed a C-based signal processing system for analyzing wave motion data with the following key components:</p>
                     
-                    <h5>Data Acquisition & Preprocessing:</h5>
+                    <h5>Data Acquisition & Preprocessing: {% include github-link.html href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/sc_misc.c" %}{% include github-link.html href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/signal_conditioning.c" %}</h5>
                     <ul>
                         <li>Implemented 640-second burst sampling at 64Hz from IMU and Kistler accelerometer</li>
                         <li>Designed digital filtering system using:
