@@ -40,7 +40,7 @@ permalink: /projects/waves-in-ice/WIIOS/wave_analysis/
                     <h3>Implementation of Real-Time Spectral Analysis for Wave Motion Processing</h3>
                     <p>I developed a C-based signal processing system for analyzing wave motion data with the following key components:</p>
                     
-                    <h4>Data Acquisition & Preprocessing:</h4>
+                    <h5>Data Acquisition & Preprocessing:</h5>
                     <ul>
                         <li>Implemented 640-second burst sampling at 64Hz from IMU and Kistler accelerometer</li>
                         <li>Designed digital filtering system using:
@@ -52,7 +52,7 @@ permalink: /projects/waves-in-ice/WIIOS/wave_analysis/
                         </li>
                     </ul>
 
-                    <h4>Spectral Analysis Core:</h4>
+                    <h5>Spectral Analysis Core:</h5>
                     <ul>
                         <li>Implemented Welch's method for power spectral density estimation:</li>
                         <li>256-second segments with 50% overlap</li>
@@ -61,21 +61,21 @@ permalink: /projects/waves-in-ice/WIIOS/wave_analysis/
                         <li>Spectral moment calculations</li>
                     </ul>
 
-                    <h4>Automated Quality Control System:</h4>
+                    <h5>Automated Quality Control System:</h5>
                     <ul>
                         <li>Statistical validation tests</li>
                         <li>Spike detection algorithms</li>
                         <li>Consecutive data change monitoring</li>
                     </ul>
 
-                    <h4>Real-time Processing:</h4>
+                    <h5>Real-time Processing:</h5>
                     <ul>
                         <li>Dual-core Edison processor</li>
                         <li>1GB RAM limitation</li>
                         <li>32GB SD storage management</li>
                     </ul>
 
-                    <h4>Technical Skills Demonstrated:</h4>
+                    <h5>Technical Skills Demonstrated:</h5>
                     <ul>
                         <li>Digital Signal Processing</li>
                         <li>Real-time embedded systems programming</li>
