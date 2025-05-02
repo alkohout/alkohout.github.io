@@ -51,7 +51,11 @@ permalink: /projects/waves-in-ice/WIIOS/wave_analysis/
                             </ul>
                         </li>
                     </ul>
-                    <script src="https://gist.github.com/alkohout/f46348d088067857a96385edc916086e.js"></script>
+		    <div class="code">
+		      {% highlight c %}
+		      {% include decimate.c %}
+		      {% endhighlight %}
+		    </div>
 
                     <h5>{% include github-link.html href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/process.c" %}{% include github-link.html href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/nr_four.c" %}{% include github-link.html href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/direction.c" %}Spectral Analysis:</h5>
                     <ul>
