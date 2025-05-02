@@ -51,6 +51,7 @@ permalink: /projects/waves-in-ice/WIIOS/wave_analysis/
                             </ul>
                         </li>
                     </ul>
+                    <script src="https://gist.github.com/alkohout/f46348d088067857a96385edc916086e.js"></script>
 
                     <h5>{% include github-link.html href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/process.c" %}{% include github-link.html href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/nr_four.c" %}{% include github-link.html href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/direction.c" %}Spectral Analysis:</h5>
                     <ul>
@@ -61,7 +62,7 @@ permalink: /projects/waves-in-ice/WIIOS/wave_analysis/
                         <li>Spectral moment calculations</li>
                     </ul>
 
-                    <h5>{% include github-link.html href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/qc.c" %}Automated Quality Control System: <a href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/qc.c">(github)</a></h5>
+                    <h5>{% include github-link.html href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/qc.c" %}Automated Quality Control System:</h5>
                     <ul>
                         <li>Statistical validation tests</li>
                         <li>Spike detection algorithms</li>
