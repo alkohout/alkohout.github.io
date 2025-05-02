@@ -40,7 +40,7 @@ permalink: /projects/waves-in-ice/WIIOS/wave_analysis/
                     <h3>Implementation of Real-Time Spectral Analysis for Wave Motion Processing</h3>
                     <p>I developed a C-based signal processing system for analyzing wave motion data with the following key components:</p>
                     
-                    <h5>Data Acquisition & Preprocessing: {% include github-link.html href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/sc_misc.c" %}{% include github-link.html href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/signal_conditioning.c" %}</h5>
+                    <h5>{% include github-link.html href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/main.c" %}{% include github-link.html href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/sc_misc.c" %}{% include github-link.html href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/signal_conditioning.c" %}Data Acquisition & Preprocessing: </h5>
                     <ul>
                         <li>Implemented 640-second burst sampling at 64Hz from IMU and Kistler accelerometer</li>
                         <li>Designed digital filtering system using:
@@ -52,7 +52,7 @@ permalink: /projects/waves-in-ice/WIIOS/wave_analysis/
                         </li>
                     </ul>
 
-                    <h5>Spectral Analysis Core:</h5>
+                    <h5>{% include github-link.html href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/process.c" %}{% include github-link.html href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/nr_four.c" %}{% include github-link.html href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/direction.c" %}Spectral Analysis:</h5>
                     <ul>
                         <li>Implemented Welch's method for power spectral density estimation:</li>
                         <li>256-second segments with 50% overlap</li>
@@ -61,7 +61,7 @@ permalink: /projects/waves-in-ice/WIIOS/wave_analysis/
                         <li>Spectral moment calculations</li>
                     </ul>
 
-                    <h5>Automated Quality Control System: <a href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/qc.c">(github)</a></h5>
+                    <h5>{% include github-link.html href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/qc.c" %}Automated Quality Control System: <a href="https://github.com/alkohout/waves-in-ice/blob/main/3.27/src/qc.c">(github)</a></h5>
                     <ul>
                         <li>Statistical validation tests</li>
                         <li>Spike detection algorithms</li>
