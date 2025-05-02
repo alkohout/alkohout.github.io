@@ -311,7 +311,7 @@ h6 {
 }
 .code {
   max-width: 100%;              /* responsive */
-  width: 600px;                 /* set as you wish */
+  width: 800px;                 /* set as you wish */
   max-height: 400px;            /* set max height */
   overflow: auto;               /* scroll if too big */
   background: #1e1e1e;          /* dark BG */
