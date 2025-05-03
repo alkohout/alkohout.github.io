@@ -42,10 +42,10 @@ tags:
     <section class="topics">
       <div class="topic-list">
         <div class="topic inverse">
-          <h3>Waves in Ice</h3>
+          <h2>Waves in Ice</h2>
           <p>Exploring the impact of waves on sea ice through <a href="https://alkohout.github.io/projects/waves-in-ice/WIIOS/">innovative sensor technology</a> and <a href="https://alkohout.github.io/projects/waves-in-ice/data_analysis/">data analysis</a>.</p>
 
-          <h5>Highlights</h5>
+          <h3>Highlights</h3>
           <h6>Wave attenuation</h6>
           <ul>
             <li>Waves can travel 100's of kilometers into sea ice regions.</li>
@@ -55,7 +55,7 @@ tags:
             <li>Potential for accelerated sea-ice retreat.</li>
           </ul>
 
-          <h5>Impact</h5>
+          <h3>Impact</h3>
           <p>Our research has had significant implications across multiple areas:</p>
             <h6>Scientific Understanding</h6>
             <ul>
@@ -77,7 +77,7 @@ tags:
                 <li>Environmental Protection: Better understanding of ecosystem changes and improved basis for conservation strategies.</li>
             </ul>
 
-          <h5>Publications and Media</h5>
+          <h3>Publications and Media</h3>
           <p><a href="https://www.nature.com/articles/nature13262" target="_blank">Kohout, A., Williams, M., Dean, S. <em>et al.</em> Storm-induced sea-ice breakup and the implications for ice extent. <em>Nature</em> <strong>509</strong>, 604–607 (2014).</a></p>
         </div>
       </div>
