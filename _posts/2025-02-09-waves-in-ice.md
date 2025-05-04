@@ -79,6 +79,20 @@ tags:
 
           <h3>Publications and Media</h3>
           <p><a href="https://www.nature.com/articles/nature13262" target="_blank">Kohout, A., Williams, M., Dean, S. <em>et al.</em> Storm-induced sea-ice breakup and the implications for ice extent. <em>Nature</em> <strong>509</strong>, 604–607 (2014).</a></p>
+	  <h3>Acknowledgments</h3>
+	  <p>This research was made possible through funding from the following organizations:</p>
+	  <ul>
+	      <li>National Institute of Water and Atmosphere (NIWA) - National Climate Center</li>
+	      <li>University of Tasmania</li>
+	      <li>Australian Antarctic Division</li>
+	      <li>Antarctica New Zealand</li>
+	      <li>U.S. Office of Naval Research</li>
+	      <li>Australian Climate and Ecosystems Cooperative Research Center</li>
+	      <li>Australian Research Council</li>
+	      <li>Royal Society of New Zealand (Marsden Fund Council)</li>
+	      <li>Foundation of Research Science and Technology</li>
+	      <li>Deep South National Science Challenge</li>
+	  </ul>
         </div>
       </div>
     </section>
