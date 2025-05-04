@@ -1,3 +1,4 @@
+
 /******************************************************************************
  * Function: decimate
  * Purpose: Decimates (downsamples) a signal after applying an anti-aliasing
