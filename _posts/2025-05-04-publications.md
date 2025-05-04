@@ -40,7 +40,16 @@ permalink: /projects/waves-in-ice/publications/
           <h2>Publications</h2>
           <ul>
             <li> 
-	    <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2015GL064715" target="_blank"> Li, J., Kohout, A., Shen, H. Comparison of wave propagation through ice covers in calm and storm conditions. <em>Geophys. Res. Lett.</em>, <strong>42</strong>, 5935–5941, (2015). doi:10.1002/2015GL064715.</a>
+	    <a href="" target="_blank"> Kohout, A., . . <em></em>. <strong></strong>, - (20).</a>
+            </li> 
+            <li> 
+	    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0967064515003252?via%3Dihub" target="_blank"> Toyota, T., Kohout, A., Fraser, A. Formation processes of sea ice floe size distribution in the interior pack and its relationship to the marginal ice zone off East Antarctica. <em>Deep-Sea Res. Pt II.</em>. <strong>131</strong>, 28-40 (2016).</a>
+            </li> 
+            <li> 
+	    <a href="https://www.sciencedirect.com/science/article/abs/pii/S096706451500212X" target="_blank"> Kohout, A., Williams, M., Toyota, T., Lieser, J., Hutchings, J. In situ observations of wave-induced ice floe breakup. <em>Deep-Sea Res. Pt II.</em>. <strong>131</strong>, 22-27 (2016).</a>
+            </li> 
+            <li> 
+	    <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2015GL064715" target="_blank"> Li, J., Kohout, A., Shen, H. Comparison of wave propagation through ice covers in calm and storm conditions. <em>Geophys. Res. Lett.</em>, <strong>42</strong>, 5935–5941 (2015).</a>
             </li> 
             <li>
             <a href="https://www.nature.com/articles/nature13262" target="_blank">Kohout, A., Williams, M., Dean, S. <em>et al.</em> Storm-induced sea-ice breakup and the implications for ice extent. <em>Nature</em> <strong>509</strong>, 604–607 (2014).</a>
@@ -49,8 +58,7 @@ permalink: /projects/waves-in-ice/publications/
           </ul>
 
 -	
--	Kohout A, Williams M, Toyota T, Lieser J, Hutchings J. (2015). In situ observations of wave-induced ice floe breakup. Deep-Sea Res. Pt II. doi:10.1016/j.dsr2.2015.06.010.
--	Toyota T, Kohout A, Fraser A. (2015). Formation processes of sea ice floe size distribution in the interior pack and its relationship to the marginal ice zone off East Antarctica. Deep-Sea Res. Pt II. doi:10.1016/j.dsr2.2015.10.003.
+-	 (2015). . Deep-Sea Res. Pt II. doi:10.1016/j.dsr2.2015.10.003.
 -	Kohout A, Penrose B, Penrose S, Williams M. (2015) Waves-in-ice measurements during SIPEX II. Annals of Glaciology. 56(69), 415-424, doi:10.3189/2015AoG69A600.
 -	Meylan M, Bennetts L, Kohout A. (2014) In-situ measurements and analysis of ocean waves in the Antarctic marginal ice zone. Geophys. Res. Lett., 41 (14), 5046-5051.
 -	Montiel, F, Kohout A L, Roach L A. (2022). Physical drivers of ocean wave attenuation in the marginal ice zone. Journal of Physical Oceanography. 889-906. DOI:10.1175/JPO-D-21-0240.1.
