@@ -1,22 +1,35 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 
-/*
- * decimate()
- *
- * Apply a 2nd-order Butterworth low-pass filter to `input` of length n_in,
- * then downsample by the integer factor step = sr_in/sr_out and store in `output`
- * (length n_out).
- *
+/******************************************************************************
+ * Function: decimate
+ * Purpose: Decimates (downsamples) a signal after applying an anti-aliasing
+ *          Butterworth filter
+ * 
  * Parameters:
- *   in   pointer to the input samples (length n1)
- *   out  pointer to the output buffer (length n2)
- *   sr1  original sample rate
- *   sr2  desired (lower) sample rate
- *   n1   number of input samples
- *   n2   number of output samples
- */
+ *   in[]  - Input signal array
+ *   out[] - Output decimated signal array
+ *   sr1   - Input sampling rate (Hz)
+ *   sr2   - Output sampling rate (Hz)
+ *   n1    - Length of input array
+ *   n2    - Length of output array
+ * 
+ * Returns:
+ *   void
+ * 
+ * Notes:
+ *   - Implements 2nd order Butterworth filter
+ *   - Supports two specific sampling rate combinations:
+ *     1. 8 Hz input (sr1=0.125) with 0.5 Hz cutoff
+ *     2. 64 Hz input (sr1=0.015625) with 2 Hz cutoff
+ *   - Requires integer ratio between input and output sampling rates
+ *   - Includes bounds checking and error logging
+ * 
+ * Filter Coefficients:
+ *   8 Hz sampling:  a = [1.0, -1.4542, 0.5741]
+ *                   b = [0.0300, 0.0599, 0.0300]
+ *   64 Hz sampling: a = [1.0, -1.7238, 0.7575]
+ *                   b = [0.0084, 0.0169, 0.0084]
+ * 
+ *****************************************************************************/
 
 void decimate(long double *in, long double *out, float sr1, float sr2, int n1, int n2) {
 
