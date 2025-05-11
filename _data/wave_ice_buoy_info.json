@@ -1,19 +1,19 @@
 [
   {
-    "id": "SIPEX1",
+    "id": "SIPEX4",
     "voyage": "SIPEXII 2012",
     "deployment": "2012-09-23T02:00:00Z",
     "lat": -61.41227,
     "lng": 121.13549,
-    "raw_data_url": "/data/sipex1_raw.csv"
+    "raw_data_url": "/data/SIPEXII_4_data.csv"
   },
   {
-    "id": "SIPEX2",
+    "id": "SIPEX6",
     "voyage": "SIPEXII 2012",
     "deployment": "2012-09-23T02:00:00Z",
     "lat": -61.44243,
     "lng": 121.17186,
-    "raw_data_url": "/data/sipex2_raw.csv"
+    "raw_data_url": "/data/SIPEXII_6_data.csv"
   },
   {
     "id": "SIPEX3",
@@ -21,22 +21,22 @@
     "deployment": "2012-09-23T02:00:00Z",
     "lat": -61.51758,
     "lng": 121.18118,
-    "raw_data_url": "/data/sipex3_raw.csv"
-  },
-  {
-    "id": "SIPEX4",
-    "voyage": "SIPEXII 2012",
-    "deployment": "2012-09-23T08:00:00Z",
-    "lat": -61.93744,
-    "lng": 121.12817,
-    "raw_data_url": "/data/sipex4_raw.csv"
+    "raw_data_url": "/data/SIPEXII_3_data.csv"
   },
   {
     "id": "SIPEX5",
     "voyage": "SIPEXII 2012",
+    "deployment": "2012-09-23T08:00:00Z",
+    "lat": -61.93744,
+    "lng": 121.12817,
+    "raw_data_url": "/data/SIPEXII_5_data.csv"
+  },
+  {
+    "id": "SIPEX7",
+    "voyage": "SIPEXII 2012",
     "deployment": "2012-09-24T02:00:00Z",
     "lat": -62.42007,
     "lng": 121.52611,
-    "raw_data_url": "/data/sipex5_raw.csv"
+    "raw_data_url": "/data/SIPEXII_7_data.csv"
   }
 ]
