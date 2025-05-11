@@ -25,7 +25,7 @@ tags:
                 <li><a href="https://alkohout.github.io">Alison Kohout</a></li>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="https://alkohout.github.io/projects/waves-in-ice/WIIOS/">Sensor Design</a></li>
-                <li><a href="#data-collection">Data Collection</a></li>
+                <li><a href="https://alkohout.github.io/projects/waves-in-ice/data_collection/">Data Collection</a></li>
                 <li><a href="https://alkohout.github.io/projects/waves-in-ice/data_analysis/">Data Analysis</a></li>
                 <li><a href="#publications">Publications</a></li>
             </ul>
