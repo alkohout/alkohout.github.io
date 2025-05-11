@@ -89,7 +89,7 @@ permalink: /projects/waves-in-ice/data_collection/
       }).addTo(map);
 
       // Buoy data from Jekyll data file (inserted via Liquid templating)
-      var buoys = {{ site.data.buoys | jsonify }};
+      var buoys = {{ site.data.wave_ice_buoy_info | jsonify }};
 
       // Add markers for each buoy
       buoys.forEach(function(buoy) {
