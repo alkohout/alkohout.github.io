@@ -1,18 +1,42 @@
 [
   {
-    "id": "WB001",
-    "voyage": "Voyage 2023-01",
-    "deployment": "2023-03-15T12:00:00Z",
-    "lat": -77.85,
-    "lng": 166.77,
-    "raw_data_url": "/data/wb001_raw.csv"
+    "id": "SIPEX1",
+    "voyage": "SIPEXII 2012",
+    "deployment": "2012-09-23T02:00:00Z",
+    "lat": -61.41227,
+    "lng": 121.13549,
+    "raw_data_url": "/data/sipex1_raw.csv"
   },
   {
-    "id": "WB002",
-    "voyage": "Voyage 2023-02",
-    "deployment": "2023-04-10T15:30:00Z",
-    "lat": -70.5,
-    "lng": 170.0,
-    "raw_data_url": "/data/wb002_raw.csv"
+    "id": "SIPEX2",
+    "voyage": "SIPEXII 2012",
+    "deployment": "2012-09-23T02:00:00Z",
+    "lat": -61.44243,
+    "lng": 121.17186,
+    "raw_data_url": "/data/sipex2_raw.csv"
+  },
+  {
+    "id": "SIPEX3",
+    "voyage": "SIPEXII 2012",
+    "deployment": "2012-09-23T02:00:00Z",
+    "lat": -61.51758,
+    "lng": 121.18118,
+    "raw_data_url": "/data/sipex3_raw.csv"
+  },
+  {
+    "id": "SIPEX4",
+    "voyage": "SIPEXII 2012",
+    "deployment": "2012-09-23T08:00:00Z",
+    "lat": -61.93744,
+    "lng": 121.12817,
+    "raw_data_url": "/data/sipex4_raw.csv"
+  },
+  {
+    "id": "SIPEX5",
+    "voyage": "SIPEXII 2012",
+    "deployment": "2012-09-24T02:00:00Z",
+    "lat": -62.42007,
+    "lng": 121.52611,
+    "raw_data_url": "/data/sipex5_raw.csv"
   }
 ]
