@@ -77,8 +77,6 @@ tags:
                 <li>Environmental Protection: Better understanding of ecosystem changes and improved basis for conservation strategies.</li>
             </ul>
 
-          <h3>Publications and Media</h3>
-          <p><a href="https://www.nature.com/articles/nature13262" target="_blank">Kohout, A., Williams, M., Dean, S. <em>et al.</em> Storm-induced sea-ice breakup and the implications for ice extent. <em>Nature</em> <strong>509</strong>, 604–607 (2014).</a></p>
 	  <h3>Acknowledgments</h3>
 	  <p>This research was made possible through funding from the following organizations:</p>
 	  <ul>
