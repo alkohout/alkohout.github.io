@@ -1,0 +1,18 @@
+[
+  {
+    "id": "WB001",
+    "voyage": "Voyage 2023-01",
+    "deployment": "2023-03-15T12:00:00Z",
+    "lat": -77.85,
+    "lng": 166.77,
+    "raw_data_url": "/data/wb001_raw.csv"
+  },
+  {
+    "id": "WB002",
+    "voyage": "Voyage 2023-02",
+    "deployment": "2023-04-10T15:30:00Z",
+    "lat": -70.5,
+    "lng": 170.0,
+    "raw_data_url": "/data/wb002_raw.csv"
+  }
+]
