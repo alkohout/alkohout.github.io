@@ -76,7 +76,6 @@ permalink: /projects/waves-in-ice/data_collection/
     </footer>
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
     <script>
       // Initialize the map centered around East Antarctica / Scott Base region
       // Scott Base coords: ~ -77.85S, 166.77E
@@ -119,6 +118,7 @@ permalink: /projects/waves-in-ice/data_collection/
 
       });
     </script>
+
 </body>
 
 </html>
