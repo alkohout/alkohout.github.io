@@ -88,10 +88,10 @@ permalink: /projects/waves-in-ice/data_collection/
     // Variable to store the current path layer
     var currentPath = null;
     
-    // Function to load and parse CSV data
-    async function loadTrackingData() {
+    // Function to load and parse CSV data for a specific buoy
+    async function loadTrackingData(buoyId) {
       try {
-        const response = await fetch('SIPEX7_data.csv');
+        const response = await fetch(`${buoyId}_data.csv`);
         const data = await response.text();
         const rows = data.split('\n').slice(1); // Skip header row
         const coordinates = rows.map(row => {
@@ -100,7 +100,7 @@ permalink: /projects/waves-in-ice/data_collection/
         }).filter(coord => !isNaN(coord[0]) && !isNaN(coord[1])); // Filter out any invalid coordinates
         return coordinates;
       } catch (error) {
-        console.error('Error loading tracking data:', error);
+        console.error(`Error loading tracking data for buoy ${buoyId}:`, error);
         return [];
       }
     }
@@ -132,7 +132,7 @@ permalink: /projects/waves-in-ice/data_collection/
     
       // Add mouseover and mouseout events for tracking visualization
       marker.on('mouseover', async function(e) {
-        const trackingData = await loadTrackingData();
+        const trackingData = await loadTrackingData(buoy.id);
         if (trackingData.length > 0) {
           // Remove existing path if any
           if (currentPath) {
@@ -144,6 +144,12 @@ permalink: /projects/waves-in-ice/data_collection/
             weight: 3,
             opacity: 0.7
           }).addTo(map);
+          
+          // Optionally fit the map bounds to show the entire track
+          map.fitBounds(currentPath.getBounds(), {
+            padding: [50, 50], // Add some padding around the bounds
+            maxZoom: 10 // Limit how far it will zoom in
+          });
         }
       });
     
@@ -154,7 +160,7 @@ permalink: /projects/waves-in-ice/data_collection/
           currentPath = null;
         }
       });
-    
+
       // Show tooltip on hover with basic info
       marker.bindTooltip(`ID: ${buoy.id}<br>Voyage: ${buoy.voyage}<br>Deployed: ${deploymentStr}`, {sticky: true});
     });
