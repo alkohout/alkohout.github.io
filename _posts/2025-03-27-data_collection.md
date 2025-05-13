@@ -117,6 +117,88 @@ permalink: /projects/waves-in-ice/data_collection/
         marker.bindTooltip(`ID: ${buoy.id}<br>Voyage: ${buoy.voyage}<br>Deployed: ${deploymentStr}`, {sticky: true});
 
       });
+// Initialize the map centered around East Antarctica / Scott Base region
+var map = L.map('map').setView([-70, 160], 4);
+
+// Add OpenStreetMap tiles
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+// Variable to store the current path layer
+var currentPath = null;
+
+// Function to load and parse CSV data
+async function loadTrackingData() {
+  try {
+    const response = await fetch('SIPEX_PLOT.csv');
+    const data = await response.text();
+    const rows = data.split('\n').slice(1); // Skip header row
+    const coordinates = rows.map(row => {
+      const columns = row.split(',');
+      return [parseFloat(columns[1]), parseFloat(columns[2])]; // Lat, Lon from columns 2 and 3
+    }).filter(coord => !isNaN(coord[0]) && !isNaN(coord[1])); // Filter out any invalid coordinates
+    return coordinates;
+  } catch (error) {
+    console.error('Error loading tracking data:', error);
+    return [];
+  }
+}
+
+// Buoy data from Jekyll data file
+var buoys = {{ site.data.wave_ice_buoy_info | jsonify }};
+
+// Add markers for each buoy
+buoys.forEach(function(buoy) {
+  var marker = L.marker([buoy.lat, buoy.lng]).addTo(map);
+
+  // Format deployment date/time nicely
+  var deploymentDate = new Date(buoy.deployment);
+  var deploymentStr = deploymentDate.toLocaleString(undefined, {
+    year: 'numeric', month: 'short', day: 'numeric',
+    hour: '2-digit', minute: '2-digit', timeZoneName: 'short'
+  });
+
+  // Popup content
+  var popupContent = `
+    <strong>Buoy ID:</strong> ${buoy.id}<br/>
+    <strong>Voyage:</strong> ${buoy.voyage}<br/>
+    <strong>Deployment:</strong> ${deploymentStr}<br/>
+    <a href="${buoy.raw_data_url}" class="download-link" download>Download Raw Data</a>
+    <a href="${buoy.plot_url}" class="download-link" download>Download Time Series plot</a>
+  `;
+
+  marker.bindPopup(popupContent);
+
+  // Add mouseover and mouseout events for tracking visualization
+  marker.on('mouseover', async function(e) {
+    const trackingData = await loadTrackingData();
+    if (trackingData.length > 0) {
+      // Remove existing path if any
+      if (currentPath) {
+        map.removeLayer(currentPath);
+      }
+      // Create and add new path
+      currentPath = L.polyline(trackingData, {
+        color: 'red',
+        weight: 3,
+        opacity: 0.7
+      }).addTo(map);
+    }
+  });
+
+  marker.on('mouseout', function(e) {
+    // Remove path when mouse leaves marker
+    if (currentPath) {
+      map.removeLayer(currentPath);
+      currentPath = null;
+    }
+  });
+
+  // Show tooltip on hover with basic info
+  marker.bindTooltip(`ID: ${buoy.id}<br>Voyage: ${buoy.voyage}<br>Deployed: ${deploymentStr}`, {sticky: true});
+});
+</script>
     </script>
 
 </body>
