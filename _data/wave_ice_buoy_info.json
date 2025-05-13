@@ -5,7 +5,7 @@
     "deployment": "2012-09-23T02:00:00Z",
     "lat": -61.41227,
     "lng": 121.13549,
-    "raw_data_url": "/assets/data/SIPEX4_data.csv"
+    "raw_data_url": "/assets/data/SIPEX4_data.csv",
     "plot_url": "/assets/data/SIPEX4_plot.csv"
   },
   {
@@ -14,7 +14,7 @@
     "deployment": "2012-09-23T02:00:00Z",
     "lat": -61.44243,
     "lng": 121.17186,
-    "raw_data_url": "/assets/data/SIPEX6_data.csv"
+    "raw_data_url": "/assets/data/SIPEX6_data.csv",
     "plot_url": "/assets/data/SIPEX6_plot.csv"
   },
   {
@@ -23,7 +23,7 @@
     "deployment": "2012-09-23T02:00:00Z",
     "lat": -61.51758,
     "lng": 121.18118,
-    "raw_data_url": "/assets/data/SIPEX3_data.csv"
+    "raw_data_url": "/assets/data/SIPEX3_data.csv",
     "plot_url": "/assets/data/SIPEX3_plot.csv"
   },
   {
@@ -32,7 +32,7 @@
     "deployment": "2012-09-23T08:00:00Z",
     "lat": -61.93744,
     "lng": 121.12817,
-    "raw_data_url": "/assets/data/SIPEX5_data.csv"
+    "raw_data_url": "/assets/data/SIPEX5_data.csv",
     "plot_url": "/assets/data/SIPEX5_plot.csv"
   },
   {
@@ -41,7 +41,7 @@
     "deployment": "2012-09-24T02:00:00Z",
     "lat": -62.42007,
     "lng": 121.52611,
-    "raw_data_url": "/assets/data/SIPEX7_data.csv"
+    "raw_data_url": "/assets/data/SIPEX7_data.csv",
     "plot_url": "/assets/data/SIPEX7_plot.csv"
   }
 ]
