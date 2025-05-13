@@ -76,64 +76,112 @@ permalink: /projects/waves-in-ice/data_collection/
     </footer>
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script>
-      // Initialize the map
-      var map = L.map('map').setView([-70, 160], 4);
+// Modified script section with debugging
+<script>
+    // Debug: Log initial setup
+    console.log("Starting map initialization...");
 
-      // Add OpenStreetMap tiles
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    // Initialize the map
+    var map = L.map('map').setView([-70, 160], 4);
+    console.log("Map initialized");
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors'
-      }).addTo(map);
+    }).addTo(map);
+    console.log("Base map tiles added");
 
-      // Buoy data from Jekyll data file
-      var buoys = {{ site.data.wave_ice_buoy_info | jsonify }};
+    // Debug: Log buoys data
+    var buoys = {{ site.data.wave_ice_buoy_info | jsonify }};
+    console.log("Buoys data:", buoys);
 
-      // Function to load and parse CSV data
-      function loadCSV(url) {
-        return fetch(url)
-          .then(response => response.text())
-          .then(data => {
-            const lines = data.trim().split('\n');
-            const headers = lines[0].split(',').map(header => header.trim().toLowerCase()); // Normalize headers to lowercase
-            const latIndex = headers.indexOf('latitude (decimal degrees)'); // Adjust header name as needed
-            const lngIndex = headers.indexOf('longitude (decimal degrees)'); // Adjust header name as needed
-    
-            if (latIndex === -1 || lngIndex === -1) {
-              throw new Error('CSV does not contain the expected "latitude" or "longitude" columns');
+    // Modified loadCSV function with error handling
+    async function loadCSV(url) {
+        console.log("Attempting to load CSV from:", url);
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
             }
-    
-            return lines.slice(1).map(line => {
-              const values = line.split(',');
-              return {
-                lat: parseFloat(values[latIndex]),
-                lng: parseFloat(values[lngIndex])
-              };
+            const data = await response.text();
+            console.log("CSV data received:", data.substring(0, 200) + "..."); // Show first 200 chars
+
+            const lines = data.trim().split('\n');
+            const headers = lines[0].split(',').map(h => h.trim().toLowerCase());
+            console.log("CSV headers:", headers);
+
+            const latIndex = headers.indexOf('latitude (decimal degrees)');
+            const lngIndex = headers.indexOf('longitude (decimal degrees)');
+
+            console.log("Column indices - Lat:", latIndex, "Lng:", lngIndex);
+
+            if (latIndex === -1 || lngIndex === -1) {
+                throw new Error('CSV missing required columns');
+            }
+
+            const positions = lines.slice(1).map(line => {
+                const values = line.split(',');
+                return {
+                    lat: parseFloat(values[latIndex]),
+                    lng: parseFloat(values[lngIndex])
+                };
             });
-          });
-      }
-    
-      // Add markers and paths for each buoy
-      buoys.forEach(function(buoy) {
-        var positions;
-        loadCSV(buoy.positions_url)
-          .then(data => {
-            positions = data;
-    
-            // Create and show polyline for the buoy's path
-            var path = L.polyline(positions, {
-              color: 'blue',
-              weight: 2,
-              opacity: 0.7,
-              smoothFactor: 1
+
+            console.log("Parsed positions:", positions.slice(0, 3)); // Show first 3 positions
+            return positions;
+        } catch (error) {
+            console.error("Error loading CSV:", error);
+            throw error;
+        }
+    }
+
+    // Modified buoy processing with better error handling
+    buoys.forEach(async function(buoy) {
+        console.log("Processing buoy:", buoy.id);
+        try {
+            const positions = await loadCSV(buoy.plot_url);
+            
+            if (!positions || positions.length === 0) {
+                console.warn("No positions found for buoy:", buoy.id);
+                return;
+            }
+
+            console.log(`Creating path for buoy ${buoy.id} with ${positions.length} positions`);
+
+            // Create path
+            const path = L.polyline(positions, {
+                color: 'blue',
+                weight: 2,
+                opacity: 0.7
             }).addTo(map);
-    
-            // Create and add marker for the buoy
-            var marker = L.marker([positions[0].lat, positions[0].lng]).addTo(map);
-            marker.bindPopup(`<strong>Buoy ID:</strong> ${buoy.id}`);
-          })
-          .catch(error => console.error('Error loading positions:', error));
-      });
-    </script>
+
+            // Create marker
+            const marker = L.marker([positions[0].lat, positions[0].lng])
+                .addTo(map)
+                .bindPopup(`<strong>Buoy:</strong> ${buoy.id}`);
+
+            // Add hover events
+            marker.on('mouseover', function() {
+                console.log(`Hover started on buoy ${buoy.id}`);
+                let tooltipContent = `<strong>Buoy ID: ${buoy.id}</strong><br/>Positions:<br/>`;
+                positions.slice(0, 5).forEach((pos, idx) => {
+                    tooltipContent += `${idx}: (${pos.lat.toFixed(2)}, ${pos.lng.toFixed(2)})<br/>`;
+                });
+                marker.bindTooltip(tooltipContent).openTooltip();
+                path.setStyle({color: 'red', weight: 3});
+            });
+
+            marker.on('mouseout', function() {
+                console.log(`Hover ended on buoy ${buoy.id}`);
+                path.setStyle({color: 'blue', weight: 2});
+                marker.closeTooltip();
+            });
+
+        } catch (error) {
+            console.error(`Error processing buoy ${buoy.id}:`, error);
+        }
+    });
+</script>
 
 </body>
 
