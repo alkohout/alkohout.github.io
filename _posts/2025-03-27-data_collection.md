@@ -87,13 +87,13 @@ permalink: /projects/waves-in-ice/data_collection/
     
     // Variable to store the current path layer
     var currentPath = null;
+    var trackDataCache = {};  // Cache for storing loaded track data
+    var globalBounds = null;  // Variable to store the overall bounds
     
     // Function to load and parse CSV data for a specific buoy
     async function loadTrackingData(buoyId) {
-      console.log('Attempting to load data for buoy:', buoyId);
       try {
         const filename = `/assets/data/${buoyId}_data.csv`;
-        console.log('Fetching file:', filename);
         const response = await fetch(filename);
         
         if (!response.ok) {
@@ -101,15 +101,12 @@ permalink: /projects/waves-in-ice/data_collection/
         }
         
         const data = await response.text();
-        console.log('Raw CSV data first 100 chars:', data.substring(0, 100));
-        
         const rows = data.split('\n').slice(1); // Skip header row
         const coordinates = rows.map(row => {
           const columns = row.split(',');
           return [parseFloat(columns[1]), parseFloat(columns[2])]; // Lat, Lon from columns 2 and 3
         }).filter(coord => !isNaN(coord[0]) && !isNaN(coord[1])); // Filter out any invalid coordinates
         
-        console.log('Processed coordinates (first 3):', coordinates.slice(0, 3));
         return coordinates;
       } catch (error) {
         console.error(`Error loading tracking data for buoy ${buoyId}:`, error);
@@ -117,72 +114,90 @@ permalink: /projects/waves-in-ice/data_collection/
       }
     }
     
+    // Function to calculate global bounds
+    async function calculateGlobalBounds(buoys) {
+      let allCoordinates = [];
+      
+      // Load all tracks
+      for (const buoy of buoys) {
+        const trackData = await loadTrackingData(buoy.id);
+        trackDataCache[buoy.id] = trackData;  // Cache the data
+        allCoordinates = allCoordinates.concat(trackData);
+      }
+      
+      if (allCoordinates.length === 0) return null;
+      
+      // Calculate bounds
+      const bounds = L.latLngBounds(allCoordinates);
+      return bounds;
+    }
+    
     // Buoy data from Jekyll data file
     var buoys = {{ site.data.wave_ice_buoy_info | jsonify }};
-    console.log('Loaded buoy data:', buoys);
     
-    // Add markers for each buoy
-    buoys.forEach(function(buoy) {
-      console.log('Processing buoy:', buoy.id);
-      var marker = L.marker([buoy.lat, buoy.lng]).addTo(map);
+    // Initialize bounds and markers
+    (async function initializeMap() {
+      // Calculate global bounds first
+      globalBounds = await calculateGlobalBounds(buoys);
+      
+      if (globalBounds) {
+        // Set initial map view to show all tracks with padding
+        map.fitBounds(globalBounds, {
+          padding: [50, 50],
+          maxZoom: 10
+        });
+      }
+      
+      // Add markers for each buoy
+      buoys.forEach(function(buoy) {
+        var marker = L.marker([buoy.lat, buoy.lng]).addTo(map);
     
-      // Format deployment date/time nicely
-      var deploymentDate = new Date(buoy.deployment);
-      var deploymentStr = deploymentDate.toLocaleString(undefined, {
-        year: 'numeric', month: 'short', day: 'numeric',
-        hour: '2-digit', minute: '2-digit', timeZoneName: 'short'
-      });
+        // Format deployment date/time nicely
+        var deploymentDate = new Date(buoy.deployment);
+        var deploymentStr = deploymentDate.toLocaleString(undefined, {
+          year: 'numeric', month: 'short', day: 'numeric',
+          hour: '2-digit', minute: '2-digit', timeZoneName: 'short'
+        });
     
-      // Popup content
-      var popupContent = `
-        <strong>Buoy ID:</strong> ${buoy.id}<br/>
-        <strong>Voyage:</strong> ${buoy.voyage}<br/>
-        <strong>Deployment:</strong> ${deploymentStr}<br/>
-        <a href="${buoy.raw_data_url}" class="download-link" download>Download Raw Data</a>
-        <a href="${buoy.plot_url}" class="download-link" download>Download Time Series plot</a>
-      `;
+        // Popup content
+        var popupContent = `
+          <strong>Buoy ID:</strong> ${buoy.id}<br/>
+          <strong>Voyage:</strong> ${buoy.voyage}<br/>
+          <strong>Deployment:</strong> ${deploymentStr}<br/>
+          <a href="${buoy.raw_data_url}" class="download-link" download>Download Raw Data</a>
+          <a href="${buoy.plot_url}" class="download-link" download>Download Time Series plot</a>
+        `;
     
-      marker.bindPopup(popupContent);
+        marker.bindPopup(popupContent);
     
-      // Add mouseover and mouseout events for tracking visualization
-      marker.on('mouseover', async function(e) {
-        console.log('Marker mouseover for buoy:', buoy.id);
-        const trackingData = await loadTrackingData(buoy.id);
-        console.log('Received tracking data length:', trackingData.length);
-        
-        if (trackingData.length > 0) {
-          // Remove existing path if any
+        // Add mouseover and mouseout events for tracking visualization
+        marker.on('mouseover', function(e) {
+          const trackingData = trackDataCache[buoy.id];
+          if (trackingData && trackingData.length > 0) {
+            // Remove existing path if any
+            if (currentPath) {
+              map.removeLayer(currentPath);
+            }
+            // Create and add new path
+            currentPath = L.polyline(trackingData, {
+              color: 'red',
+              weight: 3,
+              opacity: 0.7
+            }).addTo(map);
+          }
+        });
+    
+        marker.on('mouseout', function(e) {
           if (currentPath) {
             map.removeLayer(currentPath);
+            currentPath = null;
           }
-          // Create and add new path
-          currentPath = L.polyline(trackingData, {
-            color: 'red',
-            weight: 3,
-            opacity: 0.7
-          }).addTo(map);
-          
-          console.log('Added path to map');
-          
-          // Optionally fit the map bounds to show the entire track
-          map.fitBounds(currentPath.getBounds(), {
-            padding: [50, 50],
-            maxZoom: 10
-          });
-        }
-      });
+        });
     
-      marker.on('mouseout', function(e) {
-        console.log('Marker mouseout for buoy:', buoy.id);
-        if (currentPath) {
-          map.removeLayer(currentPath);
-          currentPath = null;
-        }
+        // Show tooltip on hover with basic info
+        marker.bindTooltip(`ID: ${buoy.id}<br>Voyage: ${buoy.voyage}<br>Deployed: ${deploymentStr}`, {sticky: true});
       });
-
-      // Show tooltip on hover with basic info
-      marker.bindTooltip(`ID: ${buoy.id}<br>Voyage: ${buoy.voyage}<br>Deployed: ${deploymentStr}`, {sticky: true});
-    });
+    })();
     </script>
 
 </body>
