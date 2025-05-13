@@ -90,14 +90,26 @@ permalink: /projects/waves-in-ice/data_collection/
     
     // Function to load and parse CSV data for a specific buoy
     async function loadTrackingData(buoyId) {
+      console.log('Attempting to load data for buoy:', buoyId);
       try {
-        const response = await fetch(`${buoyId}_data.csv`);
+        const filename = `${buoyId}_data.csv`;
+        console.log('Fetching file:', filename);
+        const response = await fetch(filename);
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
         const data = await response.text();
+        console.log('Raw CSV data first 100 chars:', data.substring(0, 100));
+        
         const rows = data.split('\n').slice(1); // Skip header row
         const coordinates = rows.map(row => {
           const columns = row.split(',');
           return [parseFloat(columns[1]), parseFloat(columns[2])]; // Lat, Lon from columns 2 and 3
         }).filter(coord => !isNaN(coord[0]) && !isNaN(coord[1])); // Filter out any invalid coordinates
+        
+        console.log('Processed coordinates (first 3):', coordinates.slice(0, 3));
         return coordinates;
       } catch (error) {
         console.error(`Error loading tracking data for buoy ${buoyId}:`, error);
@@ -107,9 +119,11 @@ permalink: /projects/waves-in-ice/data_collection/
     
     // Buoy data from Jekyll data file
     var buoys = {{ site.data.wave_ice_buoy_info | jsonify }};
+    console.log('Loaded buoy data:', buoys);
     
     // Add markers for each buoy
     buoys.forEach(function(buoy) {
+      console.log('Processing buoy:', buoy.id);
       var marker = L.marker([buoy.lat, buoy.lng]).addTo(map);
     
       // Format deployment date/time nicely
@@ -132,7 +146,10 @@ permalink: /projects/waves-in-ice/data_collection/
     
       // Add mouseover and mouseout events for tracking visualization
       marker.on('mouseover', async function(e) {
+        console.log('Marker mouseover for buoy:', buoy.id);
         const trackingData = await loadTrackingData(buoy.id);
+        console.log('Received tracking data length:', trackingData.length);
+        
         if (trackingData.length > 0) {
           // Remove existing path if any
           if (currentPath) {
@@ -145,16 +162,18 @@ permalink: /projects/waves-in-ice/data_collection/
             opacity: 0.7
           }).addTo(map);
           
+          console.log('Added path to map');
+          
           // Optionally fit the map bounds to show the entire track
           map.fitBounds(currentPath.getBounds(), {
-            padding: [50, 50], // Add some padding around the bounds
-            maxZoom: 10 // Limit how far it will zoom in
+            padding: [50, 50],
+            maxZoom: 10
           });
         }
       });
     
       marker.on('mouseout', function(e) {
-        // Remove path when mouse leaves marker
+        console.log('Marker mouseout for buoy:', buoy.id);
         if (currentPath) {
           map.removeLayer(currentPath);
           currentPath = null;
