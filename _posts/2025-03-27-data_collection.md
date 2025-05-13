@@ -88,9 +88,11 @@ permalink: /projects/waves-in-ice/data_collection/
     // Variable to store the current path layer
     var currentPath = null;
     
+    // Function to load and parse CSV data for a specific buoy
+    async function loadTrackingData(buoyId) {
       console.log('Attempting to load data for buoy:', buoyId);
       try {
-        const filename = `/assests/data/${buoyId}_data.csv`;
+        const filename = `/assets/data/${buoyId}_data.csv`;
         console.log('Fetching file:', filename);
         const response = await fetch(filename);
         
