@@ -108,6 +108,7 @@ permalink: /projects/waves-in-ice/data_collection/
           <strong>Voyage:</strong> ${buoy.voyage}<br/>
           <strong>Deployment:</strong> ${deploymentStr}<br/>
           <a href="${buoy.raw_data_url}" class="download-link" download>Download Raw Data</a>
+          <a href="${buoy.plot_url}" class="download-link" download>Download Time Series plot</a>
         `;
 
         // Show popup on click
