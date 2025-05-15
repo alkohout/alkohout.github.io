@@ -195,7 +195,7 @@ permalink: /projects/waves-in-ice/data_collection/
         });
     
         // Show tooltip on hover with basic info
-        marker.bindTooltip(`ID: ${buoy.id}<br>Voyage: ${buoy.voyage}<br>Deployed: ${deploymentStr}`, {sticky: true});
+        // marker.bindTooltip(`ID: ${buoy.id}<br>Voyage: ${buoy.voyage}<br>Deployed: ${deploymentStr}`, {sticky: true});
       });
     })();
     </script>
