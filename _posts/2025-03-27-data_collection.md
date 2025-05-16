@@ -79,7 +79,7 @@ permalink: /projects/waves-in-ice/data_collection/
     <script>
         // Initialize the map first
         var map = L.map('map', {
-	    minZoom:3,
+	    minZoom:2,
 	    maxBoundsViscosity: 0.5,
             worldCopyJump: true
         }).setView([-65, 180], 4);
