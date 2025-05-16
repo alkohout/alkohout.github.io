@@ -72,102 +72,93 @@
     "plot_url": "/assets/data/PIPERS3_plot.png"
   },
   {
-    "id": "PIPERS2",
+    "id": "PIPERS4",
     "voyage": "PIPERS 2017",
-    "deployed": "2017-04-21T10:45:00Z",
-    "lat": ,
-    "lng": ,
-    "raw_data_url": "/assets/data/PIPERS1_data.csv",
-    "plot_url": "/assets/data/PIPERS1_plot.png"
+    "deployed": "2017-06-02T07:00:00Z",
+    "lat": -68.64319610595700,
+    "lng": -176.18649291992200,
+    "raw_data_url": "/assets/data/PIPERS4_data.csv",
+    "plot_url": "/assets/data/PIPERS4_plot.png"
   },
   {
-    "id": "PIPERS2",
+    "id": "PIPERS5",
     "voyage": "PIPERS 2017",
-    "deployed": "2017-04-21T10:45:00Z",
-    "lat": ,
-    "lng": ,
-    "raw_data_url": "/assets/data/PIPERS1_data.csv",
-    "plot_url": "/assets/data/PIPERS1_plot.png"
+    "deployed": "2017-06-02T15:00:00Z",
+    "lat": -68.23875427246090,
+    "lng": -176.09889221191400,
+    "raw_data_url": "/assets/data/PIPERS5_data.csv",
+    "plot_url": "/assets/data/PIPERS5_plot.png"
   },
   {
-    "id": "PIPERS2",
+    "id": "PIPERS6",
     "voyage": "PIPERS 2017",
-    "deployed": "2017-04-21T10:45:00Z",
-    "lat": ,
-    "lng": ,
-    "raw_data_url": "/assets/data/PIPERS1_data.csv",
-    "plot_url": "/assets/data/PIPERS1_plot.png"
+    "deployed": "2017-06-02T21:00:00Z",
+    "lat": -67.8279800415039,
+    "lng": -176.08346557617200,
+    "raw_data_url": "/assets/data/PIPERS6_data.csv",
+    "plot_url": "/assets/data/PIPERS6_plot.png"
   },
   {
-    "id": "PIPERS2",
+    "id": "PIPERS7",
     "voyage": "PIPERS 2017",
-    "deployed": "2017-04-21T10:45:00Z",
-    "lat": ,
-    "lng": ,
-    "raw_data_url": "/assets/data/PIPERS1_data.csv",
-    "plot_url": "/assets/data/PIPERS1_plot.png"
+    "deployed": "2017-06-03T13:00:00Z",
+    "lat": -67.56671905517580,
+    "lng": -175.7982635498050,
+    "raw_data_url": "/assets/data/PIPERS7_data.csv",
+    "plot_url": "/assets/data/PIPERS7_plot.png"
   },
   {
-    "id": "PIPERS2",
+    "id": "PIPERS8",
     "voyage": "PIPERS 2017",
-    "deployed": "2017-04-21T10:45:00Z",
-    "lat": ,
-    "lng": ,
-    "raw_data_url": "/assets/data/PIPERS1_data.csv",
-    "plot_url": "/assets/data/PIPERS1_plot.png"
+    "deployed": "2017-06-03T13:15:00Z",
+    "lat": -67.34957122802730,
+    "lng": -175.7247314453130,
+    "raw_data_url": "/assets/data/PIPERS8_data.csv",
+    "plot_url": "/assets/data/PIPERS8_plot.png"
   },
   {
-    "id": "PIPERS2",
+    "id": "PIPERS9",
     "voyage": "PIPERS 2017",
-    "deployed": "2017-04-21T10:45:00Z",
-    "lat": ,
-    "lng": ,
-    "raw_data_url": "/assets/data/PIPERS1_data.csv",
-    "plot_url": "/assets/data/PIPERS1_plot.png"
+    "deployed": "2017-06-03T13:00:00Z",
+    "lat": -67.15567016601560,
+    "lng": -175.88583374023400,
+    "raw_data_url": "/assets/data/PIPERS9_data.csv",
+    "plot_url": "/assets/data/PIPERS9_plot.png"
   },
   {
-    "id": "PIPERS2",
+    "id": "PIPERS10",
     "voyage": "PIPERS 2017",
-    "deployed": "2017-04-21T10:45:00Z",
-    "lat": ,
-    "lng": ,
-    "raw_data_url": "/assets/data/PIPERS1_data.csv",
-    "plot_url": "/assets/data/PIPERS1_plot.png"
+    "deployed": "2017-06-03T13:00:00Z",
+    "lat": -67.0204086303711,
+    "lng": -175.986328125,
+    "raw_data_url": "/assets/data/PIPERS10_data.csv",
+    "plot_url": "/assets/data/PIPERS10_plot.png"
   },
   {
-    "id": "PIPERS2",
+    "id": "PIPERS11",
     "voyage": "PIPERS 2017",
-    "deployed": "2017-04-21T10:45:00Z",
-    "lat": ,
-    "lng": ,
-    "raw_data_url": "/assets/data/PIPERS1_data.csv",
-    "plot_url": "/assets/data/PIPERS1_plot.png"
+    "deployed": "2017-04-22T01:30:00Z",
+    "lat": -69.96929168701170,
+    "lng": 172.04640197753900,
+    "raw_data_url": "/assets/data/PIPERS11_data.csv",
+    "plot_url": "/assets/data/PIPERS11_plot.png"
   },
   {
-    "id": "PIPERS2",
+    "id": "PIPERS13",
     "voyage": "PIPERS 2017",
-    "deployed": "2017-04-21T10:45:00Z",
-    "lat": ,
-    "lng": ,
-    "raw_data_url": "/assets/data/PIPERS1_data.csv",
-    "plot_url": "/assets/data/PIPERS1_plot.png"
+    "deployed": "2017-06-02T08:30:00Z",
+    "lat": -69.45184326171880,
+    "lng": -176.0705108642580,
+    "raw_data_url": "/assets/data/PIPERS13_data.csv",
+    "plot_url": "/assets/data/PIPERS13_plot.png"
   },
   {
-    "id": "PIPERS2",
+    "id": "PIPERS14",
     "voyage": "PIPERS 2017",
-    "deployed": "2017-04-21T10:45:00Z",
-    "lat": ,
-    "lng": ,
-    "raw_data_url": "/assets/data/PIPERS1_data.csv",
-    "plot_url": "/assets/data/PIPERS1_plot.png"
-  },
-  {
-    "id": "PIPERS2",
-    "voyage": "PIPERS 2017",
-    "deployed": "2017-04-21T10:45:00Z",
-    "lat": ,
-    "lng": ,
-    "raw_data_url": "/assets/data/PIPERS1_data.csv",
-    "plot_url": "/assets/data/PIPERS1_plot.png"
+    "deployed": "2017-06-02T03:00:00Z",
+    "lat": -68.98091125488280,
+    "lng": -176.13040161132800,
+    "raw_data_url": "/assets/data/PIPERS14_data.csv",
+    "plot_url": "/assets/data/PIPERS14_plot.png"
   }
 ]
