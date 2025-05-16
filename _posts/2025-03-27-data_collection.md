@@ -78,7 +78,13 @@ permalink: /projects/waves-in-ice/data_collection/
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
     // Initialize the map centered around East Antarctica / Scott Base region
-    var map = L.map('map').setView([-70, 160], 4);
+    //var map = L.map('map').setView([-70, 160], 4);
+    var map = L.map('map', {
+        maxBounds: L.latLngBounds(
+            L.latLng(-90, -90),  // Southwest corner
+            L.latLng(90, 90)     // Northeast corner
+        )
+    }).setView([-70, 0], 4); // Center at -70° latitude and 0° longitude
     
     // Add OpenStreetMap tiles
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -137,16 +143,11 @@ permalink: /projects/waves-in-ice/data_collection/
     
     // Initialize bounds and markers
     (async function initializeMap() {
-      // Calculate global bounds first
-      globalBounds = await calculateGlobalBounds(buoys);
-      
-      if (globalBounds) {
-        // Set initial map view to show all tracks with padding
-        map.fitBounds(globalBounds, {
-          padding: [50, 50],
-          maxZoom: 10
-        });
-      }
+        // Load track data but don't calculate global bounds
+        for (const buoy of buoys) {
+            trackDataCache[buoy.id] = await loadTrackingData(buoy.id);
+        }
+
       
       // Add markers for each buoy
       buoys.forEach(function(buoy) {
