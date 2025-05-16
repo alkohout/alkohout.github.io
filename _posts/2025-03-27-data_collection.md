@@ -80,9 +80,10 @@ permalink: /projects/waves-in-ice/data_collection/
         // Initialize the map first
         var map = L.map('map', {
             maxBounds: L.latLngBounds(
-                L.latLng(-90, -180),
-                L.latLng(0, 270)
-            )
+                L.latLng(-90, 150),
+                L.latLng(90, -150)
+            ),
+            worldCopyJump: true
         }).setView([-65, 0], 4);
     
         // Function to normalize longitude
