@@ -151,7 +151,7 @@ permalink: /projects/waves-in-ice/data_collection/
       // Add markers for each buoy
       buoys.forEach(function(buoy) {
         var marker = L.marker([buoy.lat, buoy.lng]).addTo(map);
-   ed 
+    
         // Format deployment date/time nicely
         var deploymentDate = new Date(buoy.deployed);
         var deploymentStr = deploymentDate.toLocaleString(undefined, {
