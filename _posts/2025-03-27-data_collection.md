@@ -153,7 +153,7 @@ permalink: /projects/waves-in-ice/data_collection/
         var marker = L.marker([buoy.lat, buoy.lng]).addTo(map);
     
         // Format deployment date/time nicely
-        var deploymentDate = new Date(buoy.deployment);
+        var deploymentDate = new Date(buoy.deployed);
         var deploymentStr = deploymentDate.toLocaleString(undefined, {
           year: 'numeric', month: 'short', day: 'numeric',
           hour: '2-digit', minute: '2-digit', timeZoneName: 'short'
