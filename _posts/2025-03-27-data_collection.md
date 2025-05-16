@@ -77,146 +77,128 @@ permalink: /projects/waves-in-ice/data_collection/
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
-
-    // Function to normalize longitude to the desired range
-    function normalizeLongitude(lon) {
-        // If longitude is negative and less than -90, convert to positive equivalent
-        if (lon < -90) {
-            return lon + 360;
-        }
-        return lon;
-    }
-
-    // Add OpenStreetMap tiles
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
+        // Initialize the map first
+        var map = L.map('map', {
+            maxBounds: L.latLngBounds(
+                L.latLng(-90, -90),
+                L.latLng(90, 270)
+            )
+        }).setView([-70, 180], 4);
     
-    // Variable to store the current path layer
-    var currentPath = null;
-    var trackDataCache = {};  // Cache for storing loaded track data
-    var globalBounds = null;  // Variable to store the overall bounds
-    
-    // Function to load and parse CSV data for a specific buoy
-    async function loadTrackingData(buoyId) {
-        try {
-            const filename = `/assets/data/${buoyId}_data.csv`;
-            const response = await fetch(filename);
-        
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+        // Function to normalize longitude
+        function normalizeLongitude(lon) {
+            if (lon < -90) {
+                return lon + 360;
             }
+            return lon;
+        }
+    
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
         
-            const data = await response.text();
-            const rows = data.split('\n').slice(1); // Skip header row
-            const coordinates = rows.map(row => {
-                const columns = row.split(',');
-                const lat = parseFloat(columns[1]);
-                const lon = normalizeLongitude(parseFloat(columns[2])); // Normalize longitude
-                return [lat, lon];
-            }).filter(coord => !isNaN(coord[0]) && !isNaN(coord[1]));
+        // Variable to store the current path layer
+        var currentPath = null;
+        var trackDataCache = {};  // Cache for storing loaded track data
+        var globalBounds = null;  // Variable to store the overall bounds
+        
+        // Function to load and parse CSV data for a specific buoy
+        async function loadTrackingData(buoyId) {
+            try {
+                const filename = `/assets/data/${buoyId}_data.csv`;
+                const response = await fetch(filename);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.text();
+                const rows = data.split('\n').slice(1);
+                const coordinates = rows.map(row => {
+                    const columns = row.split(',');
+                    const lat = parseFloat(columns[1]);
+                    const lon = normalizeLongitude(parseFloat(columns[2]));
+                    return [lat, lon];
+                }).filter(coord => !isNaN(coord[0]) && !isNaN(coord[1]));
+                
+                return coordinates;
+            } catch (error) {
+                console.error(`Error loading tracking data for buoy ${buoyId}:`, error);
+                return [];
+            }
+        }
+        
+        // Function to calculate global bounds
+        async function calculateGlobalBounds(buoys) {
+            let allCoordinates = [];
             
-            return coordinates;
-        } catch (error) {
-            console.error(`Error loading tracking data for buoy ${buoyId}:`, error);
-            return [];
-        }
-    }
-    
-    // Function to calculate global bounds
-    async function calculateGlobalBounds(buoys) {
-      let allCoordinates = [];
-  
-      // Load all tracks
-      for (const buoy of buoys) {
-        const trackData = await loadTrackingData(buoy.id);
-        trackDataCache[buoy.id] = trackData;  // Cache the data
-        allCoordinates = allCoordinates.concat(trackData);
-      }
-  
-      if (allCoordinates.length === 0) return null;
-  
-      // Calculate bounds
-      const bounds = L.latLngBounds(allCoordinates);
-      return bounds;
-    }
-    
-    // Buoy data from Jekyll data file
-    var buoys = {{ site.data.wave_ice_buoy_info | jsonify }};
-    
-// Initialize bounds and markers
-(async function initializeMap() {
-  
-    // Initialize bounds and markers
-    (async function initializeMap() {
-
-      // Calculate global bounds first
-      globalBounds = await calculateGlobalBounds(buoys);
-
-      // Load track data 
-      for (const buoy of buoys) {
-          trackDataCache[buoy.id] = await loadTrackingData(buoy.id);
-      }
-
-      if (globalBounds) {
-        // Set initial map view to show all tracks with padding
-        map.fitBounds(globalBounds, {
-          padding: [50, 50],
-          maxZoom: 10
-        });
-      }
-
-      // Add markers for each buoy
-      buoys.forEach(function(buoy) {
-          buoy.lng = normalizeLongitude(buoy.lng);
-          var marker = L.marker([buoy.lat, buoy.lng]).addTo(map);
-    
-        // Format deployment date/time nicely
-        var deploymentDate = new Date(buoy.deployed);
-        var deploymentStr = deploymentDate.toLocaleString(undefined, {
-          year: 'numeric', month: 'short', day: 'numeric',
-          hour: '2-digit', minute: '2-digit', timeZoneName: 'short'
-        });
-    
-        // Popup content
-        var popupContent = `
-          <strong>Buoy ID:</strong> ${buoy.id}<br/>
-          <strong>Voyage:</strong> ${buoy.voyage}<br/>
-          <strong>Deployed:</strong> ${deploymentStr}<br/>
-          <a href="${buoy.raw_data_url}" class="download-link" download>Download Raw Data</a>
-          <a href="${buoy.plot_url}" class="download-link" download>Download Time Series plot</a>
-        `;
-    
-        marker.bindPopup(popupContent);
-    
-        // Add mouseover and mouseout events for tracking visualization
-        marker.on('mouseover', function(e) {
-          const trackingData = trackDataCache[buoy.id];
-          if (trackingData && trackingData.length > 0) {
-            // Remove existing path if any
-            if (currentPath) {
-              map.removeLayer(currentPath);
+            for (const buoy of buoys) {
+                const trackData = await loadTrackingData(buoy.id);
+                trackDataCache[buoy.id] = trackData;
+                allCoordinates = allCoordinates.concat(trackData);
             }
-            // Create and add new path
-            currentPath = L.polyline(trackingData, {
-              color: 'red',
-              weight: 3,
-              opacity: 0.7
-            }).addTo(map);
-          }
-        });
+            
+            if (allCoordinates.length === 0) return null;
+            
+            const bounds = L.latLngBounds(allCoordinates);
+            return bounds;
+        }
+        
+        // Buoy data from Jekyll data file
+        var buoys = {{ site.data.wave_ice_buoy_info | jsonify }};
+        
+        // Initialize bounds and markers
+        (async function initializeMap() {
+            // Calculate global bounds first
+            globalBounds = await calculateGlobalBounds(buoys);
     
-        marker.on('mouseout', function(e) {
-          if (currentPath) {
-            map.removeLayer(currentPath);
-            currentPath = null;
-          }
-        });
-    
-        // Show tooltip on hover with basic info
-        // marker.bindTooltip(`ID: ${buoy.id}<br>Voyage: ${buoy.voyage}<br>Deployed: ${deploymentStr}`, {sticky: true});
-      });
-    })();
+            // Add markers for each buoy
+            buoys.forEach(function(buoy) {
+                buoy.lng = normalizeLongitude(buoy.lng);
+                var marker = L.marker([buoy.lat, buoy.lng]).addTo(map);
+                
+                // Format deployment date/time nicely
+                var deploymentDate = new Date(buoy.deployed);
+                var deploymentStr = deploymentDate.toLocaleString(undefined, {
+                    year: 'numeric', month: 'short', day: 'numeric',
+                    hour: '2-digit', minute: '2-digit', timeZoneName: 'short'
+                });
+                
+                // Popup content
+                var popupContent = `
+                    <strong>Buoy ID:</strong> ${buoy.id}<br/>
+                    <strong>Voyage:</strong> ${buoy.voyage}<br/>
+                    <strong>Deployed:</strong> ${deploymentStr}<br/>
+                    <a href="${buoy.raw_data_url}" class="download-link" download>Download Raw Data</a>
+                    <a href="${buoy.plot_url}" class="download-link" download>Download Time Series plot</a>
+                `;
+                
+                marker.bindPopup(popupContent);
+                
+                // Add mouseover and mouseout events
+                marker.on('mouseover', function(e) {
+                    const trackingData = trackDataCache[buoy.id];
+                    if (trackingData && trackingData.length > 0) {
+                        if (currentPath) {
+                            map.removeLayer(currentPath);
+                        }
+                        currentPath = L.polyline(trackingData, {
+                            color: 'red',
+                            weight: 3,
+                            opacity: 0.7
+                        }).addTo(map);
+                    }
+                });
+                
+                marker.on('mouseout', function(e) {
+                    if (currentPath) {
+                        map.removeLayer(currentPath);
+                        currentPath = null;
+                    }
+                });
+            });
+        })();
     </script>
 
 </body>
