@@ -87,15 +87,6 @@ permalink: /projects/waves-in-ice/data_collection/
         return lon;
     }
 
-    // Initialize the map centered around East Antarctica / Scott Base region
-    //var map = L.map('map').setView([-70, 160], 4);
-    var map = L.map('map', {
-        maxBounds: L.latLngBounds(
-            L.latLng(-80, -180),  // Southwest corner
-            L.latLng(-50, 180)     // Northeast corner
-        )
-    }).setView([-65, 0], 4); // Center at -70° latitude and 0° longitude
-    
     // Add OpenStreetMap tiles
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
@@ -135,16 +126,16 @@ permalink: /projects/waves-in-ice/data_collection/
     // Function to calculate global bounds
     async function calculateGlobalBounds(buoys) {
       let allCoordinates = [];
-      
+  
       // Load all tracks
       for (const buoy of buoys) {
         const trackData = await loadTrackingData(buoy.id);
         trackDataCache[buoy.id] = trackData;  // Cache the data
         allCoordinates = allCoordinates.concat(trackData);
       }
-      
+  
       if (allCoordinates.length === 0) return null;
-      
+  
       // Calculate bounds
       const bounds = L.latLngBounds(allCoordinates);
       return bounds;
@@ -153,14 +144,28 @@ permalink: /projects/waves-in-ice/data_collection/
     // Buoy data from Jekyll data file
     var buoys = {{ site.data.wave_ice_buoy_info | jsonify }};
     
+// Initialize bounds and markers
+(async function initializeMap() {
+  
     // Initialize bounds and markers
     (async function initializeMap() {
-        // Load track data but don't calculate global bounds
-        for (const buoy of buoys) {
-            trackDataCache[buoy.id] = await loadTrackingData(buoy.id);
-        }
 
-      
+      // Calculate global bounds first
+      globalBounds = await calculateGlobalBounds(buoys);
+
+      // Load track data 
+      for (const buoy of buoys) {
+          trackDataCache[buoy.id] = await loadTrackingData(buoy.id);
+      }
+
+      if (globalBounds) {
+        // Set initial map view to show all tracks with padding
+        map.fitBounds(globalBounds, {
+          padding: [50, 50],
+          maxZoom: 10
+        });
+      }
+
       // Add markers for each buoy
       buoys.forEach(function(buoy) {
           buoy.lng = normalizeLongitude(buoy.lng);
