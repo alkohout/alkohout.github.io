@@ -82,7 +82,7 @@ permalink: /projects/waves-in-ice/data_collection/
 	    minZoom:2,
 	    maxBoundsViscosity: 0.5,
             worldCopyJump: true
-        }).setView([-65, 180], 4);
+        }).setView([-65, -170], 3);
     
         // Function to normalize longitude
         function normalizeLongitude(lon) {
