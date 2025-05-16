@@ -90,6 +90,14 @@ permalink: /projects/waves-in-ice/data_collection/
     var trackDataCache = {};  // Cache for storing loaded track data
     var globalBounds = null;  // Variable to store the overall bounds
     
+    // Function to normalize longitude to -180 to 180 range
+    function normalizeLongitude(lon) {
+      if (lon > 180) {
+        return lon - 360;
+      }
+      return lon;
+    }
+
     // Function to load and parse CSV data for a specific buoy
     async function loadTrackingData(buoyId) {
       try {
@@ -104,7 +112,10 @@ permalink: /projects/waves-in-ice/data_collection/
         const rows = data.split('\n').slice(1); // Skip header row
         const coordinates = rows.map(row => {
           const columns = row.split(',');
-          return [parseFloat(columns[1]), parseFloat(columns[2])]; // Lat, Lon from columns 2 and 3
+          const lat = parseFloat(columns[1]);
+          let lon = parseFloat(columns[2]);
+          lon = normalizeLongitude(lon);
+          return [lat, lon];
         }).filter(coord => !isNaN(coord[0]) && !isNaN(coord[1])); // Filter out any invalid coordinates
         
         return coordinates;
@@ -114,6 +125,21 @@ permalink: /projects/waves-in-ice/data_collection/
       }
     }
     
+    // Initialize the map centered around East Antarctica
+    // Center at 180° to show -90 to -180 on left and 0 to 90 on right
+    var map = L.map('map', {
+      center: [-70, 180],
+      zoom: 4,
+      worldCopyJump: true
+    });
+    
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors',
+      noWrap: true,
+      bounds: [[-90, -180], [90, 180]]
+    }).addTo(map);
+
     // Function to calculate global bounds
     async function calculateGlobalBounds(buoys) {
       let allCoordinates = [];
@@ -151,7 +177,7 @@ permalink: /projects/waves-in-ice/data_collection/
       // Add markers for each buoy
       buoys.forEach(function(buoy) {
         var marker = L.marker([buoy.lat, buoy.lng]).addTo(map);
-    
+   ed 
         // Format deployment date/time nicely
         var deploymentDate = new Date(buoy.deployed);
         var deploymentStr = deploymentDate.toLocaleString(undefined, {
