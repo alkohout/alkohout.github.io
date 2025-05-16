@@ -81,10 +81,10 @@ permalink: /projects/waves-in-ice/data_collection/
     //var map = L.map('map').setView([-70, 160], 4);
     var map = L.map('map', {
         maxBounds: L.latLngBounds(
-            L.latLng(-90, -90),  // Southwest corner
-            L.latLng(90, 90)     // Northeast corner
+            L.latLng(-80, -180),  // Southwest corner
+            L.latLng(-50, 180)     // Northeast corner
         )
-    }).setView([-70, 0], 4); // Center at -70° latitude and 0° longitude
+    }).setView([-65, 0], 4); // Center at -70° latitude and 0° longitude
     
     // Add OpenStreetMap tiles
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
