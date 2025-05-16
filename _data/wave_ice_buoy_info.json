@@ -160,5 +160,50 @@
     "lng": -176.13040161132800,
     "raw_data_url": "/assets/data/PIPERS14_data.csv",
     "plot_url": "/assets/data/PIPERS14_plot.png"
-  }
+  },
+  {
+    "id": "JARE1",
+    "voyage": "JARE 2019",
+    "deployed": "2019-12-09T16:10:00Z",
+    "lat": -64.27336883544920,
+    "lng": 120.31551361084000,
+    "raw_data_url": "/assets/data/JARE1_data.csv",
+    "plot_url": "/assets/data/JARE1_plot.png"
+  },
+  {
+    "id": "JARE2",
+    "voyage": "JARE 2019",
+    "deployed": "2019-12-09T18:10:00Z",
+    "lat": -64.37969970703130,
+    "lng": 120.4885025024410,
+    "raw_data_url": "/assets/data/JARE2_data.csv",
+    "plot_url": "/assets/data/JARE2_plot.png"
+  },
+  {
+    "id": "JARE3",
+    "voyage": "JARE 2019",
+    "deployed": "2019-12-09T19:10:00Z",
+    "lat": -64.4412841796875,
+    "lng": 120.48810577392600,
+    "raw_data_url": "/assets/data/JARE3_data.csv",
+    "plot_url": "/assets/data/JARE3_plot.png"
+  },
+  {
+    "id": "JARE4",
+    "voyage": "JARE 2019",
+    "deployed": "2019-12-09T21:10:00Z",
+    "lat": -64.64205169677730,
+    "lng": 120.5064697265630,
+    "raw_data_url": "/assets/data/JARE4_data.csv",
+    "plot_url": "/assets/data/JARE4_plot.png"
+  },
+  {
+    "id": "JARE5",
+    "voyage": "JARE 2019",
+    "deployed": "2019-12-09T22:10:00Z",
+    "lat": -64.2427978515625,
+    "lng": 116.76849365234400,
+    "raw_data_url": "/assets/data/JARE5_data.csv",
+    "plot_url": "/assets/data/JARE5_plot.png"
+  },
 ]
