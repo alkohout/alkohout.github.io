@@ -90,33 +90,6 @@ permalink: /projects/waves-in-ice/data_collection/
     var trackDataCache = {};  // Cache for storing loaded track data
     var globalBounds = null;  // Variable to store the overall bounds
     
-    // Function to normalize longitude to -180 to 180 range
-    function normalizeLongitude(lon) {
-      if (lon > 180) {
-        return lon - 360;
-      }
-      return lon;
-    }
-    
-    // Initialize the map centered around East Antarctica
-    var map = L.map('map', {
-      center: [-70, 180],
-      zoom: 4,
-      worldCopyJump: true
-    });
-    
-    // Add OpenStreetMap tiles
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; OpenStreetMap contributors',
-      noWrap: true,
-      bounds: [[-90, -180], [90, 180]]
-    }).addTo(map);
-    
-    // Variable to store the current path layer
-    var currentPath = null;
-    var trackDataCache = {};  // Cache for storing loaded track data
-    var globalBounds = null;  // Variable to store the overall bounds
-    
     // Function to load and parse CSV data for a specific buoy
     async function loadTrackingData(buoyId) {
       try {
@@ -131,11 +104,8 @@ permalink: /projects/waves-in-ice/data_collection/
         const rows = data.split('\n').slice(1); // Skip header row
         const coordinates = rows.map(row => {
           const columns = row.split(',');
-          const lat = parseFloat(columns[1]);
-          let lon = parseFloat(columns[2]);
-          lon = normalizeLongitude(lon);
-          return [lat, lon];
-        }).filter(coord => !isNaN(coord[0]) && !isNaN(coord[1]));
+          return [parseFloat(columns[1]), parseFloat(columns[2])]; // Lat, Lon from columns 2 and 3
+        }).filter(coord => !isNaN(coord[0]) && !isNaN(coord[1])); // Filter out any invalid coordinates
         
         return coordinates;
       } catch (error) {
@@ -151,7 +121,7 @@ permalink: /projects/waves-in-ice/data_collection/
       // Load all tracks
       for (const buoy of buoys) {
         const trackData = await loadTrackingData(buoy.id);
-        trackDataCache[buoy.id] = trackData;
+        trackDataCache[buoy.id] = trackData;  // Cache the data
         allCoordinates = allCoordinates.concat(trackData);
       }
       
@@ -171,6 +141,7 @@ permalink: /projects/waves-in-ice/data_collection/
       globalBounds = await calculateGlobalBounds(buoys);
       
       if (globalBounds) {
+        // Set initial map view to show all tracks with padding
         map.fitBounds(globalBounds, {
           padding: [50, 50],
           maxZoom: 10
@@ -179,12 +150,10 @@ permalink: /projects/waves-in-ice/data_collection/
       
       // Add markers for each buoy
       buoys.forEach(function(buoy) {
-        // Normalize the buoy's longitude
-        let lon = normalizeLongitude(buoy.lng);
-        var marker = L.marker([buoy.lat, lon]).addTo(map);
-    
+        var marker = L.marker([buoy.lat, buoy.lng]).addTo(map);
+   ed 
         // Format deployment date/time nicely
-        var deploymentDate = new Date(buoy.deployment);
+        var deploymentDate = new Date(buoy.deployed);
         var deploymentStr = deploymentDate.toLocaleString(undefined, {
           year: 'numeric', month: 'short', day: 'numeric',
           hour: '2-digit', minute: '2-digit', timeZoneName: 'short'
@@ -194,7 +163,7 @@ permalink: /projects/waves-in-ice/data_collection/
         var popupContent = `
           <strong>Buoy ID:</strong> ${buoy.id}<br/>
           <strong>Voyage:</strong> ${buoy.voyage}<br/>
-          <strong>Deployment:</strong> ${deploymentStr}<br/>
+          <strong>Deployed:</strong> ${deploymentStr}<br/>
           <a href="${buoy.raw_data_url}" class="download-link" download>Download Raw Data</a>
           <a href="${buoy.plot_url}" class="download-link" download>Download Time Series plot</a>
         `;
@@ -205,9 +174,11 @@ permalink: /projects/waves-in-ice/data_collection/
         marker.on('mouseover', function(e) {
           const trackingData = trackDataCache[buoy.id];
           if (trackingData && trackingData.length > 0) {
+            // Remove existing path if any
             if (currentPath) {
               map.removeLayer(currentPath);
             }
+            // Create and add new path
             currentPath = L.polyline(trackingData, {
               color: 'red',
               weight: 3,
@@ -222,6 +193,9 @@ permalink: /projects/waves-in-ice/data_collection/
             currentPath = null;
           }
         });
+    
+        // Show tooltip on hover with basic info
+        // marker.bindTooltip(`ID: ${buoy.id}<br>Voyage: ${buoy.voyage}<br>Deployed: ${deploymentStr}`, {sticky: true});
       });
     })();
     </script>
