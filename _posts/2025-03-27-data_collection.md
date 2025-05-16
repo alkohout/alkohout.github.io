@@ -79,10 +79,8 @@ permalink: /projects/waves-in-ice/data_collection/
     <script>
         // Initialize the map first
         var map = L.map('map', {
-            maxBounds: L.latLngBounds(
-                L.latLng(-90, 150),
-                L.latLng(90, -150)
-            ),
+	    maxZoom:3,
+	    maxBoundsViscosity: 0.5,
             worldCopyJump: true
         }).setView([-65, 180], 4);
     
