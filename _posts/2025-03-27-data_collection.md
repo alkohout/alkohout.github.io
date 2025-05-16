@@ -77,6 +77,16 @@ permalink: /projects/waves-in-ice/data_collection/
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
+
+    // Function to normalize longitude to the desired range
+    function normalizeLongitude(lon) {
+        // If longitude is negative and less than -90, convert to positive equivalent
+        if (lon < -90) {
+            return lon + 360;
+        }
+        return lon;
+    }
+
     // Initialize the map centered around East Antarctica / Scott Base region
     //var map = L.map('map').setView([-70, 160], 4);
     var map = L.map('map', {
@@ -98,26 +108,28 @@ permalink: /projects/waves-in-ice/data_collection/
     
     // Function to load and parse CSV data for a specific buoy
     async function loadTrackingData(buoyId) {
-      try {
-        const filename = `/assets/data/${buoyId}_data.csv`;
-        const response = await fetch(filename);
+        try {
+            const filename = `/assets/data/${buoyId}_data.csv`;
+            const response = await fetch(filename);
         
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+        
+            const data = await response.text();
+            const rows = data.split('\n').slice(1); // Skip header row
+            const coordinates = rows.map(row => {
+                const columns = row.split(',');
+                const lat = parseFloat(columns[1]);
+                const lon = normalizeLongitude(parseFloat(columns[2])); // Normalize longitude
+                return [lat, lon];
+            }).filter(coord => !isNaN(coord[0]) && !isNaN(coord[1]));
+            
+            return coordinates;
+        } catch (error) {
+            console.error(`Error loading tracking data for buoy ${buoyId}:`, error);
+            return [];
         }
-        
-        const data = await response.text();
-        const rows = data.split('\n').slice(1); // Skip header row
-        const coordinates = rows.map(row => {
-          const columns = row.split(',');
-          return [parseFloat(columns[1]), parseFloat(columns[2])]; // Lat, Lon from columns 2 and 3
-        }).filter(coord => !isNaN(coord[0]) && !isNaN(coord[1])); // Filter out any invalid coordinates
-        
-        return coordinates;
-      } catch (error) {
-        console.error(`Error loading tracking data for buoy ${buoyId}:`, error);
-        return [];
-      }
     }
     
     // Function to calculate global bounds
@@ -151,7 +163,8 @@ permalink: /projects/waves-in-ice/data_collection/
       
       // Add markers for each buoy
       buoys.forEach(function(buoy) {
-        var marker = L.marker([buoy.lat, buoy.lng]).addTo(map);
+          buoy.lng = normalizeLongitude(buoy.lng);
+          var marker = L.marker([buoy.lat, buoy.lng]).addTo(map);
     
         // Format deployment date/time nicely
         var deploymentDate = new Date(buoy.deployed);
