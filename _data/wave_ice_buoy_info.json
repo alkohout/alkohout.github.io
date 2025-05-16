@@ -43,7 +43,7 @@
     "lng": 121.52611,
     "raw_data_url": "/assets/data/SIPEX7_data.csv",
     "plot_url": "/assets/data/SIPEX7_plot.png"
-  }
+  },
   {
     "id": "PIPERS1",
     "voyage": "PIPERS 2017",
@@ -52,7 +52,7 @@
     "lng": 171.81153869628900,
     "raw_data_url": "/assets/data/PIPERS1_data.csv",
     "plot_url": "/assets/data/PIPERS1_plot.png"
-  }
+  },
   {
     "id": "PIPERS2",
     "voyage": "PIPERS 2017",
@@ -61,7 +61,7 @@
     "lng": 171.99452209472700,
     "raw_data_url": "/assets/data/PIPERS2_data.csv",
     "plot_url": "/assets/data/PIPERS2_plot.png"
-  }
+  },
   {
     "id": "PIPERS3",
     "voyage": "PIPERS 2017",
@@ -70,7 +70,7 @@
     "lng": 171.98257446289100,
     "raw_data_url": "/assets/data/PIPERS3_data.csv",
     "plot_url": "/assets/data/PIPERS3_plot.png"
-  }
+  },
   {
     "id": "PIPERS2",
     "voyage": "PIPERS 2017",
@@ -79,7 +79,7 @@
     "lng": ,
     "raw_data_url": "/assets/data/PIPERS1_data.csv",
     "plot_url": "/assets/data/PIPERS1_plot.png"
-  }
+  },
   {
     "id": "PIPERS2",
     "voyage": "PIPERS 2017",
@@ -88,7 +88,7 @@
     "lng": ,
     "raw_data_url": "/assets/data/PIPERS1_data.csv",
     "plot_url": "/assets/data/PIPERS1_plot.png"
-  }
+  },
   {
     "id": "PIPERS2",
     "voyage": "PIPERS 2017",
@@ -97,7 +97,7 @@
     "lng": ,
     "raw_data_url": "/assets/data/PIPERS1_data.csv",
     "plot_url": "/assets/data/PIPERS1_plot.png"
-  }
+  },
   {
     "id": "PIPERS2",
     "voyage": "PIPERS 2017",
@@ -106,7 +106,7 @@
     "lng": ,
     "raw_data_url": "/assets/data/PIPERS1_data.csv",
     "plot_url": "/assets/data/PIPERS1_plot.png"
-  }
+  },
   {
     "id": "PIPERS2",
     "voyage": "PIPERS 2017",
@@ -115,7 +115,7 @@
     "lng": ,
     "raw_data_url": "/assets/data/PIPERS1_data.csv",
     "plot_url": "/assets/data/PIPERS1_plot.png"
-  }
+  },
   {
     "id": "PIPERS2",
     "voyage": "PIPERS 2017",
@@ -124,7 +124,7 @@
     "lng": ,
     "raw_data_url": "/assets/data/PIPERS1_data.csv",
     "plot_url": "/assets/data/PIPERS1_plot.png"
-  }
+  },
   {
     "id": "PIPERS2",
     "voyage": "PIPERS 2017",
@@ -133,7 +133,7 @@
     "lng": ,
     "raw_data_url": "/assets/data/PIPERS1_data.csv",
     "plot_url": "/assets/data/PIPERS1_plot.png"
-  }
+  },
   {
     "id": "PIPERS2",
     "voyage": "PIPERS 2017",
@@ -142,7 +142,7 @@
     "lng": ,
     "raw_data_url": "/assets/data/PIPERS1_data.csv",
     "plot_url": "/assets/data/PIPERS1_plot.png"
-  }
+  },
   {
     "id": "PIPERS2",
     "voyage": "PIPERS 2017",
@@ -151,7 +151,7 @@
     "lng": ,
     "raw_data_url": "/assets/data/PIPERS1_data.csv",
     "plot_url": "/assets/data/PIPERS1_plot.png"
-  }
+  },
   {
     "id": "PIPERS2",
     "voyage": "PIPERS 2017",
@@ -160,7 +160,7 @@
     "lng": ,
     "raw_data_url": "/assets/data/PIPERS1_data.csv",
     "plot_url": "/assets/data/PIPERS1_plot.png"
-  }
+  },
   {
     "id": "PIPERS2",
     "voyage": "PIPERS 2017",
