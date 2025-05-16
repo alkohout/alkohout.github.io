@@ -84,7 +84,7 @@ permalink: /projects/waves-in-ice/data_collection/
                 L.latLng(90, -150)
             ),
             worldCopyJump: true
-        }).setView([-65, 0], 4);
+        }).setView([-65, 180], 4);
     
         // Function to normalize longitude
         function normalizeLongitude(lon) {
