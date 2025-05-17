@@ -65,18 +65,20 @@ permalink: /projects/waves-in-ice/data_collection/
               <img src="/assets/images/inside_wiios.jpg" alt="WIIOS" class="zoomable">
           </div>
       </div>
+    </section>
     <section id="home" class="topics">
        <div class="topic-list">
         <div class="topic inverse">
-	<div id="map"></div>
-
+          <h1>Data collection</h1>
+	  <p>There were three main deployments of these instruments. These occurred during the SIPEX II, PIPERS and JARE61 expeditions. The map below shows the locations of the deployments and links to download the data and / or a time series plot.
         </div>
        </div>
     </section>
     <section id="home" class="topics">
        <div class="topic-list">
         <div class="topic inverse">
-          <h1>Data collection</h1>
+	<div id="map"></div>
+
         </div>
        </div>
     </section>
