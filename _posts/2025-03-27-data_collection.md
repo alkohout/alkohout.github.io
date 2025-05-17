@@ -224,7 +224,7 @@ permalink: /projects/waves-in-ice/data_collection/
                     <strong>Buoy ID:</strong> ${buoy.id}<br/>
                     <strong>Voyage:</strong> ${buoy.voyage}<br/>
                     <strong>Deployed:</strong> ${deploymentStr}<br/>
-                    <a href="${buoy.raw_data_url}" class="btn" download>Download Raw Data</a>
+                    <a href="${buoy.raw_data_url}" class="btn" style="color:#DDDDDD" download>Download Raw Data</a>
                     <a href="${buoy.plot_url}" class="btn" style="color:#DDDDDD" download>Download Time Series plot</a>
                 `;
                 
