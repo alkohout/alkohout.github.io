@@ -147,6 +147,60 @@ permalink: /projects/waves-in-ice/data_collection/
         
         // Buoy data from Jekyll data file
         var buoys = {{ site.data.wave_ice_buoy_info | jsonify }};
+
+        // Add this before your markers code - define custom icons
+        var redIcon = new L.Icon({
+            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
+        
+        var blueIcon = new L.Icon({
+            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
+        
+        var greenIcon = new L.Icon({
+            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
+        
+        // Then in your marker creation code, you can assign colors based on voyage:
+        buoys.forEach(function(buoy) {
+            let lng = buoy.lng;
+            if (lng < 0) {
+                lng += 360;
+            }
+            
+            // Choose icon based on voyage
+            let icon;
+            switch(buoy.voyage) {
+                case 'SIPEXII 2012':
+                    icon = redIcon;
+                    break;
+                case 'PIPERS 2017':
+                    icon = blueIcon;
+                    break;
+                case 'JARE 2019':
+                    icon = greenIcon;
+                    break;
+                default:
+                    icon = blueIcon;
+            }
+            
+            var marker = L.marker([buoy.lat, lng], {icon: icon}).addTo(map);
+        });
         
         // Initialize bounds and markers
         (async function initializeMap() {
