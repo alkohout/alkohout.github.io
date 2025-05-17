@@ -80,7 +80,7 @@ permalink: /projects/waves-in-ice/data_collection/
         // Initialize the map first
         var map = L.map('map', {
             worldCopyJump: true,
-            center: [-65, 0],
+            center: [-65, 170],  // Center closer to the Ross Sea region
             zoom: 3
         });
     
@@ -92,15 +92,17 @@ permalink: /projects/waves-in-ice/data_collection/
         
         // Variable to store the current path layer
         var currentPath = null;
-        var trackDataCache = {};  // Cache for storing loaded track data
-        var globalBounds = null;  // Variable to store the overall bounds
+        var trackDataCache = {};
+        var globalBounds = null;
         
-        // Function to normalize longitude to range [-180, 180]
+        // Function to normalize longitude to be centered around the Pacific
         function normalizeLongitude(lon) {
-            lon = ((lon + 180) % 360) - 180;
+            if (lon < 0) {
+                return lon + 360;
+            }
             return lon;
         }
-        
+    
         // Function to load and parse CSV data for a specific buoy
         async function loadTrackingData(buoyId) {
             try {
@@ -150,7 +152,24 @@ permalink: /projects/waves-in-ice/data_collection/
         (async function initializeMap() {
             // Calculate global bounds first
             globalBounds = await calculateGlobalBounds(buoys);
+
+            // Add markers for each buoy
+            buoys.forEach(function(buoy) {
+                let lng = buoy.lng;
+                // Normalize longitude to keep data together
+                if (lng < 0) {
+                    lng += 360;
+                }
+                var marker = L.marker([buoy.lat, lng]).addTo(map);
+                
+                // Rest of your marker code remains the same...
+            });
     
+            // If we have bounds, fit the map to them
+            if (globalBounds) {
+                map.fitBounds(globalBounds);
+            }
+
             // Add markers for each buoy
             buoys.forEach(function(buoy) {
                 const normalizedLng = normalizeLongitude(buoy.lng);
@@ -197,10 +216,6 @@ permalink: /projects/waves-in-ice/data_collection/
                 });
             });
     
-            // If we have bounds, fit the map to them
-            if (globalBounds) {
-            map.fitBounds(globalBounds);
-            }
         })();
     </script>
 
