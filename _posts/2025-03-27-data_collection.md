@@ -79,16 +79,15 @@ permalink: /projects/waves-in-ice/data_collection/
     <script>
         // Initialize the map first
         var map = L.map('map', {
-	    minZoom:2,
-	    maxBoundsViscosity: 0.5,
-            worldCopyJump: true
-        }).setView([-65, 180], 3);
-    
-        // Function to normalize longitude
+            worldCopyJump: true,
+            center: [-65, -180],
+            zoom: 3
+        });
+
+        // Function to normalize longitude - modified version
         function normalizeLongitude(lon) {
-            if (lon < -90) {
-                return lon + 360;
-            }
+            while (lon < -180) lon += 360;
+            while (lon > 180) lon -= 360;
             return lon;
         }
     
@@ -102,25 +101,42 @@ permalink: /projects/waves-in-ice/data_collection/
         var trackDataCache = {};  // Cache for storing loaded track data
         var globalBounds = null;  // Variable to store the overall bounds
         
-        // Function to load and parse CSV data for a specific buoy
+        // When loading track data, modify the coordinate handling
         async function loadTrackingData(buoyId) {
             try {
                 const filename = `/assets/data/${buoyId}_data.csv`;
                 const response = await fetch(filename);
-                
+        
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
-                
+        
                 const data = await response.text();
                 const rows = data.split('\n').slice(1);
-                const coordinates = rows.map(row => {
+        
+                // Create array to store coordinates
+                let coordinates = [];
+                let prevLon = null;
+        
+                rows.forEach(row => {
                     const columns = row.split(',');
                     const lat = parseFloat(columns[1]);
-                    const lon = normalizeLongitude(parseFloat(columns[2]));
-                    return [lat, lon];
-                }).filter(coord => !isNaN(coord[0]) && !isNaN(coord[1]));
-                
+                    let lon = parseFloat(columns[2]);
+                    
+                    // Handle date line crossing
+                    if (prevLon !== null) {
+                        // If we detect a large jump in longitude, split into separate line segments
+                        if (Math.abs(lon - prevLon) > 180) {
+                            coordinates.push(null); // Add null to break the line
+                        }
+                    }
+            
+                    if (!isNaN(lat) && !isNaN(lon)) {
+                        coordinates.push([lat, lon]);
+                        prevLon = lon;
+                    }
+                });
+        
                 return coordinates;
             } catch (error) {
                 console.error(`Error loading tracking data for buoy ${buoyId}:`, error);
