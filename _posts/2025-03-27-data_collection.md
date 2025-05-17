@@ -206,15 +206,33 @@ permalink: /projects/waves-in-ice/data_collection/
         (async function initializeMap() {
             // Calculate global bounds first
             globalBounds = await calculateGlobalBounds(buoys);
-
-            // Add markers for each buoy
+        
+            // Add markers for each buoy - SINGLE implementation combining both color and features
             buoys.forEach(function(buoy) {
                 let lng = buoy.lng;
                 // Normalize longitude to keep data together
                 if (lng < 0) {
                     lng += 360;
                 }
-                var marker = L.marker([buoy.lat, lng]).addTo(map);
+        
+                // Choose icon based on voyage
+                let icon;
+                switch(buoy.voyage) {
+                    case 'SIPEXII 2012':
+                        icon = redIcon;
+                        break;
+                    case 'PIPERS 2017':
+                        icon = blueIcon;
+                        break;
+                    case 'JARE 2019':
+                        icon = greenIcon;
+                        break;
+                    default:
+                        icon = blueIcon;
+                }
+                
+                // Create marker with custom icon
+                var marker = L.marker([buoy.lat, lng], {icon: icon}).addTo(map);
                 
                 // Format deployment date/time nicely
                 var deploymentDate = new Date(buoy.deployed);
@@ -256,9 +274,13 @@ permalink: /projects/waves-in-ice/data_collection/
                     }
                 });
             });
-    
+        
+            // If we have bounds, fit the map to them
+            if (globalBounds) {
+                map.fitBounds(globalBounds);
+            }
         })();
-    </script>
+     </script>
 
 </body>
 
