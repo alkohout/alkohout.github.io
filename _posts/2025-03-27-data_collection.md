@@ -188,15 +188,19 @@ permalink: /projects/waves-in-ice/data_collection/
             switch(buoy.voyage) {
                 case 'SIPEXII 2012':
                     icon = redIcon;
+                    trackColor = '#FF0000';
                     break;
                 case 'PIPERS 2017':
                     icon = blueIcon;
+                    trackColor = '#2A81CB'; 
                     break;
                 case 'JARE 2019':
                     icon = greenIcon;
+                    trackColor = '#38CB2A';
                     break;
                 default:
                     icon = blueIcon;
+                    trackColor = '#2A81CB'; 
             }
             
             var marker = L.marker([buoy.lat, lng], {icon: icon}).addTo(map);
@@ -220,15 +224,19 @@ permalink: /projects/waves-in-ice/data_collection/
                 switch(buoy.voyage) {
                     case 'SIPEXII 2012':
                         icon = redIcon;
+                        trackColor = '#FF0000';  // Red
                         break;
                     case 'PIPERS 2017':
                         icon = blueIcon;
+                        trackColor = '#2A81CB'; 
                         break;
                     case 'JARE 2019':
                         icon = greenIcon;
+                        trackColor = '#38CB2A';
                         break;
                     default:
                         icon = blueIcon;
+                        trackColor = '#2A81CB'; 
                 }
                 
                 // Create marker with custom icon
@@ -260,7 +268,7 @@ permalink: /projects/waves-in-ice/data_collection/
                             map.removeLayer(currentPath);
                         }
                         currentPath = L.polyline(trackingData, {
-                            color: 'red',
+                            color: trackColor,
                             weight: 3,
                             opacity: 0.7
                         }).addTo(map);
