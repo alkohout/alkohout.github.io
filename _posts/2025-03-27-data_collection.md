@@ -81,7 +81,7 @@ permalink: /projects/waves-in-ice/data_collection/
         var map = L.map('map', {
             worldCopyJump: true,
             center: [-65, 170],  // Center closer to the Ross Sea region
-            zoom: 2
+            zoom: 3
         });
     
         // Add OpenStreetMap tiles
