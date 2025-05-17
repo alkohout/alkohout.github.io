@@ -80,20 +80,14 @@ permalink: /projects/waves-in-ice/data_collection/
         // Initialize the map first
         var map = L.map('map', {
             worldCopyJump: true,
-            center: [-65, -180],
+            center: [-65, 0],
             zoom: 3
         });
-
-        // Function to normalize longitude - modified version
-        function normalizeLongitude(lon) {
-            while (lon < -180) lon += 360;
-            while (lon > 180) lon -= 360;
-            return lon;
-        }
     
         // Add OpenStreetMap tiles
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors'
+            attribution: '&copy; OpenStreetMap contributors',
+            noWrap: false
         }).addTo(map);
         
         // Variable to store the current path layer
@@ -101,42 +95,31 @@ permalink: /projects/waves-in-ice/data_collection/
         var trackDataCache = {};  // Cache for storing loaded track data
         var globalBounds = null;  // Variable to store the overall bounds
         
-        // When loading track data, modify the coordinate handling
+        // Function to normalize longitude to range [-180, 180]
+        function normalizeLongitude(lon) {
+            lon = ((lon + 180) % 360) - 180;
+            return lon;
+        }
+        
+        // Function to load and parse CSV data for a specific buoy
         async function loadTrackingData(buoyId) {
             try {
                 const filename = `/assets/data/${buoyId}_data.csv`;
                 const response = await fetch(filename);
-        
+                
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
-        
+                
                 const data = await response.text();
                 const rows = data.split('\n').slice(1);
-        
-                // Create array to store coordinates
-                let coordinates = [];
-                let prevLon = null;
-        
-                rows.forEach(row => {
+                const coordinates = rows.map(row => {
                     const columns = row.split(',');
                     const lat = parseFloat(columns[1]);
-                    let lon = parseFloat(columns[2]);
-                    
-                    // Handle date line crossing
-                    if (prevLon !== null) {
-                        // If we detect a large jump in longitude, split into separate line segments
-                        if (Math.abs(lon - prevLon) > 180) {
-                            coordinates.push(null); // Add null to break the line
-                        }
-                    }
-            
-                    if (!isNaN(lat) && !isNaN(lon)) {
-                        coordinates.push([lat, lon]);
-                        prevLon = lon;
-                    }
-                });
-        
+                    const lon = normalizeLongitude(parseFloat(columns[2]));
+                    return [lat, lon];
+                }).filter(coord => !isNaN(coord[0]) && !isNaN(coord[1]));
+                
                 return coordinates;
             } catch (error) {
                 console.error(`Error loading tracking data for buoy ${buoyId}:`, error);
@@ -170,8 +153,8 @@ permalink: /projects/waves-in-ice/data_collection/
     
             // Add markers for each buoy
             buoys.forEach(function(buoy) {
-                buoy.lng = normalizeLongitude(buoy.lng);
-                var marker = L.marker([buoy.lat, buoy.lng]).addTo(map);
+                const normalizedLng = normalizeLongitude(buoy.lng);
+                var marker = L.marker([buoy.lat, normalizedLng]).addTo(map);
                 
                 // Format deployment date/time nicely
                 var deploymentDate = new Date(buoy.deployed);
@@ -213,6 +196,11 @@ permalink: /projects/waves-in-ice/data_collection/
                     }
                 });
             });
+    
+            // If we have bounds, fit the map to them
+            if (globalBounds) {
+            map.fitBounds(globalBounds);
+            }
         })();
     </script>
 
