@@ -176,36 +176,6 @@ permalink: /projects/waves-in-ice/data_collection/
             shadowSize: [41, 41]
         });
         
-        // Then in your marker creation code, you can assign colors based on voyage:
-        buoys.forEach(function(buoy) {
-            let lng = buoy.lng;
-            if (lng < 0) {
-                lng += 360;
-            }
-            
-            // Choose icon based on voyage
-            let icon;
-            switch(buoy.voyage) {
-                case 'SIPEXII 2012':
-                    icon = redIcon;
-                    trackColor = '#FF0000';
-                    break;
-                case 'PIPERS 2017':
-                    icon = blueIcon;
-                    trackColor = '#2A81CB'; 
-                    break;
-                case 'JARE 2019':
-                    icon = greenIcon;
-                    trackColor = '#38CB2A';
-                    break;
-                default:
-                    icon = blueIcon;
-                    trackColor = '#2A81CB'; 
-            }
-            
-            var marker = L.marker([buoy.lat, lng], {icon: icon}).addTo(map);
-        });
-        
         // Initialize bounds and markers
         (async function initializeMap() {
             // Calculate global bounds first
@@ -220,7 +190,7 @@ permalink: /projects/waves-in-ice/data_collection/
                 }
         
                 // Choose icon based on voyage
-                let icon;
+                let icon, trackColor;
                 switch(buoy.voyage) {
                     case 'SIPEXII 2012':
                         icon = redIcon;
