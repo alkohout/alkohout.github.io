@@ -144,6 +144,10 @@ nav ul li a {
     background-color: #004080;
 }
 
+.btn.btn-text {
+    color: #d4d4d4;
+}
+
 .topics {
     width: 100%;
     padding: 40px 20px;
