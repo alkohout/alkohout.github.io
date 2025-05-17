@@ -32,8 +32,6 @@ permalink: /projects/waves-in-ice/data_collection/
         display: inline-block;
         margin-top: 5px;
         padding: 4px 8px;
-        background-color: #007bff;
-        color: white;
         border-radius: 4px;
         text-decoration: none;
       }
@@ -55,6 +53,18 @@ permalink: /projects/waves-in-ice/data_collection/
     </header>
 
     <main>
+    <section id="home" class="topics">
+      <div class="image-gallery">
+          <div class="image-container">
+              <img src="/assets/images/Picture 1.png" alt="WIIOS deployment" class="zoomable">
+              <img src="/assets/images/wave_ice_buoy.jpg" alt="WIIOS on an ice floe" class="zoomable">
+              <img src="/assets/images/P1010544.jpeg" alt="WIIOS v1.0" class="zoomable">
+              <img src="/assets/images/deployment2.png" alt="WIIOS deployment" class="zoomable">
+              <img src="/assets/images/deployment.jpg" alt="WIIOS deployment" class="zoomable">
+              <img src="/assets/images/Buoy.png" alt="Deployed WIIOS" class="zoomable">
+              <img src="/assets/images/inside_wiios.jpg" alt="WIIOS" class="zoomable">
+          </div>
+      </div>
     <section id="home" class="topics">
        <div class="topic-list">
         <div class="topic inverse">
