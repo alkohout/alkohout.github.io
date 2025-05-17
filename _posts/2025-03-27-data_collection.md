@@ -162,19 +162,6 @@ permalink: /projects/waves-in-ice/data_collection/
                 }
                 var marker = L.marker([buoy.lat, lng]).addTo(map);
                 
-                // Rest of your marker code remains the same...
-            });
-    
-            // If we have bounds, fit the map to them
-            if (globalBounds) {
-                map.fitBounds(globalBounds);
-            }
-
-            // Add markers for each buoy
-            buoys.forEach(function(buoy) {
-                const normalizedLng = normalizeLongitude(buoy.lng);
-                var marker = L.marker([buoy.lat, normalizedLng]).addTo(map);
-                
                 // Format deployment date/time nicely
                 var deploymentDate = new Date(buoy.deployed);
                 var deploymentStr = deploymentDate.toLocaleString(undefined, {
