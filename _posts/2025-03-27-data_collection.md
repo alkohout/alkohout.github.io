@@ -70,15 +70,35 @@ permalink: /projects/waves-in-ice/data_collection/
        <div class="topic-list">
         <div class="topic inverse">
           <h1>Data collection</h1>
-	  <p>There were three main deployments of these instruments. These occurred during the SIPEX II, PIPERS and JARE61 expeditions. The map below shows the locations of the deployments and links to download the data and / or a time series plot.
+	  <p>The three main deployments of the Wave in Ice Observing System (WIIOS) were during the second Sea Ice Physics and Ecosystem Experiment <a href="#sipex">(SIPEX II)</a>, the Polynyas Ice Production and seasonal Evolution in the Ross Sea <a href="#pipers">(PIPERS)</a> expedition and the 61st Japanese Antarctic Reserach Expedition <a href="#jare" (JARE61)</a>. The map below shows the locations of the deployments and links to download the data and / or a time series plot.</p>
         </div>
        </div>
     </section>
-    <section id="home" class="topics">
+    <section id="map" class="topics">
        <div class="topic-list">
         <div class="topic inverse">
 	<div id="map"></div>
-
+        </div>
+       </div>
+    </section>
+    <section id="sipex" class="topics">
+       <div class="topic-list">
+        <div class="topic inverse">
+        <h3> The second Sea Ice Physics and Ecosystem Experiment (SIPEX II)</h3>
+        </div>
+       </div>
+    </section>
+    <section id="pipers" class="topics">
+       <div class="topic-list">
+        <div class="topic inverse">
+        <h3> The Polynas Ice Production and seasonal Evolution in the Ross Sea (PIPERS)</h3>
+        </div>
+       </div>
+    </section>
+    <section id="jare" class="topics">
+       <div class="topic-list">
+        <div class="topic inverse">
+        <h3> The 61st Japanese Antarctic Research Expedition (JARE61)</h3>
         </div>
        </div>
     </section>
