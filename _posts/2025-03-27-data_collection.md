@@ -25,8 +25,8 @@ permalink: /projects/waves-in-ice/data_collection/
       /* Map container styling */
       #map {
         height: 600px;
-        width: 100%;
-        margin: 1em 0;
+        width: 80%;
+        margin: 2em 0;
       }
       .download-link {
         display: inline-block;
