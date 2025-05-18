@@ -94,7 +94,15 @@ Each WIIOS performed on-board data quality control and spectral analysis before 
     <section id="pipers" class="topics">
        <div class="topic-list">
         <div class="topic inverse">
-        <h3> The Polynas Ice Production and seasonal Evolution in the Ross Sea (PIPERS)</h3>
+           <h3> The Polynas Ice Production and seasonal Evolution in the Ross Sea (PIPERS)</h3>
+	   <p> To improve our understanding of wave attenuation processes, we conducted another
+wave-ice experiment during the Polynyas, Ice Production, and seasonal Evolution in the
+Ross Sea (PIPERS) expedition in 2017. 
+	   The experiment design was very similar to the SIPEX-II experiment except that we deployed 14 WIIOS (14 relative to 5) and the WIIOS generally survived much longer. 
+	   As a result, we have a significantly larger dataset to analyse (over 23 000 wave records compared to just 268 during SIPEX-II). 
+	   In addition to the larger size of the dataset, two other key differences are the location of deployment and time of year the WIIOS were deployed.
+	   SIPEX-II was a spring experiment in East Antarctica during the season of ice melt and retreat. 
+	   PIPERS was an autumn experiment during the sea-ice growth period in the Ross Sea.</p>
         </div>
        </div>
     </section>
