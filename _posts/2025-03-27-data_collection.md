@@ -87,6 +87,14 @@ permalink: /projects/waves-in-ice/data_collection/
        <div class="topic-list">
         <div class="topic inverse">
         <h3> The second Sea Ice Physics and Ecosystem Experiment (SIPEX II)</h3>
+	<p>The WIIOS were deployed on East Antarctic sea ice from the *RV Aurora Australis* during the Australian-led second Sea Ice Physics and Ecosystem Experiment (SIPEX II). 
+The purpose of SIPEX II was to investigate relationships between the physical sea ice environment, marine biogeochemistry and the structure of Southern Ocean ecosystems. 
+Upon entering the pack-ice zone, five WIIOS were deployed on the sea ice along a meridional transect line. 
+Every three hours, the WIIOS simultaneously woke and recorded wave accelerations for 34 minutes. 
+On 23 Sep 2012, three WIIOS were deployed via a helicopter hovering approximately 2 m above the floe.
+The remaining WIIOS were deployed via the *RV Aurora Australis* aft 7 tonne crane.
+This was achieved in high winds (up to 25 m/s) and 2 - 3 m swell. 
+Each WIIOS performed on-board data quality control and spectral analysis before returning the wave spectrum via satellite. 
         </div>
        </div>
     </section>
