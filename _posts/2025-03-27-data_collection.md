@@ -102,14 +102,19 @@ Ross Sea (PIPERS) expedition in 2017.
 	   As a result, we have a significantly larger dataset to analyse (over 23 000 wave records compared to just 268 during SIPEX-II). 
 	   In addition to the larger size of the dataset, two other key differences are the location of deployment and time of year the WIIOS were deployed.
 	   SIPEX-II was a spring experiment in East Antarctica during the season of ice melt and retreat. 
-	   PIPERS was an autumn experiment during the sea-ice growth period in the Ross Sea.</p>
+	   PIPERS was an autumn experiment during the sea-ice growth period in the Ross Sea.
+	   The majority of units were deployed via crane, but a handful were deployed via Zodiac where ice cores were taken along with drone imagery.</p>
         </div>
        </div>
     </section>
     <section id="jare" class="topics">
        <div class="topic-list">
         <div class="topic inverse">
-        <h3> The 61st Japanese Antarctic Research Expedition (JARE61)</h3>
+           <h3> The 61st Japanese Antarctic Research Expedition (JARE61)</h3>
+	   <p> We had an opportunity to deploy more buoys during the 61st Japanese Antarctic Research Expedition (JARE61)
+	   This time we returned to East Antarctica, but during the 2019/20 summer season instead of Spring.
+	   These buoys survived a surprisingly long time given there were deployed on summer sea ice. 
+	   All units were deployed via crane. </p>
         </div>
        </div>
     </section>
