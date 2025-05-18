@@ -71,9 +71,9 @@ permalink: /projects/waves-in-ice/data_collection/
         <div class="topic inverse">
           <h1>Data collection</h1>
 	  <p>The three main deployments of the Wave in Ice Observing System <a href="https://alkohout.github.io/projects/waves-in-ice/WIIOS/">(WIIOS)</a> were during the second Sea Ice Physics and Ecosystem Experiment <a href="#sipex">(SIPEX II)</a>, the Polynyas Ice Production and seasonal Evolution in the Ross Sea <a href="#pipers">(PIPERS)</a> expedition and the 61st Japanese Antarctic Reserach Expedition <a href="#jare" >(JARE61)</a>. The map <a href="#map">below</a> shows the locations of the deployments with links to download data and plots.</p>
-          <h3>Deployment Locations</h3>
-	  <div id="map"></div>
+	  <div id="map">
 	  <p>Interactive map showing the deployment locations and tracks of WIIOS units. Hover over markers to see buoy tracks. Click markers for deployment information and data downloads.</p>
+	  </div>
           </div>
          </div>
      </section>
@@ -88,7 +88,7 @@ Every three hours, the WIIOS simultaneously woke and recorded wave accelerations
 On 23 Sep 2012, three WIIOS were deployed via a helicopter hovering approximately 2 m above the floe.
 The remaining WIIOS were deployed via the <i>RV Aurora Australis</i> aft 7 tonne crane.
 This was achieved in high winds (up to 25 m/s) and 2 - 3 m swell. 
-Each WIIOS performed on-board data quality control and spectral analysis before returning the wave spectrum via satellite. 
+Each WIIOS performed on-board data quality control and spectral analysis before returning the wave spectrum via satellite. </p>
         </div>
        </div>
     </section>
