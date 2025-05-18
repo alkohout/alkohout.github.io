@@ -87,7 +87,7 @@ Every three hours, the WIIOS simultaneously woke and recorded wave accelerations
 On 23 Sep 2012, three WIIOS were deployed via a helicopter hovering approximately 2 m above the floe.
 The remaining WIIOS were deployed via the <i>RV Aurora Australis</i> aft 7 tonne crane.
 This was achieved in high winds (up to 25 m/s) and 2 - 3 m swell. 
-Each WIIOS performed on-board data quality control and spectral analysis before returning the wave spectrum via satellite. </p>
+Each WIIOS performed on-board data quality control and spectral analysis before returning the wave spectrum via satellite. More information, data downloads and publication links can be found on <a href="https://data.mendeley.com/datasets/jt4h99mwb7/1"> Mendeley</a>. </p>
         </div>
        </div>
     </section>
@@ -103,7 +103,8 @@ Ross Sea (PIPERS) expedition in 2017.
 	   In addition to the larger size of the dataset, two other key differences are the location of deployment and time of year the WIIOS were deployed.
 	   SIPEX-II was a spring experiment in East Antarctica during the season of ice melt and retreat. 
 	   PIPERS was an autumn experiment during the sea-ice growth period in the Ross Sea.
-	   The majority of units were deployed via crane, but a handful were deployed via Zodiac where ice cores were taken along with drone imagery.</p>
+	   The majority of units were deployed via crane, but a handful were deployed via Zodiac where ice cores were taken along with drone imagery. 
+	   More information, data downloads and publication links can be found on <a href="https://data.mendeley.com/datasets/b33xxnpfyw/1"> Mendeley</a>. </p>
         </div>
        </div>
     </section>
@@ -114,7 +115,8 @@ Ross Sea (PIPERS) expedition in 2017.
 	   <p> We had an opportunity to deploy more buoys during the 61st Japanese Antarctic Research Expedition (JARE61)
 	   This time we returned to East Antarctica, but during the 2019/20 summer season instead of Spring.
 	   These buoys survived a surprisingly long time given there were deployed on summer sea ice. 
-	   All units were deployed via crane. </p>
+	   All units were deployed via crane. 
+	   More information, data downloads and publication links can be found on <a href="https://data.mendeley.com/datasets/22hpw2xn3x/1"> Mendeley</a>.  </p>
         </div>
        </div>
     </section>
