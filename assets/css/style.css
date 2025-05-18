@@ -329,3 +329,17 @@ h6 {
   line-height: 1.5;
   white-space: pre;
 }
+
+.img-right {
+  float: right;
+  max-width: 260px;     /* adjust to taste */
+  height: auto;
+  margin: 0 0 1rem 1rem;/* space around the picture */
+}
+
+/* clearfix so later content doesn't wrap under the float */
+.topic::after {
+  content: "";
+  display: block;
+  clear: both;
+}

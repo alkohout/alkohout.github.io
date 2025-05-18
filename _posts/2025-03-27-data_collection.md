@@ -92,8 +92,15 @@ permalink: /projects/waves-in-ice/data_collection/
             investigate relationships between the physical sea ice environment,
             marine biogeochemistry and the structure of Southern Ocean ecosystems.
             Upon entering the pack-ice zone, five WIIOS were deployed on the sea ice
-            along a meridional transect line.&nbsp;…<br><br>
-    
+            along a meridional transect line.&nbsp;
+            Every three hours, the WIIOS simultaneously woke and recorded wave accelerations 
+	    for 34 minutes.
+	    On 23 Sep 2012, three WIIOS were deployed via a helicopter hovering approximately 
+	    2 m above the floe.
+	    The remaining WIIOS were deployed via the <i>RV Aurora Australis</i> aft 7 tonne crane.
+	    This was achieved in high winds (up to 25 m/s) and 2 - 3 m swell.
+	    Each WIIOS performed on-board data quality control and spectral analysis before returning the wave spectrum via satellite.
+            <br><br>
             More information, data downloads and publication links can be found on
             <a href="https://data.mendeley.com/datasets/jt4h99mwb7/1"
                target="_blank"
@@ -106,16 +113,31 @@ permalink: /projects/waves-in-ice/data_collection/
        <div class="topic-list">
         <div class="topic inverse">
            <h3> The Polynas Ice Production and seasonal Evolution in the Ross Sea (PIPERS)</h3>
-	   <p> To improve our understanding of wave attenuation processes, we conducted another
-wave-ice experiment during the Polynyas, Ice Production, and seasonal Evolution in the
-Ross Sea (PIPERS) expedition in 2017. 
-	   The experiment design was very similar to the SIPEX-II experiment except that we deployed 14 WIIOS (14 relative to 5) and the WIIOS generally survived much longer. 
-	   As a result, we have a significantly larger dataset to analyse (over 23 000 wave records compared to just 268 during SIPEX-II). 
-	   In addition to the larger size of the dataset, two other key differences are the location of deployment and time of year the WIIOS were deployed.
-	   SIPEX-II was a spring experiment in East Antarctica during the season of ice melt and retreat. 
-	   PIPERS was an autumn experiment during the sea-ice growth period in the Ross Sea.
-	   The majority of units were deployed via crane, but a handful were deployed via Zodiac where ice cores were taken along with drone imagery. 
-	   More information, data downloads and publication links can be found on <a href="https://data.mendeley.com/datasets/b33xxnpfyw/1" target="_blank"> Mendeley</a>. </p>
+           <p>
+             <!-- in-text image -->
+             <img src="images/Picture 1.png"
+                  alt="PIPERS wave-ice experiment deployment"
+                  class="img-right">
+
+             To improve our understanding of wave attenuation processes, we conducted another
+             wave-ice experiment during the Polynyas, Ice Production, and seasonal Evolution in the
+             Ross Sea (PIPERS) expedition in 2017.
+             The experiment design was very similar to the SIPEX-II experiment except that we deployed
+             14 WIIOS (14 relative to 5) and the WIIOS generally survived much longer.
+             As a result, we have a significantly larger dataset to analyse (over&nbsp;23&nbsp;000 wave records
+             compared to just 268 during SIPEX-II).
+             In addition to the larger size of the dataset, two other key differences are the location
+             of deployment and time of year the WIIOS were deployed.
+             SIPEX-II was a spring experiment in East Antarctica during the season of ice melt and retreat.
+             PIPERS was an autumn experiment during the sea-ice growth period in the Ross Sea.
+             The majority of units were deployed via crane, but a handful were deployed via Zodiac where
+             ice cores were taken along with drone imagery.
+            <br><br>
+             More information, data downloads and publication links can be found on
+             <a href="https://data.mendeley.com/datasets/b33xxnpfyw/1"
+                target="_blank"
+                rel="noopener noreferrer">Mendeley</a>.
+           </p>
         </div>
        </div>
     </section>
@@ -123,11 +145,22 @@ Ross Sea (PIPERS) expedition in 2017.
        <div class="topic-list">
         <div class="topic inverse">
            <h3> The 61st Japanese Antarctic Research Expedition (JARE61)</h3>
-	   <p> We had an opportunity to deploy more buoys during the 61st Japanese Antarctic Research Expedition (JARE61)
-	   This time we returned to East Antarctica, but during the 2019/20 summer season instead of Spring.
-	   These buoys survived a surprisingly long time given there were deployed on summer sea ice. 
-	   All units were deployed via crane. 
-	   More information, data downloads and publication links can be found on <a href="https://data.mendeley.com/datasets/22hpw2xn3x/1" target="_blank"> Mendeley</a>.  </p>
+		<p>
+		  <!-- In-text / floated image -->
+		  <img src="images/deployment2.png"
+		       alt="JARE61 buoy deployment in East Antarctica"
+		       class="img-right">
+
+		  We had an opportunity to deploy more buoys during the 61st Japanese Antarctic
+		  Research Expedition (JARE-61). This time we returned to East Antarctica, but
+		  during the 2019/20 summer season instead of spring. These buoys survived a
+		  surprisingly long time given they were deployed on summer sea ice. All units
+		  were deployed via crane.
+                  <br><br>
+		  More information, data downloads and publication links can be found on
+		  <a href="https://data.mendeley.com/datasets/22hpw2xn3x/1"
+		     target="_blank" rel="noopener noreferrer">Mendeley</a>.
+		</p>
         </div>
        </div>
     </section>
