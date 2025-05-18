@@ -78,6 +78,7 @@ permalink: /projects/waves-in-ice/data_collection/
        <div class="topic-list">
         <div class="topic inverse">
 	<div id="map"></div>
+	<p>Interactive map showing the deployment locations and tracks of WIIOS units. Hover over markers to see buoy tracks. Click markers for deployment information and data downloads.</p>
         </div>
        </div>
     </section>
