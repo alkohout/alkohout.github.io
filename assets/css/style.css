@@ -337,9 +337,8 @@ h6 {
   margin: 0 0 1rem 1rem;/* space around the picture */
 }
 
-.mg.img-left {
+.img-left {
   float: left;
-  max-width: 260px;     /* adjust to taste */
   height: auto;
   margin: 0 1rem 1rem 0;/* space around the picture */
 }
