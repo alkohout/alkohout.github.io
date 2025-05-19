@@ -82,7 +82,7 @@ permalink: /projects/waves-in-ice/data_collection/
           <h3>The second Sea Ice Physics and Ecosystem Experiment (SIPEX II)</h3>
 
           <p>
-            <img src="images/sipex.jpg"
+            <img src="/assets/images/sipex.jpg"
                  alt="<i>RV Aurora Australis</i> deploying WIIOS on sea-ice. Photo Credit: Alison Kohout"
                  class="img-right">
 
@@ -115,7 +115,7 @@ permalink: /projects/waves-in-ice/data_collection/
            <h3> The Polynas Ice Production and seasonal Evolution in the Ross Sea (PIPERS)</h3>
            <p>
              <!-- in-text image -->
-             <img src="images/Picture 1.png"
+             <img src="/assets/images/Picture 1.png"
                   alt="PIPERS wave-ice experiment deployment"
                   class="img-right">
 
@@ -147,7 +147,7 @@ permalink: /projects/waves-in-ice/data_collection/
            <h3> The 61st Japanese Antarctic Research Expedition (JARE61)</h3>
 		<p>
 		  <!-- In-text / floated image -->
-		  <img src="images/deployment2.png"
+		  <img src="/assets/images/deployment2.png"
 		       alt="JARE61 buoy deployment in East Antarctica"
 		       class="img-right">
 
