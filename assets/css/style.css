@@ -336,6 +336,12 @@ h6 {
   height: auto;
   margin: 0 0 1rem 1rem;/* space around the picture */
 }
+.img-left {
+  float: left;
+  max-width: 260px;     /* adjust to taste */
+  height: auto;
+  margin: 0 0 1rem 1rem;/* space around the picture */
+}
 
 /* clearfix so later content doesn't wrap under the float */
 .topic::after {

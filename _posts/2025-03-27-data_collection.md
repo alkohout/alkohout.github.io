@@ -84,7 +84,7 @@ permalink: /projects/waves-in-ice/data_collection/
           <p>
             <img src="/assets/images/sipex.jpg"
                  alt="<i>RV Aurora Australis</i> deploying WIIOS on sea-ice. Photo Credit: Alison Kohout"
-                 class="img-right">
+                 class="img-left">
 
             The WIIOS were deployed on East Antarctic sea ice from the
             <i>RV Aurora Australis</i> during the Australian-led second Sea Ice Physics
