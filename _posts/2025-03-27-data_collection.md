@@ -82,7 +82,7 @@ permalink: /projects/waves-in-ice/data_collection/
           <h3>The second Sea Ice Physics and Ecosystem Experiment (SIPEX II)</h3>
 
           <p>
-            <img src="images/sipex_aurora.jpg"
+            <img src="images/sipex.jpg"
                  alt="<i>RV Aurora Australis</i> deploying WIIOS on sea-ice. Photo Credit: Alison Kohout"
                  class="img-right">
 
