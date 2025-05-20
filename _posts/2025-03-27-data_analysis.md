@@ -37,7 +37,37 @@ permalink: /projects/waves-in-ice/data_analysis/
     <section id="home" class="topics">
        <div class="topic-list">
         <div class="topic inverse">
-          <h1>Data Analysis</h1>
+          <h1>Wave decay</h1>
+<p>
+Analysis of wave decay in sea-ice focuses on understanding the evolution of the full wave spectrum propagating through the ice. 
+Linear theory assumes that as a wave propagates through ice, the power at each wave-
+number decays without transfer of energy between wave numbers. 
+This implies that the significant wave height, which is proportional to the square root of the total wave energy, will always decay exponentially with distance from the sea-ice edge. 
+Our SIPEX data set confirms previous observations that, during calm conditions, the significant wave height decays exponentially with distance. 
+However, during three large-wave events, we found that significant wave heights did not decay exponentially, enabling large waves to persist deep into the pack ice.
+To demonstrate this, we calculated the decay rate of the significant wave height between wave buoys, dHs/dx, where Hs is the significant wave height and x the distance between buoys. 
+Using observations farther than 100 km from the ice edge, the magnitude of dHs/dx increases almost
+perfectly linearly with Hs until Hs reaches 3 m. 
+For waves larger than 3 m, dHs/dx flattens and can be treated as being independent of Hs. 
+This shows that existing linear theory is only valid for waves with Hs < 3 m. 
+The empirical model derived from the data is 
+dHs
+{5:35|10{6Hs Hsƒ3
+~
+dx
+{16:05|10{6 Hs§3 ð1Þ
+where25.35 3 1026 is the attenuation coefficient. 
+The constant attenuation for waves with significant wave height greater than 3 m implies a more gradual decay of wave height with propagation distance, allowing large waves to penetrate considerably farther into the ice. 
+Because the ice in the MIZ was all first-year ice, we are unable to determine how equation (1) will differ in thicker ice or in a combination of first-year and multi-year ice.
+The wave spectra during large-wave events indicate that the spectral peak of the energy distribution may shift to longer periods with increasing distance from the ice edge. 
+This is standard for waves in the open ocean, where nonlinear interactions create an inverse energy cascade, moving energy and the spectral peak to longer periods.
+Thus, our observations suggest that nonlinear energy transfer may need
+to be considered when modelling the decay of large waves (Hs > 3 m) through sea ice and that small-amplitude wave theory cannot simply be extrapolated to large-amplitude waves.
+
+To improve our understanding of the wave attenuation processes found during SIPEXII, we conducted a much larger experiment during PIPERS.
+The large dataset is broken into long and short peak wave periods and high and low ice concentrations, showing that generally during this experiment, the total wave energy decayed exponentially through the ice with the rate of decay dependent on ice concentration. 
+These results suggest that the conclusion from the SIPEXII dataset, that large waves decay linearly, was an artefact of analysing a small dataset in different ice conditions. 
+For example, it is possible that during SIPEX-II, the large-wave events predominantly occurred when low ice concentrations were present, thereby reducing the decay rates and leading to an appearance of linear wave decay. 
         </div>
        </div>
     </section>
