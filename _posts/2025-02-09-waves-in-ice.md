@@ -43,18 +43,17 @@ tags:
       <div class="topic-list">
         <div class="topic inverse">
           <h2>Waves in Ice</h2>
-          <p>On this site we explore the impact of waves on sea ice through <a href="https://alkohout.github.io/projects/waves-in-ice/WIIOS/">innovative sensor technology</a> and <a href="https://alkohout.github.io/projects/waves-in-ice/data_analysis/">data analysis</a>.</p>
-	  Sea ice is a feature of both polar regions and has an important role in moderating the global climate. 
-	  The expansion and contraction of sea ice is largely governed by seasonal changes in air temperature, with the finer details controlled by the complex feedbacks that exist between sea ice,
-the atmosphere and the ocean. 
-	  Of these feedbacks, the interaction between ocean waves and sea ice is one of the least well understood and is usually overlooked in coupled climate models. 
-	  Yet the ability of waves to break sea ice has been known since the ‘heroic age’ of polar exploration. 
-	  Waves propagating through sea ice leave behind a wake of broken ice floes, which are then more easily deformed by winds and currents, effectively eliminating the barrier between air and ocean and enhancing heat exchange.
-	  The key to predicting the magnitude of ice breakup lies in understanding wave attenuation in the marginal ice zone (MIZ), which is a region, potentially hundreds of kilometres wide, of broken ice floes that forms at the boundary of the open ocean and the sea ice at each pole. 
-	  Large storm waves are routinely found in the Southern Ocean11 and may be anticipated in
-an increasingly ice-free Arctic. 
-	  These drive large-wave events that have occasionally been observed at single locations within the MIZ12–14, but these observations are insufficient to determine how storm-generated
-waves propagate through sea ice.
+          <p>
+Welcome to my site, where I delve into the impact of ocean waves on sea ice using cutting-edge sensor technology and data analysis.
+
+Sea ice, found in both polar regions, plays a crucial role in regulating our global climate. Its size changes with the seasons, mainly due to shifts in air temperature. However, the intricate interactions among sea ice, the atmosphere, and the ocean also influence these changes. Among these interactions, the effect of ocean waves on sea ice is one of the least understood and often ignored in climate models. Yet, explorers have long known that waves can break sea ice.
+
+As waves move through the ice, they leave trails of broken ice floes. These floes are more easily moved by winds and currents, removing the barrier between the air and the ocean and increasing heat exchange. Understanding how waves weaken in the vast area of fragmented ice at the edge of the open ocean and polar is, is vital for predicting how much ice will break. 
+
+The Southern Ocean frequently experiences large storm waves, and similar events may become common in an increasingly ice-free Arctic. 
+
+Here we explore these dynamic interactions and begin to unravel the mysteries of waves and ice.
+</p>
 
           <h3>Highlights</h3>
           <h6>Wave attenuation</h6>
