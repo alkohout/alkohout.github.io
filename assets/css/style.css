@@ -338,9 +338,10 @@ h6 {
 }
 
 .img-left {
-  display: flex;
-  align-items: flex-start;   /* image and first text line align at top */
-  gap: 1rem;                 /* space between image and text */
+  float: left;
+  max-width: 10px;     /* adjust to taste */
+  height: auto;
+  margin: 0 1rem 1rem 0;/* space around the picture */
 }
 
 /* clearfix so later content doesn't wrap under the float */
