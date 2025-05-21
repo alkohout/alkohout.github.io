@@ -51,11 +51,13 @@ perfectly linearly with Hs until Hs reaches 3 m.
 For waves larger than 3 m, dHs/dx flattens and can be treated as being independent of Hs. 
 This shows that existing linear theory is only valid for waves with Hs < 3 m. 
 The empirical model derived from the data is 
-dHs
-{5:35|10{6Hs Hsƒ3
-~
-dx
-{16:05|10{6 Hs§3 ð1Þ
+$$
+\frac{dH_s}{dx} =
+\begin{cases}
+-1.15 \times 10^{-7}, & H_s \le 3\,\mathrm{m}, \\
+-16.05 \times 10^{-6}, & H_s \ge 3\,\mathrm{m}.
+\end{cases}
+$$
 where25.35 3 1026 is the attenuation coefficient. 
 The constant attenuation for waves with significant wave height greater than 3 m implies a more gradual decay of wave height with propagation distance, allowing large waves to penetrate considerably farther into the ice. 
 Because the ice in the MIZ was all first-year ice, we are unable to determine how equation (1) will differ in thicker ice or in a combination of first-year and multi-year ice.
@@ -68,6 +70,7 @@ To improve our understanding of the wave attenuation processes found during SIPE
 The large dataset is broken into long and short peak wave periods and high and low ice concentrations, showing that generally during this experiment, the total wave energy decayed exponentially through the ice with the rate of decay dependent on ice concentration. 
 These results suggest that the conclusion from the SIPEXII dataset, that large waves decay linearly, was an artefact of analysing a small dataset in different ice conditions. 
 For example, it is possible that during SIPEX-II, the large-wave events predominantly occurred when low ice concentrations were present, thereby reducing the decay rates and leading to an appearance of linear wave decay. 
+</p>
         </div>
        </div>
     </section>
