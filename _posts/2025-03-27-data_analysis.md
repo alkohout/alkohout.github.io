@@ -51,13 +51,13 @@ permalink: /projects/waves-in-ice/data_analysis/
           For waves larger than 3 m, dHs/dx flattens and can be treated as being independent of Hs. 
           This shows that existing linear theory is only valid for waves with Hs < 3 m. 
           The empirical model derived from the data is 
-          $$
-          \frac{dH_s}{dx} =
-          \begin{cases}
-          -1.15 \times 10^{-7}, & H_s \le 3\,\mathrm{m}, \\
-          -16.05 \times 10^{-6}, & H_s \ge 3\,\mathrm{m}.
-          \end{cases}
-          $$
+          <script type="math/tex; mode=display">
+            \frac{dH_s}{dx} =
+            \begin{cases}
+            -1.15 \times 10^{-7}, & H_s \le 3\,\mathrm{m} \\
+            -16.05 \times 10^{-6}, & H_s \ge 3\,\mathrm{m}
+            \end{cases}
+          </script>
           where25.35 3 1026 is the attenuation coefficient. 
           The constant attenuation for waves with significant wave height greater than 3 m implies a more gradual decay of wave height with propagation distance, allowing large waves to penetrate considerably farther into the ice. 
           Because the ice in the MIZ was all first-year ice, we are unable to determine how equation (1) will differ in thicker ice or in a combination of first-year and multi-year ice.
