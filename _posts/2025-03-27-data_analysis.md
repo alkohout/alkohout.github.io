@@ -64,14 +64,14 @@ permalink: /projects/waves-in-ice/data_analysis/
           This implies that the significant wave height, which is proportional to the square root of the total wave energy, will always decay exponentially with distance from the sea ice edge. 
           Our SIPEX data set confirms previous observations that, during calm conditions, the significant wave height decays exponentially with distance. 
           However, during three large wave events, we found that significant wave heights did not decay exponentially, enabling large waves to persist deep into the pack ice.
-          <figure class="img-left" style="max-width: 100%">
+          <figure class="img-left" style="max-width: 30%">
               <img src="/assets/images/wave_decay.png"
                    alt="Wave decay plots">
               <figcaption>Figure 1: Wave decay in the marginal ice zone during a calm wave event and a large wave event</figcaption>
           </figure>
           To demonstrate this, for our whole data record, we calculated the decay rate of the significant wave height between wave buoys, dHs/dx, where Hs is the significant wave height and x the distance between buoys. 
 	  We present this data in the form of a boxplot, where we observe that the magnitude of dHs/dx increases almost perfectly linearly with Hs until Hs reaches 3 m, as we would expect for exponentially decaying waves as show in the calm plot in Figure 1. 
-          <figure class="img-left">
+          <figure class="img-left" style="max-width: 20%">
               <img src="/assets/images/wave_decay_boxplot.png"
                    alt="Wave decay plots">
               <figcaption>Figure 2: Wave decay in the marginal ice zone during a calm wave event and a large wave event</figcaption>
