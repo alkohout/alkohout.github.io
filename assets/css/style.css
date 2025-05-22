@@ -333,7 +333,7 @@ h6 {
 .img-right {
   float: right;
   height: auto;
-  margin: 0 0 1rem 1rem;/* space around the picture */
+  margin: 0 .5 .5rem .5rem;/* space around the picture */
 }
 
 .img-right img {
@@ -345,13 +345,13 @@ h6 {
   font-size: 0.9em;
   color: #666;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: .5rem;
 }
 
 .img-left {
   float: left;
   height: auto;
-  margin: 0 1rem 1rem 0;/* space around the picture */
+  margin: .5 .5rem .5rem 0;/* space around the picture */
 }
 
 .img-left img {
@@ -363,7 +363,7 @@ h6 {
   font-size: 0.9em;
   color: #666;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: .5rem;
 }
 
 /* clearfix so later content doesn't wrap under the float */
