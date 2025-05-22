@@ -345,7 +345,7 @@ h6 {
   font-size: 0.9em;
   color: #666;
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .img-left {
@@ -363,7 +363,7 @@ h6 {
   font-size: 0.9em;
   color: #666;
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 /* clearfix so later content doesn't wrap under the float */
