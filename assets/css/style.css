@@ -345,17 +345,11 @@ h6 {
 }
 
 .img-left img {
-  max-width: 100%;
+  max-width: 200%;
   height: auto;
 }
 
-.fig-left {
-  float: left;
-  max-width: 150px;     /* adjust to taste */
-  height: auto;
-  margin: 0 1rem 1rem 0;/* space around the picture */
-}
-.fig-left figcaption {
+.img-left figcaption {
   font-size: 0.9em;
   max-width: 50%;     /* adjust to taste */
   color: #666;
