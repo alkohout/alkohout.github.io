@@ -23,6 +23,10 @@ permalink: /projects/waves-in-ice/data_analysis/
     <script id="MathJax-script" async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
+    <!-- Site Visit Counter -->
+    <script data-goatcounter="https://kohoutal.goatcounter.com/count"
+       async src="//gc.zgo.at/count.js">
+    </script>
 </head>
 <body>
     <header>

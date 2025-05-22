@@ -18,6 +18,10 @@ permalink: /projects/waves-in-ice/publications/
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waves - in - ice</title>
     <link rel="stylesheet" href="/assets/css/style.css"> 
+    <!-- Site Visit Counter -->
+    <script data-goatcounter="https://kohoutal.goatcounter.com/count"
+       async src="//gc.zgo.at/count.js">
+    </script>
 </head>
 <body>
     <header>

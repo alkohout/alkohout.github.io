@@ -20,6 +20,10 @@ permalink: /projects/waves-in-ice/data_collection/
     <link rel="stylesheet" href="/assets/css/style.css"> 
     <!-- Load Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Site Visit Counter -->
+    <script data-goatcounter="https://kohoutal.goatcounter.com/count"
+       async src="//gc.zgo.at/count.js">
+    </script>
 
     <style>
       /* Map container styling */
