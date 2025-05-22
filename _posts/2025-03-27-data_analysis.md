@@ -18,18 +18,6 @@ permalink: /projects/waves-in-ice/data_analysis/
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Analysis</title>
     <link rel="stylesheet" href="/assets/css/style.css"> 
-    <!-- MathJax v3 -->
-    <script>
-    MathJax = {
-        tex: {
-            inlineMath: [['$', '$'], ['\$$', '\$$']],
-            displayMath: [['$$', '$$'], ['\$$', '\$$']]
-        }
-    };
-    </script>
-    <script type="text/javascript" async
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
     <!-- Site Visit Counter -->
     <script data-goatcounter="https://kohoutal.goatcounter.com/count"
        async src="//gc.zgo.at/count.js">
