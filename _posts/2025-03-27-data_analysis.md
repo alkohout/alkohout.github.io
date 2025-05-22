@@ -67,12 +67,16 @@ permalink: /projects/waves-in-ice/data_analysis/
           <figure class="fig-left">
               <img src="/assets/images/wave_decay.png"
                    alt="Wave decay plots">
-              <figcaption>Figure 1: Wave decay in the marginal ice zone during a calm wave event (a) and a large wave event (b)</figcaption>
+              <figcaption>Figure 1: Wave decay in the marginal ice zone during a calm wave event and a large wave event</figcaption>
           </figure>
-          To demonstrate this, we calculated the decay rate of the significant wave height between wave buoys, dHs/dx, where Hs is the significant wave height and x the distance between buoys. 
-          Using observations farther than 100 km from the ice edge, the magnitude of dHs/dx increases almost
-          perfectly linearly with Hs until Hs reaches 3 m. 
-          For waves larger than 3 m, dHs/dx flattens and can be treated as being independent of Hs. 
+          To demonstrate this, for our whole data record, we calculated the decay rate of the significant wave height between wave buoys, dHs/dx, where Hs is the significant wave height and x the distance between buoys. 
+	  We present this data in the form of a boxplot, where we observe that the magnitude of dHs/dx increases almost perfectly linearly with Hs until Hs reaches 3 m, as we would expect for exponentially decaying waves as show in the calm plot in Figure 1. 
+          <figure class="fig-left">
+              <img src="/assets/images/wave_decay_boxplot.png"
+                   alt="Wave decay plots">
+              <figcaption>Figure 2: Wave decay in the marginal ice zone during a calm wave event and a large wave event</figcaption>
+          </figure>
+          For waves larger than 3 m, dHs/dx flattens and can be treated as being independent of Hs, as demonstrated in the large wave event plot in Figure 1. 
           This showed that existing linear theory appears to be only valid for waves with Hs < 3 m. 
           The empirical model derived from the data was 
           </p>
