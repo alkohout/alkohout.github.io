@@ -341,6 +341,13 @@ h6 {
   height: auto;
 }
 
+.img-right figcaption {
+  font-size: 0.9em;
+  color: #666;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
 .img-left {
   float: left;
   height: auto;

@@ -57,7 +57,7 @@ permalink: /projects/waves-in-ice/data_analysis/
           <p>
 	  The interaction between ocean waves and sea ice is a fundamental process that influences both the dynamics of the ice cover and the characteristics of the wave field. 
 	  Understanding how waves decay as they propagate through sea ice is crucial for improving our ability to model and predict ice-ocean interactions, particularly in the marginal ice zone (MIZ) where wave-ice interactions are most pronounced. 
-          <figure class="img-left" style="max-width: 30%">
+          <figure class="img-right" style="max-width: 30%">
               <img src="/assets/images/wave_decay.png"
                    alt="Wave decay plots">
               <figcaption>Figure 1: Wave decay in the marginal ice zone during a calm wave event and a large wave event</figcaption>
