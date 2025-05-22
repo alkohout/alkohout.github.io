@@ -67,7 +67,7 @@ permalink: /projects/waves-in-ice/data_analysis/
           <figure class="img-left">
               <img src="/assets/images/wave_decay.png"
                    alt="Wave decay plots">
-              <figcaption>Wave decay in pack ice during large wave events</figcaption>
+              <figcaption>Figure 1: Wave decay in the marginal ice zone during a calm wave event (a) and a large wave event (b)</figcaption>
           </figure>
           To demonstrate this, we calculated the decay rate of the significant wave height between wave buoys, dHs/dx, where Hs is the significant wave height and x the distance between buoys. 
           Using observations farther than 100 km from the ice edge, the magnitude of dHs/dx increases almost
