@@ -69,12 +69,18 @@ permalink: /projects/waves-in-ice/data_analysis/
           This implies that the significant wave height, which is proportional to the square root of the total wave energy, will always decay exponentially with distance from the sea ice edge. 
           Our SIPEX data set confirms previous observations that, during calm conditions, the significant wave height decays exponentially with distance. 
           However, during three large wave events, we found that significant wave heights did not decay exponentially, enabling large waves to persist deep into the pack ice.
-          To demonstrate this, for our whole data record, we calculated the decay rate of the significant wave height between wave buoys, dHs/dx, where Hs is the significant wave height and x the distance between buoys. 
+	  See Figure 1 for an example of these two cases.
+          To demonstrate the consistency of this, for our whole data record, we calculated the decay rate of the significant wave height between wave buoys, dHs/dx, where Hs is the significant wave height and x the distance between buoys. 
 	  We present this data in the form of a boxplot, where we observe that the magnitude of dHs/dx increases almost perfectly linearly with Hs until Hs reaches 3 m, as we would expect for exponentially decaying waves as show in the calm plot in Figure 1. 
           <figure class="img-left" style="max-width: 20%">
               <img src="/assets/images/wave_decay_boxplot.png"
                    alt="Wave decay plots">
-              <figcaption>Figure 2: Wave decay in the marginal ice zone during a calm wave event and a large wave event</figcaption>
+              <figcaption>Figure 2: Decay rates of waves for given significant wave heights. 
+		Data are binned in 1-m boxes. 
+		The red dot is the median. 
+		Box height shows the range within which 50% of the data lie. 
+		The whiskers give the range of data, excluding outliers (blue markers) and single data points. 
+	       </figcaption>
           </figure>
           For waves larger than 3 m, dHs/dx flattens and can be treated as being independent of Hs, as demonstrated in the large wave event plot in Figure 1. 
           This showed that existing linear theory appears to be only valid for waves with Hs < 3 m. 
