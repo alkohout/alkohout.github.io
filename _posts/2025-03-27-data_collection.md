@@ -155,7 +155,8 @@ permalink: /projects/waves-in-ice/data_collection/
 		  <!-- In-text / floated image -->
 		  <img src="/assets/images/deployment2.png"
 		       alt="JARE61 buoy deployment in East Antarctica"
-		       class="img-left" >
+		       class="img-left" 
+		       style="max-width: 30%">
 
 		  We had an opportunity to deploy more buoys during the 61st Japanese Antarctic
 		  Research Expedition (JARE-61). This time we returned to East Antarctica, but

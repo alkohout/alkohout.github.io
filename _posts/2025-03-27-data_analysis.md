@@ -57,15 +57,15 @@ permalink: /projects/waves-in-ice/data_analysis/
           <p>
 	  The interaction between ocean waves and sea ice is a fundamental process that influences both the dynamics of the ice cover and the characteristics of the wave field. 
 	  Understanding how waves decay as they propagate through sea ice is crucial for improving our ability to model and predict ice-ocean interactions, particularly in the marginal ice zone (MIZ) where wave-ice interactions are most pronounced. 
-	  This understanding has become increasingly important as climate change leads to more frequent and intense wave events in polar regions, potentially accelerating ice break-up and affecting maritime operations. 
-	  Traditional approaches to studying wave decay in sea ice have relied on linear wave theory, but recent observations suggest this may not fully capture the complexity of wave-ice interactions, particularly during large wave events.
-          Analysis of wave decay in sea ice focuses on understanding the evolution of the full wave spectrum propagating through the ice. 
-          Linear theory assumes that as a wave propagates through ice, the power at each wave number decays without transfer of energy between wave numbers. 
           <figure class="img-left" style="max-width: 30%">
               <img src="/assets/images/wave_decay.png"
                    alt="Wave decay plots">
               <figcaption>Figure 1: Wave decay in the marginal ice zone during a calm wave event and a large wave event</figcaption>
           </figure>
+	  This understanding has become increasingly important as climate change leads to more frequent and intense wave events in polar regions, potentially accelerating ice break-up and affecting maritime operations. 
+	  Traditional approaches to studying wave decay in sea ice have relied on linear wave theory, but recent observations suggest this may not fully capture the complexity of wave-ice interactions, particularly during large wave events.
+          Analysis of wave decay in sea ice focuses on understanding the evolution of the full wave spectrum propagating through the ice. 
+          Linear theory assumes that as a wave propagates through ice, the power at each wave number decays without transfer of energy between wave numbers. 
           This implies that the significant wave height, which is proportional to the square root of the total wave energy, will always decay exponentially with distance from the sea ice edge. 
           Our SIPEX data set confirms previous observations that, during calm conditions, the significant wave height decays exponentially with distance. 
           However, during three large wave events, we found that significant wave heights did not decay exponentially, enabling large waves to persist deep into the pack ice.
