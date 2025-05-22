@@ -61,14 +61,14 @@ permalink: /projects/waves-in-ice/data_analysis/
 	  Traditional approaches to studying wave decay in sea ice have relied on linear wave theory, but recent observations suggest this may not fully capture the complexity of wave-ice interactions, particularly during large wave events.
           Analysis of wave decay in sea ice focuses on understanding the evolution of the full wave spectrum propagating through the ice. 
           Linear theory assumes that as a wave propagates through ice, the power at each wave number decays without transfer of energy between wave numbers. 
-          This implies that the significant wave height, which is proportional to the square root of the total wave energy, will always decay exponentially with distance from the sea ice edge. 
-          Our SIPEX data set confirms previous observations that, during calm conditions, the significant wave height decays exponentially with distance. 
-          However, during three large wave events, we found that significant wave heights did not decay exponentially, enabling large waves to persist deep into the pack ice.
           <figure class="img-left" style="max-width: 30%">
               <img src="/assets/images/wave_decay.png"
                    alt="Wave decay plots">
               <figcaption>Figure 1: Wave decay in the marginal ice zone during a calm wave event and a large wave event</figcaption>
           </figure>
+          This implies that the significant wave height, which is proportional to the square root of the total wave energy, will always decay exponentially with distance from the sea ice edge. 
+          Our SIPEX data set confirms previous observations that, during calm conditions, the significant wave height decays exponentially with distance. 
+          However, during three large wave events, we found that significant wave heights did not decay exponentially, enabling large waves to persist deep into the pack ice.
           To demonstrate this, for our whole data record, we calculated the decay rate of the significant wave height between wave buoys, dHs/dx, where Hs is the significant wave height and x the distance between buoys. 
 	  We present this data in the form of a boxplot, where we observe that the magnitude of dHs/dx increases almost perfectly linearly with Hs until Hs reaches 3 m, as we would expect for exponentially decaying waves as show in the calm plot in Figure 1. 
           <figure class="img-left" style="max-width: 20%">
