@@ -339,19 +339,18 @@ h6 {
 
 .img-left {
   float: left;
-  max-width: 260px;     /* adjust to taste */
+  max-width: 500px;     /* adjust to taste */
   height: auto;
   margin: 0 1rem 1rem 0;/* space around the picture */
 }
 
 .img-left img {
-  max-width: 200%;
+  max-width: 100%;
   height: auto;
 }
 
 .img-left figcaption {
   font-size: 0.9em;
-  max-width: 50%;     /* adjust to taste */
   color: #666;
   text-align: center;
   margin-top: 0.5rem;
