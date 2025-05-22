@@ -19,9 +19,16 @@ permalink: /projects/waves-in-ice/data_analysis/
     <title>Data Analysis</title>
     <link rel="stylesheet" href="/assets/css/style.css"> 
     <!-- MathJax v3 -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    <script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\$$', '\$$']],
+            displayMath: [['$$', '$$'], ['\$$', '\$$']]
+        }
+    };
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
     <!-- Site Visit Counter -->
     <script data-goatcounter="https://kohoutal.goatcounter.com/count"
