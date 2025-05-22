@@ -60,7 +60,7 @@ permalink: /projects/waves-in-ice/data_analysis/
           <figure class="img-right" style="max-width: 30%">
               <img src="/assets/images/wave_decay.png"
                    alt="Wave decay plots">
-              <figcaption>Figure 1: Wave decay in the marginal ice zone during a calm wave event and a large wave event</figcaption>
+              <figcaption>Figure 1: Wave decay in the marginal ice zone during a calm wave event and a large wave event. Each plot shows the significant wave heights as a function of distance from the ice edge from the WIIOS units (blue markers) and an exponential fit to the calm condition units and and linear fit to the large wave event (red line). </figcaption>
           </figure>
 	  This understanding has become increasingly important as climate change leads to more frequent and intense wave events in polar regions, potentially accelerating ice break-up and affecting maritime operations. 
 	  Traditional approaches to studying wave decay in sea ice have relied on linear wave theory, but recent observations suggest this may not fully capture the complexity of wave-ice interactions, particularly during large wave events.
