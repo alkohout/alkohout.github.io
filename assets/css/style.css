@@ -357,6 +357,7 @@ h6 {
 }
 .fig-left figcaption {
   font-size: 0.9em;
+  max-width: 50%;     /* adjust to taste */
   color: #666;
   text-align: center;
   margin-top: 0.5rem;
