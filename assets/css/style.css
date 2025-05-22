@@ -333,7 +333,7 @@ h6 {
 .img-right {
   float: right;
   height: auto;
-  margin: 0 .5 .5rem .5rem;/* space around the picture */
+  margin: 0 .5rem .5rem .5rem;/* space around the picture */
 }
 
 .img-right img {
@@ -351,7 +351,7 @@ h6 {
 .img-left {
   float: left;
   height: auto;
-  margin: .5 .5rem .5rem 0;/* space around the picture */
+  margin: .5rem .5rem .5rem 0;/* space around the picture */
 }
 
 .img-left img {
