@@ -111,9 +111,24 @@ permalink: /projects/waves-in-ice/data_analysis/
           Thus, our observations suggest that nonlinear energy transfer may need
           to be considered when modelling the decay of large waves (Hs > 3 m) through sea ice and that small amplitude wave theory cannot simply be extrapolated to large amplitude waves.
           
-          To improve our understanding of the wave attenuation processes found during SIPEXII, we conducted a much larger experiment during PIPERS.
-          The large dataset is broken into long and short peak wave periods and high and low ice concentrations, showing that generally during this experiment, the total wave energy decayed exponentially through the ice with the rate of decay dependent on ice concentration. 
-          These results suggest that the conclusion from the SIPEXII dataset, that large waves decay linearly, was an artefact of analysing a small dataset in different ice conditions. 
+          To verify these findings we conducted a much larger experiment during PIPERS.
+          <figure class="img-left" style="max-width: 20%">
+              <img src="/assets/images/cascade.png"
+                   alt="Wave decay plots">
+              <figcaption>Figure 4: 
+		Decay rates of WIIOS in ice concentrations <80% (blue squares) and WIIOS in ice concentrations >80% (green circles). 
+		(a) Data from WIIOS with peak periods <14 s.
+		(b) Data from WIIOS with peak periods >14 s. 
+		Data are binned in 1 m boxes. 
+		The markers are the median within each box. 
+		The shaded boxes show the range within which 50% of the data lie. 
+		The number of data points within each box is displayed above/below the box. 
+		The black lines show the least-squares regression line of best fit to the median values within each box.
+	      </figcaption>
+          </figure>
+	  We again studied the decay rates and display the data in boxplots. This time however, the larger dataset allowed us to break the data into long and short peak wave periods and high and low ice concentrations. 
+	  This showed that generally during this experiment, the total wave energy decayed exponentially through the ice with the rate of decay dependent on ice concentration. 
+          These results suggest that the conclusion from the SIPEX-II dataset, that large waves decay linearly, was likely an artefact of analysing a small dataset and comparing data experiencing differing ice conditions. 
           For example, it is possible that during SIPEX-II, the large wave events predominantly occurred when low ice concentrations were present, thereby reducing the decay rates and leading to an appearance of linear wave decay. 
           </p>
         </div>
