@@ -99,10 +99,14 @@ permalink: /projects/waves-in-ice/data_analysis/
           Because the ice in the MIZ was all first-year ice, we are unable to determine how equation (1) will differ in thicker ice or in a combination of first-year and multi-year ice.
           The wave spectra during large wave events indicate that the spectral peak of the energy distribution may shift to longer periods with increasing distance from the ice edge. 
           This is standard for waves in the open ocean, where nonlinear interactions create an inverse energy cascade, moving energy and the spectral peak to longer periods.
-          <figure class="img-right" style="max-width: 20%">
+          <figure class="img-right" style="max-width: 30%">
               <img src="/assets/images/cascade.png"
                    alt="Wave decay plots">
-              <figcaption>Figure 3: Wave decay in the marginal ice zone during a calm wave event and a large wave event</figcaption>
+              <figcaption>Figure 3: 
+		The power spectral densities during a storm-generated wave event (a) and during calm seas (b). 
+		For each event, the red dashed lines show the output of the unit closest to the ice edge and the yellow furthest from the ice edge.
+		The shaded regions give the 90% confidence intervals
+	      </figcaption>
           </figure>
           Thus, our observations suggest that nonlinear energy transfer may need
           to be considered when modelling the decay of large waves (Hs > 3 m) through sea ice and that small amplitude wave theory cannot simply be extrapolated to large amplitude waves.
