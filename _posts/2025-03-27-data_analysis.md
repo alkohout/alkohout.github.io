@@ -138,8 +138,37 @@ permalink: /projects/waves-in-ice/data_analysis/
        <div class="topic-list">
         <div class="topic inverse">
           <h1>Wave decay</h1>
+          <figure class="img-left" style="max-width: 20%">
+              <img src="/assets/images/kohout_etal_2014.png"
+                   alt="Trends in sea ice extent and significant wave heights">
+              <figcaption>Figure 5: 
+		A comparison between the trends in sea ice extent and significant wave height between 1997 and 2009. 
+		The observed trend in the location of the ice edge (red) and the simulated trend in the significant wave height (blue) are shown as functions of longitude. 
+		a, Averaged trends for the ice decay season (September to February). 
+		b, The averaged trends during the ice growth season (March to August). 
+		The Pearson coefficient (r) is given at the top right of each panel (n = 288 for each). 
+		Antarctica is represented by the grey shaded region. 
+		We note that the scale for trend in Hs increases downwards.
+	      </figcaption>
+          </figure>
           <p>
-	  Another important study we did was 
+	  Building on our experimental findings, we investigate the broader implications of wave breakup on sea ice extent. 
+	  We propose that increasing significant wave heights in the Southern Ocean enhance sea ice breakup, leading to a retreat of the sea-ice edge. 
+	  Conversely, decreasing wave heights would likely cause the ice edge to expand.
+	  To test this relationship, we analyzed model-derived significant wave height estimates alongside satellite sea-ice observations from 1997-2009, defining the sea-ice edge at 15% ice concentration. 
+	  We divided the data into biannual seasons: growth (March-August) and decay (September-February) as shown in Figure 5.
+
+	  Both seasonal analyses revealed that trends in sea-ice extent inversely correlate with significant wave height trends, with Pearson correlation coefficients of -0.70 during decay season and -0.79 during growth season. 
+	  Our analysis indicates that a 2-meter increase in significant wave height over a decade corresponds to a 2° latitudinal retreat in ice extent (Extended Data Fig. 4).
+
+	  Geographically, the most substantial wave height increases occurred in the Amundsen–Bellingshausen Sea, coinciding with documented sea-ice retreat, while the Western Ross Sea experienced the largest decreases in wave height, aligning with known ice expansion. 
+	  These 1997-2009 trends in wave height are consistent with observed longer-term patterns. 
+
+	  Our findings suggest sea ice vulnerability to changing storm patterns. 
+	  Recent decades have witnessed a southward shift in storm tracks, decreasing mid-latitude cyclones while increasing high-latitude cyclones. 
+	  This shift has not been uniformly zonal; recent trends in surface pressure and winds show zonally asymmetric changes, creating variability in atmospheric forcing on sea ice.
+
+	  Future projections indicate increasing wave heights throughout Arctic and Antarctic sea-ice edges, potentially accelerating sea-ice retreat.
           </p>
         </div>
        </div>
