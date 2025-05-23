@@ -53,7 +53,7 @@ permalink: /projects/waves-in-ice/data_analysis/
     <section id="home" class="topics">
        <div class="topic-list">
         <div class="topic inverse">
-          <h1>Wave decay</h1>
+          <h1>Wave and sea ice interactions</h1>
           <p>
 	  The interaction between ocean waves and sea ice is a fundamental process that influences both the dynamics of the ice cover and the characteristics of the wave field. 
 	  Understanding how waves decay as they propagate through sea ice is crucial for improving our ability to model and predict ice-ocean interactions, particularly in the marginal ice zone (MIZ) where wave-ice interactions are most pronounced. 
