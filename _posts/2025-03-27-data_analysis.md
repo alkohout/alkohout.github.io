@@ -116,7 +116,7 @@ permalink: /projects/waves-in-ice/data_analysis/
 	  This showed that generally during this experiment, the total wave energy decayed exponentially through the ice with the rate of decay dependent on ice concentration. 
           These results suggest that the conclusion from the SIPEX-II dataset, that large waves decay linearly, was likely an artefact of analysing a small dataset and comparing data experiencing differing ice conditions. 
           <figure class="img-left" style="max-width: 20%">
-              <img src="/assets/images/kohout_etal_20.png"
+              <img src="/assets/images/kohout_etal_20.jpg"
                    alt="Wave decay plots">
               <figcaption>Figure 4: 
 		Decay rates of WIIOS in ice concentrations <80% (blue squares) and WIIOS in ice concentrations >80% (green circles). 
@@ -137,9 +137,9 @@ permalink: /projects/waves-in-ice/data_analysis/
     <section id="home" class="topics">
        <div class="topic-list">
         <div class="topic inverse">
-          <h1>Wave decay</h1>
+          <h1>Significant wave heights and sea ice extent trends</h1>
           <figure class="img-left" style="max-width: 20%">
-              <img src="/assets/images/kohout_etal_2014.png"
+              <img src="/assets/images/kohout_etal_2014.jpg"
                    alt="Trends in sea ice extent and significant wave heights">
               <figcaption>Figure 5: 
 		A comparison between the trends in sea ice extent and significant wave height between 1997 and 2009. 
