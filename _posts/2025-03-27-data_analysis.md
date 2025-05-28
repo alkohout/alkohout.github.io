@@ -148,16 +148,17 @@ permalink: /projects/waves-in-ice/data_analysis/
 		b, The averaged trends during the ice growth season (March to August). 
 		The Pearson coefficient (r) is given at the top right of each panel (n = 288 for each). 
 		Antarctica is represented by the grey shaded region. 
-		We note that the scale for trend in Hs increases downwards.
+		We note that the scale for trend in Hs increases downwards (<a href="https://www.nature.com/articles/nature13262" target="_blank">Kohout <em>et al.</em> 2014<a>).
+		
 	      </figcaption>
           </figure>
-	  Our analysis indicates that a 2-meter increase in significant wave height over a decade corresponds to a 2° latitudinal retreat in ice extent (Extended Data Fig. 4).
+	  Our analysis indicates that a 2-meter increase in significant wave height over a decade corresponds to a 2° latitudinal retreat in ice extent (Figure 5).
 	  Geographically, the most substantial wave height increases occurred in the Amundsen–Bellingshausen Sea, coinciding with documented sea-ice retreat, while the Western Ross Sea experienced the largest decreases in wave height, aligning with known ice expansion. 
 	  These 1997-2009 trends in wave height are consistent with observed longer-term patterns. 
 	  Our findings suggest sea ice vulnerability to changing storm patterns. 
 	  Recent decades have witnessed a southward shift in storm tracks, decreasing mid-latitude cyclones while increasing high-latitude cyclones. 
 	  This shift has not been uniformly zonal; recent trends in surface pressure and winds show zonally asymmetric changes, creating variability in atmospheric forcing on sea ice.
-	  Future projections indicate increasing wave heights throughout Arctic and Antarctic sea-ice edges, potentially accelerating sea-ice retreat.
+	  Future projections indicate increasing wave heights throughout Arctic and Antarctic sea-ice edges, potentially accelerating sea-ice retreat (<a href="https://www.nature.com/articles/nature13262" target="_blank">Kohout <em>et al.</em> 2014<a>).
           </p>
         </div>
        </div>
