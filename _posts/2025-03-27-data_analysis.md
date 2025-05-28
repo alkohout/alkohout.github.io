@@ -114,7 +114,7 @@ permalink: /projects/waves-in-ice/data_analysis/
           To verify these findings we conducted a much larger experiment during PIPERS.
 	  We again studied the decay rates and display the data in boxplots. This time however, the larger dataset allowed us to break the data into long and short peak wave periods and high and low ice concentrations. 
 	  This showed that generally during this experiment, the total wave energy decayed exponentially through the ice with the rate of decay dependent on ice concentration. 
-          These results suggest that the conclusion from the SIPEX-II dataset, that large waves decay linearly, was likely an artefact of analysing a small dataset and comparing data experiencing differing ice conditions. 
+          These results suggest that the conclusion from the SIPEX-II dataset, that large waves decay linearly, was likely an artefact of analysing a small dataset and comparing data experiencing differing ice conditions (<a href="https://www.cambridge.org/core/journals/annals-of-glaciology/article/observations-of-exponential-wave-attenuation-in-antarctic-sea-ice-during-the-pipers-campaign/A21809218DA23F5DE46CC0D823922A55" target="_blank"> Kohout <em>et al.</em> 2020</a>).
           <figure class="img-left" style="max-width: 20%">
               <img src="/assets/images/kohout_etal_20.jpg"
                    alt="Wave decay plots">
@@ -144,11 +144,11 @@ permalink: /projects/waves-in-ice/data_analysis/
               <figcaption>Figure 5: 
 		A comparison between the trends in sea ice extent and significant wave height between 1997 and 2009. 
 		The observed trend in the location of the ice edge (red) and the simulated trend in the significant wave height (blue) are shown as functions of longitude. 
-		a, Averaged trends for the ice decay season (September to February). 
-		b, The averaged trends during the ice growth season (March to August). 
+		a) Averaged trends for the ice decay season (September to February). 
+		b) The averaged trends during the ice growth season (March to August). 
 		The Pearson coefficient (r) is given at the top right of each panel (n = 288 for each). 
 		Antarctica is represented by the grey shaded region. 
-		We note that the scale for trend in Hs increases downwards (<a href="https://www.nature.com/articles/nature13262" target="_blank">Kohout <em>et al.</em> 2014</a>).
+		Note the scale for trend in Hs increases downwards (<a href="https://www.nature.com/articles/nature13262" target="_blank">Kohout <em>et al.</em> 2014</a>).
 	      </figcaption>
           </figure>
 	  Our analysis indicates that a 2-meter increase in significant wave height over a decade corresponds to a 2° latitudinal retreat in ice extent (Figure 5).
