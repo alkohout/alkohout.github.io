@@ -126,7 +126,7 @@ permalink: /projects/waves-in-ice/data_analysis/
 		The markers are the median within each box. 
 		The shaded boxes show the range within which 50% of the data lie. 
 		The number of data points within each box is displayed above/below the box. 
-		The black lines show the least-squares regression line of best fit to the median values within each box.
+		The black lines show the least-squares regression line of best fit to the median values within each box (<a href="https://www.cambridge.org/core/journals/annals-of-glaciology/article/observations-of-exponential-wave-attenuation-in-antarctic-sea-ice-during-the-pipers-campaign/A21809218DA23F5DE46CC0D823922A55" target="_blank"> Kohout <em>et al.</em> 2020</a>).
 	      </figcaption>
           </figure>
           For example, it is possible that during SIPEX-II, the large wave events predominantly occurred when low ice concentrations were present, thereby reducing the decay rates and leading to an appearance of linear wave decay. 

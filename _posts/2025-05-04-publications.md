@@ -44,7 +44,7 @@ permalink: /projects/waves-in-ice/publications/
           <h2>Publications</h2>
           <ul>
             <li> 
-	    <a href="" target="_blank"> Kohout, A., . . <em></em>. <strong></strong>, - (20).</a>
+	    <a href="https://www.cambridge.org/core/journals/annals-of-glaciology/article/observations-of-exponential-wave-attenuation-in-antarctic-sea-ice-during-the-pipers-campaign/A21809218DA23F5DE46CC0D823922A55" target="_blank"> Kohout, A., Smith, M., Roach, L. A., Williams, G., Montiel, F., Williams, M. J. M. Observations of exponential wave attenuation in Antarctic sea ice during the PIPERS campaign. <em>Annals of Glaciology</em>. <strong>61</strong>(82), 1 - 14 (2020).</a>
             </li> 
             <li> 
 	    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0967064515003252?via%3Dihub" target="_blank"> Toyota, T., Kohout, A., Fraser, A. Formation processes of sea ice floe size distribution in the interior pack and its relationship to the marginal ice zone off East Antarctica. <em>Deep-Sea Res. Pt II.</em>. <strong>131</strong>, 28-40 (2016).</a>
@@ -77,7 +77,6 @@ permalink: /projects/waves-in-ice/publications/
 -	Thomson J, Hosekova L, Meylan M H, Kohout A L, Kumar N. (2021) Spurious rollover of wave attenuation rates in sea ice caused by noise in field measurements. Journal of Geophysical Research Oceans. 126. DOI:10.1029/2020/JC016606.
 	    <li>
 	    </li>
--	Kohout A L, Smith M, Roach L A, Williams G, Montiel F, Williams MJM. (2020). Observations of exponential wave attenuation in Antarctic sea ice during the PIPERS campaign. Annals of Glaciology 1 – 14. doi:10.1017/aog.2020.36.
 	    <li>
 	    </li>
 -	Kohout A, Meylan M. (2008) An elastic plate model for wave atteniuation and ice floe breaking in the marginal ice zone. Journal of Geophysical Research, 113, C09016.
