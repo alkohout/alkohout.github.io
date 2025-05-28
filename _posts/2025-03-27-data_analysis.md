@@ -71,7 +71,7 @@ permalink: /projects/waves-in-ice/data_analysis/
           However, during three large wave events, we found that significant wave heights did not decay exponentially, enabling large waves to persist deep into the pack ice.
 	  See Figure 1 for an example of these two cases.
           To demonstrate the consistency of this, for our whole data record, we calculated the decay rate of the significant wave height between wave buoys, dHs/dx, where Hs is the significant wave height and x the distance between buoys. 
-	  We present this data in the form of a boxplot, where we observe that the magnitude of dHs/dx increases almost perfectly linearly with Hs until Hs reaches 3 m, as we would expect for exponentially decaying waves as show in the calm plot in Figure 1. 
+	  We present this data in the form of a boxplot (Figure 2), where we observe that the magnitude of dHs/dx increases almost perfectly linearly with Hs until Hs reaches 3 m, as we would expect for exponentially decaying waves as show in the calm plot in Figure 1. 
           <figure class="img-left" style="max-width: 20%">
               <img src="/assets/images/wave_decay_boxplot.png"
                    alt="Wave decay plots">
@@ -79,7 +79,7 @@ permalink: /projects/waves-in-ice/data_analysis/
 		Data are binned in 1-m boxes. 
 		The red dot is the median. 
 		Box height shows the range within which 50% of the data lie. 
-		The whiskers give the range of data, excluding outliers (blue markers) and single data points. 
+		The whiskers give the range of data, excluding outliers (blue markers) and single data points (<a href="https://www.nature.com/articles/nature13262" target="_blank">Kohout <em>et al.</em> 2014</a>). 
 	       </figcaption>
           </figure>
           For waves larger than 3 m, dHs/dx flattens and can be treated as being independent of Hs, as demonstrated in the large wave event plot in Figure 1. 
@@ -94,10 +94,10 @@ permalink: /projects/waves-in-ice/data_analysis/
 	  \end{cases}
 	  $$
           <p>
-          where $-5.35 \times 10^{-6}$ is the attenuation coefficient. 
+          where $-5.35 \times 10^{-6}$ is the attenuation coefficient (<a href="https://www.nature.com/articles/nature13262" target="_blank">Kohout <em>et al.</em> 2014</a>). 
           The constant attenuation for waves with significant wave height greater than 3 m implies a more gradual decay of wave height with propagation distance, allowing large waves to penetrate considerably farther into the ice. 
           Because the ice in the MIZ was all first-year ice, we are unable to determine how equation (1) will differ in thicker ice or in a combination of first-year and multi-year ice.
-          The wave spectra during large wave events indicate that the spectral peak of the energy distribution may shift to longer periods with increasing distance from the ice edge. 
+          The wave spectra during large wave events indicate that the spectral peak of the energy distribution may shift to longer periods with increasing distance from the ice edge (Figure 3). 
           This is standard for waves in the open ocean, where nonlinear interactions create an inverse energy cascade, moving energy and the spectral peak to longer periods.
           <figure class="img-right" style="max-width: 30%">
               <img src="/assets/images/cascade.png"
@@ -105,16 +105,16 @@ permalink: /projects/waves-in-ice/data_analysis/
               <figcaption>Figure 3: 
 		The power spectral densities during a storm-generated wave event (a) and during calm seas (b). 
 		For each event, the red dashed lines show the output of the unit closest to the ice edge and the yellow furthest from the ice edge.
-		The shaded regions give the 90% confidence intervals
+		The shaded regions give the 90% confidence intervals (<a href="https://www.nature.com/articles/nature13262" target="_blank">Kohout <em>et al.</em> 2014</a>).
 	      </figcaption>
           </figure>
           Thus, our observations suggest that nonlinear energy transfer may need
           to be considered when modelling the decay of large waves (Hs > 3 m) through sea ice and that small amplitude wave theory cannot simply be extrapolated to large amplitude waves.
           
           To verify these findings we conducted a much larger experiment during PIPERS.
-	  We again studied the decay rates and display the data in boxplots. This time however, the larger dataset allowed us to break the data into long and short peak wave periods and high and low ice concentrations. 
+	  We again studied the decay rates and display the data in boxplots. This time however, the larger dataset allowed us to break the data into long and short peak wave periods and high and low ice concentrations (Figure 4). 
 	  This showed that generally during this experiment, the total wave energy decayed exponentially through the ice with the rate of decay dependent on ice concentration. 
-          These results suggest that the conclusion from the SIPEX-II dataset, that large waves decay linearly, was likely an artefact of analysing a small dataset and comparing data experiencing differing ice conditions (<a href="https://www.cambridge.org/core/journals/annals-of-glaciology/article/observations-of-exponential-wave-attenuation-in-antarctic-sea-ice-during-the-pipers-campaign/A21809218DA23F5DE46CC0D823922A55" target="_blank"> Kohout <em>et al.</em> 2020</a>).
+          These results suggest that the conclusion from the SIPEX-II dataset, that large waves decay linearly, was likely an artefact of analysing a small dataset and comparing data experiencing differing ice conditions (<a href="https://www.cambridge.org/core/journals/annals-of-glaciology/article/observations-of-exponential-wave-attenuation-in-antarctic-sea-ice-during-the-pipers-campaign/A21809218DA23F5DE46CC0D823922A55" target="_blank">Kohout <em>et al.</em> 2020</a>).
           <figure class="img-left" style="max-width: 20%">
               <img src="/assets/images/kohout_etal_20.jpg"
                    alt="Wave decay plots">
@@ -126,7 +126,7 @@ permalink: /projects/waves-in-ice/data_analysis/
 		The markers are the median within each box. 
 		The shaded boxes show the range within which 50% of the data lie. 
 		The number of data points within each box is displayed above/below the box. 
-		The black lines show the least-squares regression line of best fit to the median values within each box (<a href="https://www.cambridge.org/core/journals/annals-of-glaciology/article/observations-of-exponential-wave-attenuation-in-antarctic-sea-ice-during-the-pipers-campaign/A21809218DA23F5DE46CC0D823922A55" target="_blank"> Kohout <em>et al.</em> 2020</a>).
+		The black lines show the least-squares regression line of best fit to the median values within each box (<a href="https://www.cambridge.org/core/journals/annals-of-glaciology/article/observations-of-exponential-wave-attenuation-in-antarctic-sea-ice-during-the-pipers-campaign/A21809218DA23F5DE46CC0D823922A55" target="_blank">Kohout <em>et al.</em> 2020</a>).
 	      </figcaption>
           </figure>
           For example, it is possible that during SIPEX-II, the large wave events predominantly occurred when low ice concentrations were present, thereby reducing the decay rates and leading to an appearance of linear wave decay. 
@@ -137,15 +137,15 @@ permalink: /projects/waves-in-ice/data_analysis/
 	  Conversely, decreasing wave heights would likely cause the ice edge to expand.
 	  To test this relationship, we analyzed model-derived significant wave height estimates alongside satellite sea-ice observations from 1997-2009, defining the sea-ice edge at 15% ice concentration. 
 	  We divided the data into biannual seasons: growth (March-August) and decay (September-February) as shown in Figure 5.
-	  Both seasonal analyses revealed that trends in sea-ice extent inversely correlate with significant wave height trends, with Pearson correlation coefficients of -0.70 during decay season and -0.79 during growth season. 
+	  Both seasonal analyses revealed that trends in sea-ice extent inversely correlate with significant wave height trends, with Pearson correlation coefficients of -0.70 during decay season and -0.79 during growth season (<a href="https://www.nature.com/articles/nature13262" target="_blank">Kohout <em>et al.</em> 2014</a>). 
           <figure class="img-right" style="max-width: 30%">
               <img src="/assets/images/Kohout_etal_2014.jpg"
                    alt="Trends in sea ice extent and significant wave heights">
               <figcaption>Figure 5: 
 		A comparison between the trends in sea ice extent and significant wave height between 1997 and 2009. 
 		The observed trend in the location of the ice edge (red) and the simulated trend in the significant wave height (blue) are shown as functions of longitude. 
-		a) Averaged trends for the ice decay season (September to February). 
-		b) The averaged trends during the ice growth season (March to August). 
+		(a) Averaged trends for the ice decay season (September to February). 
+		(b) The averaged trends during the ice growth season (March to August). 
 		The Pearson coefficient (r) is given at the top right of each panel (n = 288 for each). 
 		Antarctica is represented by the grey shaded region. 
 		Note the scale for trend in Hs increases downwards (<a href="https://www.nature.com/articles/nature13262" target="_blank">Kohout <em>et al.</em> 2014</a>).
@@ -157,7 +157,7 @@ permalink: /projects/waves-in-ice/data_analysis/
 	  Our findings suggest sea ice vulnerability to changing storm patterns. 
 	  Recent decades have witnessed a southward shift in storm tracks, decreasing mid-latitude cyclones while increasing high-latitude cyclones. 
 	  This shift has not been uniformly zonal; recent trends in surface pressure and winds show zonally asymmetric changes, creating variability in atmospheric forcing on sea ice.
-	  Future projections indicate increasing wave heights throughout Arctic and Antarctic sea-ice edges, potentially accelerating sea-ice retreat (<a href="https://www.nature.com/articles/nature13262" target="_blank">Kohout <em>et al.</em> 2014</a>).
+	  Future projections indicate increasing wave heights throughout Arctic and Antarctic sea-ice edges, potentially accelerating sea-ice retreat.
           </p>
         </div>
        </div>
