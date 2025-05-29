@@ -44,7 +44,7 @@ permalink: /projects/waves-in-ice/publications/
           <h2>Publications</h2>
           <ul>
 	    <li>
-	    <a href="https://tc.copernicus.org/articles/16/2325/2022/" target="_blank">Brouwer, J., Fraser, A. D., Murphy, D. J., Wongpan, P., Alberello, A., Kohout, A. L., Horvat, C., Witherspoon, S., Massom, R., Cartwright, J., Williams, G. D. Altimetric observations of wave attenuation through the Antarctic marginal ice zone using ICESat-2. <em>The Cryosphere</em>, <strong>16</strong>, 2325-2353 (2022).</a>
+	    <a href="https://tc.copernicus.org/articles/16/2325/2022/" target="_blank">Brouwer, J., Fraser, A. D., Murphy, D. J., Wongpan, P., Alberello, A., Kohout, A. L., Horvat, C., Witherspoon, S., Massom, R., Cartwright, J., Williams, G. D. Altimetric observations of wave attenuation through the Antarctic marginal ice zone using ICESat-2. <em>The Cryosphere</em>, <strong>16</strong>, 2325-2353 (2022).</a><br>
 	    </li>
 	    <li>
 	    <a href="https://journals.ametsoc.org/view/journals/phoc/52/5/JPO-D-21-0240.1.xml" target="_blank">Montiel, F., Kohout, A. L., Roach, L. A. Physical drivers of ocean wave attenuation in the marginal ice zone. <em>Journal of Physical Oceanography</em>, <strong>52</strong>, 889-906 (2022).</a>
@@ -56,7 +56,7 @@ permalink: /projects/waves-in-ice/publications/
 	    <a href="https://www.cambridge.org/core/journals/annals-of-glaciology/article/observations-of-exponential-wave-attenuation-in-antarctic-sea-ice-during-the-pipers-campaign/A21809218DA23F5DE46CC0D823922A55" target="_blank"> Kohout, A. L., Smith, M., Roach, L. A., Williams, G., Montiel, F., Williams, M. J. M. Observations of exponential wave attenuation in Antarctic sea ice during the PIPERS campaign. <em>Annals of Glaciology</em>. <strong>61</strong>(82), 1 - 14 (2020).</a>
             </li> 
             <li> 
-	    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0967064515003252?via%3Dihub" target="_blank"> Toyota, T., Kohout, A. L., Fraser, A. Formation processes of sea ice floe size distribution in the interior pack and its relationship to the marginal ice zone off East Antarctica. <em>Deep-Sea Research Pt II.</em>. <strong>131</strong>, 28-40 (2016).</a>
+	    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0967064515003252?via%3Dihub" target="_blank"> Toyota, T., Kohout, A. L., Fraser, A. Formation processes of sea ice floe size distribution in the interior pack and its relationship to the marginal ice zone off East Antarctica. <em>Deep-Sea Research Pt II.</em> <strong>131</strong>, 28-40 (2016).</a>
             </li> 
             <li> 
 	    <a href="https://www.sciencedirect.com/science/article/abs/pii/S096706451500212X" target="_blank"> Kohout, A. L., Williams, M., Toyota, T., Lieser, J., Hutchings, J. In situ observations of wave-induced ice floe breakup. <em>Deep-Sea Research Pt II.</em>. <strong>131</strong>, 22-27 (2016).</a>
