@@ -47,7 +47,7 @@ permalink: /projects/board_game_logger/
 		Users can seamlessly input game details including date played, game title, notes, results, and various scores. 
 		This data is securely stored and managed using a PostgreSQL database.
 		</p>
-	        <p><strong>Code Snippet: Adding a game to the database</strong></p>
+	        <p><strong>Code Snippet: Adding a played game to the database</strong></p>
           	<figure class="img-right" style="max-width: 35%">
 	              <img src="/assets/images/boardgame_log.png"
 	                   alt="Board game log screenshot">
@@ -71,6 +71,19 @@ permalink: /projects/board_game_logger/
 		The application provides detailed statistics, highlighting top played games and game counts by week, month, and year. 
 		Users can access averages and identify the most played games over various time frames.
 		</p>
+	        <p><strong>Code Snippet: Played board game statistics</strong></p>
+          	<figure class="img-right" style="max-width: 35%">
+	              <img src="/assets/images/boardgame_stats.png"
+	                   alt="Board game log screenshot">
+	              <figcaption>
+			Screenshot of the board game logger.
+		      </figcaption>
+	        </figure>
+       		<div class="code">
+	              {% highlight python %}
+       		      {% include boardgame_stats.html %}
+       		      {% endhighlight %}
+       		</div>
 
           <h3>Advanced Search Functionality</h3>
 		<p>
