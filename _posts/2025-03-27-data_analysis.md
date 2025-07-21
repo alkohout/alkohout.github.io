@@ -82,6 +82,12 @@ permalink: /projects/waves-in-ice/data_analysis/
 		The whiskers give the range of data, excluding outliers (blue markers) and single data points (<a href="https://www.nature.com/articles/nature13262" target="_blank">Kohout <em>et al.</em> 2014</a>). 
 	       </figcaption>
           </figure>
+          <p><strong>Code Snippet: Downsampling Implementation</strong></p>
+          <div class="code">
+              {% highlight c %}
+              {% include decimate.c %}
+              {% endhighlight %}
+          </div>
           For waves larger than 3 m, dHs/dx flattens and can be treated as being independent of Hs, as demonstrated in the large wave event plot in Figure 1. 
           This showed that existing linear theory appears to be only valid for waves with Hs < 3 m. 
           The empirical model derived from the data was 

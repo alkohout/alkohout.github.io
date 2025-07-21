@@ -48,6 +48,19 @@ permalink: /projects/board_game_logger/
 		Users can seamlessly input game details including date played, game title, notes, results, and various scores. 
 		This data is securely stored and managed using a PostgreSQL database.
 		</p>
+          	<figure class="img-left" style="max-width: 20%">
+	              <img src="/assets/images/boardgame_log.png"
+	                   alt="Board game log screenshot">
+	              <figcaption>
+			Screenshot of the board game logger.
+		      </figcaption>
+	          </figure>
+	          <p><strong>Code Snippet: Downsampling Implementation</strong></p>
+       		  <div class="code">
+	              {% highlight python %}
+       		      {% include boardgame_log.py %}
+       		      {% endhighlight %}
+       		  </div>
 
           <h5>Comprehensive Analysis</h5>
 		<p>
