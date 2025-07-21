@@ -11,3 +11,82 @@ tags:
 permalink: /projects/board_game_logger/
 ---
 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board game logger</title>
+    <link rel="stylesheet" href="/assets/css/style.css"> 
+    <!-- Site Visit Counter -->
+    <script data-goatcounter="https://kohoutal.goatcounter.com/count"
+       async src="//gc.zgo.at/count.js">
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://alkohout.github.io">Alison Kohout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <section class="topics">
+      <div class="topic-list">
+        <div class="topic inverse">
+          <h2>Boardgame logging</h2>
+          <h3>Overview</h3>
+		<p>
+		The SQL Logger is a dynamic web application developed using Flask and PostgreSQL, designed to track and analyze board game data. 
+		This project showcases my skills in web development and database management, offering valuable insights into gameplay trends.
+		</p>
+
+          <h3>Key Features</h3>
+          <h6>Data Entry and Management</h6>
+		<p>
+		Users can seamlessly input game details including date played, game title, notes, results, and various scores. 
+		This data is securely stored and managed using a PostgreSQL database.
+		</p>
+
+          <h6>Comprehensive Analysis</h6>
+		<p>
+		The application provides detailed statistics, highlighting top played games and game counts by week, month, and year. 
+		Users can access averages and identify the most played games over various time frames.
+		</p>
+
+          <h6>Advanced Search Functionality</h6>
+		<p>
+		With powerful search capabilities, users can find game data by title or other criteria. 
+		Specialized routes cater to game-specific tracking, such as the "Sleeping Gods" and "Imperium" games.
+		</p>
+
+          <h6>Interactive Updates</h6>
+		<p>
+		Users can update game notes and scores dynamically, allowing for current data and insights. 
+		The application supports data updates and deletions through secure endpoints.
+		</p>
+
+          <h6>Special Features for Enthusiasts</h6>
+		<p>
+		The project includes targeted features for "Sleeping Gods," including totem tracking and resource management, as well as detailed win/loss statistics for the "Imperium" game—appealing to dedicated gamers.
+		</p>
+
+          <h3>Technical Highlights</h3>
+          <h6>Database Interaction</h6>
+		<p>
+		Utilizes psycopg2 for efficient and secure database connections, ensuring seamless data handling and user experiences.
+		</p>
+
+        </div>
+      </div>
+    </section>
+    </main>
+    <footer>
+        <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+    </footer>
+
+</body>
+</html>
+
+
