@@ -1,3 +1,4 @@
+
 @app.route('/add', methods=['POST'])
 def add_game():
     date_played = request.form['date_played']

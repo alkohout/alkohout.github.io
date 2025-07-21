@@ -1,0 +1,30 @@
+
+<body>
+    <div class="form-container">
+        <h1>Log a Game</h1>
+        <form action="/add" method="post">
+            <label for="date_played">Date Played:</label>
+            <input type="date" id="date_played" name="date_played" required>
+            <br><br>
+            <label for="game_title">Game Title:</label>
+            <input type="text" id="game_title" name="game_title" required autocomplete="off" style="border: none;">
+            <div id="add_suggestions" class="autocomplete-suggestions"></div>
+            <br><br>
+            <label for="result">Result:</label>
+            <textarea id="result" name="result" rows="1" cols="50" placeholder="Add result here..."></textarea>
+            <br><br>
+            <label for="level">Level:</label>
+            <textarea id="level" name="level" rows="1" cols="50" placeholder="Add my level here..."></textarea>
+            <br><br>
+            <label for="my_score">My Score:</label>
+            <textarea id="my_score" name="my_score" rows="1" cols="50" placeholder="Add my score here..."></textarea>
+            <br><br>
+            <label for="bot_score">Bot Score:</label>
+            <textarea id="bot_score" name="bot_score" rows="1" cols="50" placeholder="Add bot score here..."></textarea>
+            <br><br>
+            <label for="notes">Notes:</label>
+            <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Add any notes here..."></textarea>
+            <br><br>
+            <button type="submit">Log Game</button>
+        </form>
+    </div>
