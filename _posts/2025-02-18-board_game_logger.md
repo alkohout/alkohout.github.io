@@ -42,51 +42,49 @@ permalink: /projects/board_game_logger/
 		This project showcases my skills in web development and database management, offering valuable insights into gameplay trends.
 		</p>
 
-          <h3>Key Features</h3>
-          <h5>Data Entry and Management</h5>
+          <h3>Data Entry and Management</h3>
 		<p>
 		Users can seamlessly input game details including date played, game title, notes, results, and various scores. 
 		This data is securely stored and managed using a PostgreSQL database.
 		</p>
-          	<figure class="img-left" style="max-width: 20%">
+          	<figure class="img-right" style="max-width: 15%">
 	              <img src="/assets/images/boardgame_log.png"
 	                   alt="Board game log screenshot">
 	              <figcaption>
 			Screenshot of the board game logger.
 		      </figcaption>
 	          </figure>
-	          <p><strong>Code Snippet: Downsampling Implementation</strong></p>
        		  <div class="code">
 	              {% highlight python %}
        		      {% include boardgame_log.py %}
        		      {% endhighlight %}
        		  </div>
+	          <p>Code Snippet: Adding a game to the database</p>
 
-          <h5>Comprehensive Analysis</h5>
+          <h3>Comprehensive Analysis</h3>
 		<p>
 		The application provides detailed statistics, highlighting top played games and game counts by week, month, and year. 
 		Users can access averages and identify the most played games over various time frames.
 		</p>
 
-          <h5>Advanced Search Functionality</h5>
+          <h3>Advanced Search Functionality</h3>
 		<p>
 		With powerful search capabilities, users can find game data by title or other criteria. 
 		Specialized routes cater to game-specific tracking, such as the "Sleeping Gods" and "Imperium" games.
 		</p>
 
-          <h5>Interactive Updates</h5>
+          <h3>Interactive Updates</h3>
 		<p>
 		Users can update game notes and scores dynamically, allowing for current data and insights. 
 		The application supports data updates and deletions through secure endpoints.
 		</p>
 
-          <h5>Special Features for Enthusiasts</h5>
+          <h3>Special Features for Enthusiasts</h3>
 		<p>
 		The project includes targeted features for "Sleeping Gods," including totem tracking and resource management, as well as detailed win/loss statistics for the "Imperium" game—appealing to dedicated gamers.
 		</p>
 
-          <h3>Technical Highlights</h3>
-          <h5>Database Interaction</h5>
+          <h3>Database Interaction</h3>
 		<p>
 		Utilizes psycopg2 for efficient and secure database connections, ensuring seamless data handling and user experiences.
 		</p>
