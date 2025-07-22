@@ -79,11 +79,6 @@ permalink: /projects/board_game_logger/
 			Screenshot of the board game logger.
 		      </figcaption>
 	        </figure>
-       		<div class="code">
-	              {% highlight html %}
-       		      {% include boardgame_stats.html %}
-       		      {% endhighlight %}
-       		</div>
 
           <h3>Advanced Search Functionality</h3>
 		<p>
