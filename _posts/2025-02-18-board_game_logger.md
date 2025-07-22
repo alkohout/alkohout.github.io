@@ -80,7 +80,7 @@ permalink: /projects/board_game_logger/
 		      </figcaption>
 	        </figure>
        		<div class="code">
-	              {% highlight python %}
+	              {% highlight html %}
        		      {% include boardgame_stats.html %}
        		      {% endhighlight %}
        		</div>
