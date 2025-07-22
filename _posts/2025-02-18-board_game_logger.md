@@ -57,12 +57,10 @@ permalink: /projects/board_game_logger/
 	        </figure>
        		<div class="code">
 	              {% highlight python %}
-       		      {% include boardgame_log.py %}
        		      {% endhighlight %}
        		</div>
        		<div class="code">
 	              {% highlight html %}
-       		      {% include boardgame_log.html %}
        		      {% endhighlight %}
        		</div>
 
