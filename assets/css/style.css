@@ -330,64 +330,142 @@ h6 {
   white-space: pre;
 }
 
-/* Python syntax highlighting - matching your site theme */
-.code .python {
-    background: #1a1a1a !important;      /* Slightly lighter than your current dark */
-    color: #d4d4d4 !important;           /* Keep your existing light text */
-    padding: 1.5em !important;
-    border-radius: 8px !important;
-    border: 2px solid #005f99 !important; /* Your signature blue as accent */
-    font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
-    line-height: 1.6 !important;
-    overflow-x: auto !important;
-}
-
 /* Python Keywords - using your blue family */
-.code .python .k,
-.code .python .kd,
-.code .python .kr,
-.code .python .kn {
+.python .k,
+.python .kd,
+.python .kr,
+.python .kn {
     color: #0080cc !important;           /* Lighter version of your #005f99 */
     font-weight: bold !important;
 }
 
 /* Python built-ins - complementary warm tone */
-.code .python .nb {
+.python .nb {
     color: #cc8800 !important;           /* Warm orange that complements your blue */
 }
 
 /* Python strings - muted version of your link colors */
-.code .python .s,
-.code .python .s1,
-.code .python .s2 {
+.python .s,
+.python .s1,
+.python .s2 {
     color: #99ccdd !important;           /* Light blue-gray like your #DDDDDD but blue-tinted */
 }
 
 /* Python numbers - warm accent */
-.code .python .m,
-.code .python .mi,
-.code .python .mf {
+.python .m,
+.python .mi,
+.python .mf {
     color: #cc9966 !important;           /* Bronze/copper tone */
 }
 
 /* Python comments - muted like your #888888 */
-.code .python .c,
-.code .python .c1 {
+.python .c,
+.python .c1 {
     color: #888888 !important;           /* Exactly your hero-content color */
     font-style: italic !important;
 }
 
 /* Python functions - accent blue */
-.code .python .nf {
+.python .nf {
     color: #4da6d9 !important;           /* Mid-tone blue between your colors */
 }
 
 /* Python classes - stronger blue */
-.code .python .nc {
+.python .nc {
     color: #005f99 !important;           /* Your exact signature blue */
     font-weight: bold !important;
 }
 
+* C Keywords */
+.c .k,
+.c .kt {
+    color: #005f99 !important;           /* Your signature blue */
+    font-weight: bold !important;
+}
+
+/* C Preprocessor directives */
+.c .cp {
+    color: #0080cc !important;           /* Lighter blue */
+    font-weight: bold !important;
+}
+
+/* C Functions */
+.c .n,
+.c .nf {
+    color: #4da6d9 !important;           /* Mid-tone blue */
+}
+
+/* C Strings */
+.c .s,
+.c .s1,
+.c .s2 {
+    color: #99ccdd !important;           /* Light blue-gray */
+}
+
+/* C Numbers */
+.c .m,
+.c .mi,
+.c .mf {
+    color: #cc9966 !important;           /* Bronze tone */
+}
+
+/* C Comments */
+.c .c,
+.c .c1,
+.c .cm {
+    color: #888888 !important;           /* Your muted gray */
+    font-style: italic !important;
+}
+
+/* C Operators */
+.c .o {
+    color: #DDDDDD !important;           /* Your light gray */
+}
+
+/* C Parentheses, brackets */
+.c .p {
+    color: #CCCCCC !important;           /* Slightly darker than your #DDDDDD */
+}
+
+/* HTML Tags */
+.html .nt {
+    color: #005f99 !important;           /* Your signature blue */
+    font-weight: bold !important;
+}
+
+/* HTML Attributes */
+.html .na {
+    color: #0080cc !important;           /* Lighter blue */
+}
+
+/* HTML Attribute values */
+.html .s,
+.html .s1,
+.html .s2 {
+    color: #cc8800 !important;           /* Warm orange accent */
+}
+
+/* HTML Text content */
+.html .n {
+    color: #DDDDDD !important;           /* Your light gray */
+}
+
+/* HTML Comments */
+.html .c,
+.html .cm {
+    color: #888888 !important;           /* Your muted gray */
+    font-style: italic !important;
+}
+
+/* HTML Angle brackets */
+.html .p {
+    color: #4da6d9 !important;           /* Mid-tone blue */
+}
+
+/* HTML Entities */
+.html .ni {
+    color: #cc9966 !important;           /* Bronze tone */
+}
 .img-right {
   float: right;
   height: auto;
