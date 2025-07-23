@@ -316,7 +316,7 @@ h6 {
   max-height: 400px;            /* set max height */
   overflow: auto;               /* scroll if too big */
   background: #1e1e1e;          /* dark BG */
-  color: #d4d4d4;                light text */
+  color: #d4d4d4;               /* light text */
   border-radius: 8px;
   margin: 1em 0;
   box-shadow: 0 2px 8px #0004;
@@ -328,6 +328,51 @@ h6 {
   font-size: 1em;
   line-height: 1.5;
   white-space: pre;
+}
+
+/* Python Keywords */
+.python .k,
+.python .kd,
+.python .kr,
+.python .kn {
+    color: #ff79c6 !important;  /* Bright pink */
+    font-weight: bold !important;
+}
+
+/* Python built-ins */
+.python .nb {
+    color: #50fa7b !important;  /* Bright green */
+}
+
+/* Python strings */
+.python .s,
+.python .s1,
+.python .s2 {
+    color: #f1fa8c !important;  /* Bright yellow */
+}
+
+/* Python numbers */
+.python .m,
+.python .mi,
+.python .mf {
+    color: #bd93f9 !important;  /* Light purple */
+}
+
+/* Python comments */
+.python .c,
+.python .c1 {
+    color: #6272a4 !important;  /* Muted blue */
+    font-style: italic !important;
+}
+
+/* Python functions */
+.python .nf {
+    color: #8be9fd !important;  /* Cyan */
+}
+
+/* Python classes */
+.python .nc {
+    color: #50fa7b !important;  /* Bright green */
 }
 
 .img-right {
