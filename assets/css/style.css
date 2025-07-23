@@ -325,7 +325,6 @@ h6 {
 
 .code pre, .code code {
   background: transparent !important; /* inherit dark */
-  color: inherit !important;
   font-size: 1em;
   line-height: 1.5;
   white-space: pre;
