@@ -70,6 +70,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - rouge
 
 defaults:
   # _posts
