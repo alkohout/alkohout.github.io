@@ -70,7 +70,6 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-  - rouge
 
 defaults:
   # _posts
@@ -111,3 +110,11 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - .github/
+
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: python  # or whatever you use most
+    css_class: 'highlight'
+    line_numbers: false    # set to true if you want line numbers

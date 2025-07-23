@@ -69,8 +69,8 @@
 
     <h3>Top 5</h3>
     <ul id="top_games">
-        {% for item in top_games %}
-            <li>{{ item.game }} - {{ item.count }} </li>
+        {% for game, count in top_games %}
+            <li>{{ game }} - {{ count }} </li>
         {% endfor %}
     </ul>
 </div>
