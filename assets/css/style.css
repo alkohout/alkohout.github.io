@@ -335,44 +335,97 @@ h6 {
 .python .kd,
 .python .kr,
 .python .kn {
-    color: #ff79c6 !important;  /* Bright pink */
+    color: #d2691e !important;           /* Burnt orange */
     font-weight: bold !important;
 }
-
-/* Python built-ins */
 .python .nb {
-    color: #50fa7b !important;  /* Bright green */
+    color: #cd853f !important;           /* Peru/sandy brown */
 }
-
-/* Python strings */
 .python .s,
 .python .s1,
 .python .s2 {
-    color: #f1fa8c !important;  /* Bright yellow */
+    color: #daa520 !important;           /* Goldenrod */
 }
-
-/* Python numbers */
 .python .m,
 .python .mi,
 .python .mf {
-    color: #bd93f9 !important;  /* Light purple */
+    color: #bc8f8f !important;           /* Rosy brown */
 }
-
-/* Python comments */
 .python .c,
 .python .c1 {
-    color: #6272a4 !important;  /* Muted blue */
+    color: #8b7355 !important;           /* Dark khaki */
     font-style: italic !important;
 }
-
-/* Python functions */
 .python .nf {
-    color: #8be9fd !important;  /* Cyan */
+    color: #b8860b !important;           /* Dark goldenrod */
+}
+.python .nc {
+    color: #a0522d !important;           /* Sienna */
 }
 
-/* Python classes */
-.python .nc {
-    color: #50fa7b !important;  /* Bright green */
+/* C Keywords */
+.c .k,
+.c .kt {
+    color: #cd5c5c !important;           /* Indian red */
+    font-weight: bold !important;
+}
+.c .cp {
+    color: #d2691e !important;           /* Burnt orange */
+    font-weight: bold !important;
+}
+.c .n,
+.c .nf {
+    color: #daa520 !important;           /* Goldenrod */
+}
+.c .s,
+.c .s1,
+.c .s2 {
+    color: #f4a460 !important;           /* Sandy brown */
+}
+.c .m,
+.c .mi,
+.c .mf {
+    color: #bc8f8f !important;           /* Rosy brown */
+}
+.c .c,
+.c .c1,
+.c .cm {
+    color: #8b7355 !important;           /* Dark khaki */
+    font-style: italic !important;
+}
+.c .o {
+    color: #d2b48c !important;           /* Tan */
+}
+.c .p {
+    color: #deb887 !important;           /* Burlywood */
+}
+
+/* HTML Tags */
+.html .nt {
+    color: #cd5c5c !important;           /* Indian red */
+    font-weight: bold !important;
+}
+.html .na {
+    color: #daa520 !important;           /* Goldenrod */
+}
+.html .s,
+.html .s1,
+.html .s2 {
+    color: #f4a460 !important;           /* Sandy brown */
+}
+.html .n {
+    color: #d4c5a9 !important;           /* Warm cream */
+}
+.html .c,
+.html .cm {
+    color: #8b7355 !important;           /* Dark khaki */
+    font-style: italic !important;
+}
+.html .p {
+    color: #deb887 !important;           /* Burlywood */
+}
+.html .ni {
+    color: #bc8f8f !important;           /* Rosy brown */
 }
 
 .img-right {

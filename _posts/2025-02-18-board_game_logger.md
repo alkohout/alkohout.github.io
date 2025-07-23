@@ -63,9 +63,11 @@ permalink: /projects/board_game_logger/
        		     </div>
        		</div>
        		<div class="code">
+		     <div class="html">
                      {% highlight html %}
                      {% include boardgame_log.html %}
                      {% endhighlight %}
+       		     </div>
        		</div>
 
           <h3>Comprehensive Analysis</h3>
@@ -82,9 +84,11 @@ permalink: /projects/board_game_logger/
 		      </figcaption>
 	        </figure>
        		<div class="code">
+		     <div class="html">
                      {% highlight html %}
                      {% include boardgame_stats.html %}
                      {% endhighlight %}
+       		     </div>
        		</div>
 
           <h3>Advanced Search Functionality</h3>
