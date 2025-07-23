@@ -503,6 +503,46 @@ h6 {
   margin-top: .5rem;
   margin-bottom: .5rem;
 }
+/* Add media queries for responsive design */
+@media (max-width: 768px) {
+  /* On tablets and phones */
+  .img-right {
+    float: none !important;
+    max-width: 100% !important;
+    margin: 1rem auto !important;
+    display: block;
+  }
+  
+  .code {
+    width: 100%;
+    max-height: 300px; /* Slightly smaller on mobile */
+    padding: 0.5em;
+    font-size: 0.9em; /* Slightly smaller font */
+  }
+  
+  .code pre, .code code {
+    font-size: 0.85em; /* Adjust code font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  /* On small phones */
+  .code {
+    max-height: 250px;
+    padding: 0.5em;
+  }
+  
+  .code pre, .code code {
+    font-size: 0.8em;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .img-right {
+    max-width: 35%;
+  }
+}
 
 /* clearfix so later content doesn't wrap under the float */
 .topic::after {

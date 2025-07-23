@@ -48,7 +48,7 @@ permalink: /projects/board_game_logger/
 		This data is securely stored and managed using a PostgreSQL database.
 		</p>
 	        <p><strong>Code Snippet: Adding a played game to the database</strong></p>
-          	<figure class="img-right" style="max-width: 35%">
+          	<figure class="img-right" >
 	              <img src="/assets/images/boardgame_log.png"
 	                   alt="Board game log screenshot">
 	              <figcaption>
@@ -76,7 +76,7 @@ permalink: /projects/board_game_logger/
 		Users can access averages and identify the most played games over various time frames.
 		</p>
 	        <p><strong>Code Snippet: Played board game statistics</strong></p>
-          	<figure class="img-right" style="max-width: 35%">
+          	<figure class="img-right">
 	              <img src="/assets/images/boardgame_stats.png"
 	                   alt="Board game log screenshot">
 	              <figcaption>
