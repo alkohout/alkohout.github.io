@@ -38,11 +38,14 @@ future: true
 
 # Site Author
 author:
-  name: "Alison Kohout"
+  name   : "Alison Kohout"
   location: "Christchurch, New Zealand"
+  avatar : "/assets/images/kohout.jpeg"
+  bio    : "Data enthusiast"
   links:
     - label: "GitHub"
-      url: "https://github.com/alkohout"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/"
       
 include:
   - _pages
@@ -67,15 +70,6 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-
-author:
-  name   : "Alison Kohout"
-  avatar : "/assets/images/kohout.jpeg"
-  bio    : "Data enthusiast"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
 
 defaults:
   # _posts
