@@ -178,9 +178,9 @@ permalink: /projects/board_game_logger/
 	        <h6><strong>Code Snippet: View all games sorted by rank or name. </strong></h6>
        		<div class="code">
 		     <div class="html">
-                     {% highlight html %}
+                     {% raw %}
                      {% include boardgame_all_games.html %}
-                     {% endhighlight %}
+                     {% endraw %}
        		     </div>
        		</div>
 
