@@ -156,9 +156,9 @@ permalink: /projects/board_game_logger/
        		</div>
        		<div class="code">
 		     <div class="html">
-                     {% raw %}
+                     {% highlight html %}
                      {% include boardgame_overview.html %}
-                     {% endraw %}
+                     {% endhighlight %}
        		     </div>
        		</div>
           	<figure class="img-right" >
@@ -178,9 +178,9 @@ permalink: /projects/board_game_logger/
 	        <h6><strong>Code Snippet: View all games sorted by rank or name. </strong></h6>
        		<div class="code">
 		     <div class="html">
-                     {% raw %}
+                     {% highlight html %}
                      {% include boardgame_all_games.html %}
-                     {% endraw %}
+                     {% endhighlight %}
        		     </div>
        		</div>
 

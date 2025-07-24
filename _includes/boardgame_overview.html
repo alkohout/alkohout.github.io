@@ -1,9 +1,4 @@
 
-<body>
-    <h1>Games Overview</h1>
-    <button onclick="window.location.href='/'">Back to Home</button>
-    {% import 'games_table.html' as tables %}
-
     <h2>Games Played This Week</h2>
     {{ tables.render_games_table(games_this_week) }}
 
@@ -21,5 +16,4 @@
 
     <h2>Games Played Last Year</h2>
     {{ tables.render_games_table(games_last_year) }}
-</body>
 
