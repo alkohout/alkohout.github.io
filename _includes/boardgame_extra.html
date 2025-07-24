@@ -1,0 +1,198 @@
+
+<div class="form-container">
+    <h2>Extra Game Info and Tools</h2>
+    <label for="search_title">Game Title:</label>
+    <input type="text" id="search_title" name="game_title" required autocomplete="off" style="border: none;">
+    <div id="search_suggestions" class="autocomplete-suggestions"></div>
+    <button id="search_button">Search</button>
+    <p id="search_result"></p>
+
+    <label for="search_nonempty_note">Latest Non-empty Entry:</label>
+    <button id="search_button_nonempty">Search</button>
+    <p id="search_result_nonempty"></p>
+
+    <label for="search_last_note">Edit Most Recent Note:</label>
+    <input type="text" id="search_last_note" name="game_title" required autocomplete="off" style="border: none;">
+    <button id="search_last_note" onclick="triggerSearch()">Edit</button>
+<!-- Edit Note Button -->
+    <button id="edit_note_button" style="display:none;" onclick="editNote()">Edit Note</button>
+   <!-- Edit Note Container -->
+    <div id="edit_note_container" style="display:none;">
+        <textarea id="edit_note_input"></textarea>
+           <button onclick="saveNote()">Save Note</button>
+    </div>
+<br>
+<br>
+    <label for="games_played_overview">Games played Overview:</label>
+    <button onclick="window.location.href='/games_overview'" id=games_played_overview">Enter</button>
+<br>
+<br>
+    <label for="all_games_rank">Rankings for all games:</label>
+    <button onclick="window.location.href='/all_games'" id="all_games_rank">Enter</button>
+<br>
+<br>
+    <label for="imp_but">Over view of Imperium losses and wins:</label>
+    <button onclick="window.location.href='/imperium'" id="imp_but">Enter</button>
+<br>
+<br>
+    <label for="sg_but">Sleeping Gods Log:</label>
+    <button onclick="window.location.href='/sleeping_gods'" id="sg_but">Enter</button>
+
+</div>
+
+<script>
+    $(document).ready(function() {
+        // Autocomplete for Add Game
+        $('#game_title').on('input', function() {
+            let searchTerm = $(this).val();
+            if (searchTerm.length > 1) {
+                $.get('/search_games', { term: searchTerm }, function(data) {
+                    $('#add_suggestions').empty();
+                    let addedSuggestions = new Set();
+                    if (data.suggestions.length > 0) {
+                        data.suggestions.forEach(function(suggestion) {
+                            if (!addedSuggestions.has(suggestion)) {
+                                $('#add_suggestions').append('<div class="autocomplete-suggestion">' + suggestion + '</div>');
+                                addedSuggestions.add(suggestion);
+                            }
+                        });
+                    }
+                });
+            } else {
+                $('#add_suggestions').empty();
+            }
+        });
+
+        // Handle suggestion click for Add Game
+        $(document).on('click', '#add_suggestions .autocomplete-suggestion', function() {
+            $('#game_title').val($(this).text());
+            $('#add_suggestions').empty();
+        });
+
+        // Autocomplete for Search Last Played
+        $('#search_title').on('input', function() {
+            let searchTerm = $(this).val();
+            if (searchTerm.length > 1) {
+                $.get('/search_games', { term: searchTerm }, function(data) {
+                    $('#search_suggestions').empty();
+                    let addedSuggestions = new Set();
+                    if (data.suggestions.length > 0) {
+                        data.suggestions.forEach(function(suggestion) {
+                            if (!addedSuggestions.has(suggestion)) {
+                                $('#search_suggestions').append('<div class="autocomplete-suggestion">' + suggestion + '</div>');
+                                addedSuggestions.add(suggestion);
+                            }
+                        });
+                    }
+                });
+            } else {
+                $('#search_suggestions').empty();
+            }
+        });
+
+        // Handle suggestion click for Search Last Played
+        $(document).on('click', '#search_suggestions .autocomplete-suggestion', function() {
+            $('#search_title').val($(this).text());
+            $('#search_suggestions').empty();
+        });
+
+        // Search Last Played Date and Notes
+        $('#search_button').click(function() {
+            let searchTitle = $('#search_title').val();
+            $.get('/search_last_played', { term: searchTitle }, function(data) {
+                if (data.date_played) {
+        $('#search_result').html(`
+            <table style="border-collapse: separate; border-spacing: 10px 0;">
+                <tr>
+                    <th style="padding: 5px; text-align: left;"></th>
+                    <th style="padding: 5px; text-align: left;">Result</th>
+                    <th style="padding: 5px; text-align: left;">Level</th>
+                    <th style="padding: 5px; text-align: left;">My score</th>
+                    <th style="padding: 5px; text-align: left;">Bot score</th>
+                </tr>
+                <tr>
+                    <td style="padding: 5px;">${data.date_played}</td>
+                    <td style="padding: 5px;">${data.result}</td>
+                    <td style="padding: 5px;">${data.level}</td>
+                    <td style="padding: 5px;">${data.my_score}</td>
+                    <td style="padding: 5px;">${data.bot_score}</td>
+                </tr>
+            </table>
+            <br>
+            <table style="border-collapse: separate; border-spacing: 10px 0;">
+                <tr>
+                    <th style="padding: 5px; text-align: left;"></th>
+                    <th style="padding: 5px; text-align: left;">Total</th>
+                    <th style="padding: 5px; text-align: left;">This week</th>
+                    <th style="padding: 5px; text-align: left;">This month</th>
+                    <th style="padding: 5px; text-align: left;">This year</th>
+                </tr>
+                <tr>
+                    <td style="padding: 1px;">Played</td>
+                    <td style="padding: 1px;">${data.total_times_played}</td>
+                    <td style="padding: 1px;">${data.played_this_week}</td>
+                    <td style="padding: 1px;">${data.played_this_month}</td>
+                    <td style="padding: 1px;">${data.played_this_year}</td>
+                </tr>
+            </table>
+            <br>Notes: ${data.notes} 
+            <br>Ranking: ${data.ranking}`);
+                } else {
+                    $('#search_result').html("No record found for the specified game.");
+                }
+            });
+        });
+
+        // Search Last non empty notes
+        $('#search_button_nonempty').click(function() {
+            let searchTitle_nonempty = $('#search_title').val();
+            $.get('/search_last_played', { term: searchTitle_nonempty }, function(data) {
+        $('#search_result_nonempty').html(`
+            <table style="border-collapse: separate; border-spacing: 10px 0;">
+                <tr>
+                    <th style="padding: 5px; text-align: left;"></th>
+                    <th style="padding: 5px; text-align: left;">Result</th>
+                    <th style="padding: 5px; text-align: left;">Level</th>
+                    <th style="padding: 5px; text-align: left;">My score</th>
+                    <th style="padding: 5px; text-align: left;">Bot score</th>
+                </tr>
+                <tr>
+                    <td style="padding: 5px;"></td>
+                    <td style="padding: 5px;">${data.result_nonempty}</td>
+                    <td style="padding: 5px;">${data.level_nonempty}</td>
+                    <td style="padding: 5px;">${data.my_score_nonempty}</td>
+                    <td style="padding: 5px;">${data.bot_score_nonempty}</td>
+                </tr>
+            </table>
+            <br>Notes: ${data.notes_nonempty} 
+        `);
+
+            });
+        });
+    });
+
+    $('#search_last_note').on('input', function() {
+    let searchTerm = $(this).val();
+    if (searchTerm.length > 1) {
+        $.get('/search_games', { term: searchTerm }, function(data) {
+            $('#search_suggestions').empty();
+            let addedSuggestions = new Set();
+            if (data.suggestions.length > 0) {
+                data.suggestions.forEach(function(suggestion) {
+                    if (!addedSuggestions.has(suggestion)) {
+                        $('#search_suggestions').append('<div class="autocomplete-suggestion">' + suggestion + '</div>');
+                        addedSuggestions.add(suggestion);
+                    }
+                    });
+               }
+        });
+        } else {
+           $('#search_suggestions').empty();
+        }
+    });
+    // Handle suggestion click for Search Last Played
+        $(document).on('click', '#search_suggestions .autocomplete-suggestion', function() {
+            $('#search_last_note').val($(this).text());
+            $('#search_suggestions').empty();
+        });
+<script>
