@@ -47,14 +47,16 @@ permalink: /projects/board_game_logger/
 		Users can seamlessly input game details including date played, game title, notes, results, and various scores. 
 		This data is securely stored and managed using a PostgreSQL database.
 		</p>
-	        <p><strong>Code Snippet: Adding a played game to the database</strong></p>
           	<figure class="img-right" >
+		      <p>
+		      </p>
 	              <img src="/assets/images/boardgame_log.png"
 	                   alt="Board game log screenshot">
 	              <figcaption>
 			Screenshot of the board game logger.
 		      </figcaption>
 	        </figure>
+	        <p><strong>Code Snippet: Adding a played game to the database</strong></p>
        		<div class="code">
 		     <div class="python">
                      {% highlight python %}
@@ -96,6 +98,30 @@ permalink: /projects/board_game_logger/
 		With powerful search capabilities, users can find game data by title or other criteria. 
 		Specialized routes cater to game-specific tracking, such as the "Sleeping Gods" and "Imperium" games.
 		</p>
+          	<figure class="img-right" >
+		      <p>
+		      </p>
+	              <img src="/assets/images/boardgame_search.png"
+	                   alt="Board game log screenshot">
+	              <figcaption>
+			Screenshot of the board game search capability.
+		      </figcaption>
+	        </figure>
+	        <p><strong>Code Snippet: Adding a played game to the database</strong></p>
+       		<div class="code">
+		     <div class="python">
+                     {% highlight python %}
+                     {% include boardgame_search.py %}
+                     {% endhighlight %}
+       		     </div>
+       		</div>
+       		<div class="code">
+		     <div class="html">
+                     {% highlight html %}
+                     {% include boardgame_search.html %}
+                     {% endhighlight %}
+       		     </div>
+       		</div>
 
           <h3>Interactive Updates</h3>
 		<p>
