@@ -161,14 +161,14 @@ permalink: /projects/board_game_logger/
                      {% endhighlight %}
        		     </div>
        		</div>
-          	<figure class="img-right" >
+          	<figure class="img-right"  style="max-width: 30%>
 	              <img src="/assets/images/boardgame_all_sortBname.png"
 	                   alt="Board game log screenshot">
 	              <figcaption>
 			A screenshot of a list of all games played sorted by name. Clicking on the header will reorder accordingly.
 		      </figcaption>
 	        </figure>
-          	<figure class="img-right" >
+          	<figure class="img-right"  style="max-width: 30%>
 	              <img src="/assets/images/boardgame_all_sortBrank.png"
 	                   alt="Board game log screenshot">
 	              <figcaption>
