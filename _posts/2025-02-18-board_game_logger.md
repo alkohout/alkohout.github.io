@@ -106,7 +106,7 @@ permalink: /projects/board_game_logger/
 		With powerful search capabilities, users can find game data by title or other criteria. 
 		Specialized routes cater to game-specific tracking, such as the "Sleeping Gods" and "Imperium" games.
 		</p>
-          	<figure class="img-left" >
+          	<figure class="img-right" >
 		      <p>
 		      </p>
 	              <img src="/assets/images/boardgame_extra.png"
@@ -136,6 +136,50 @@ permalink: /projects/board_game_logger/
 		     <div class="html">
                      {% highlight html %}
                      {% include boardgame_extra.html %}
+                     {% endhighlight %}
+       		     </div>
+       		</div>
+          	<figure class="img-right" >
+	              <img src="/assets/images/boardgame_overview.png"
+	                   alt="Board game log screenshot">
+	              <figcaption>
+			A screenshot of an overview of games played.
+		      </figcaption>
+	        </figure>
+	        <h6><strong>Code Snippet: View an overview of the games played </strong></h6>
+       		<div class="code">
+		     <div class="python">
+                     {% highlight python %}
+                     {% include boardgame_overview.py %}
+                     {% endhighlight %}
+       		     </div>
+       		</div>
+       		<div class="code">
+		     <div class="html">
+                     {% highlight html %}
+                     {% include boardgame_overview.html %}
+                     {% endhighlight %}
+       		     </div>
+       		</div>
+          	<figure class="img-right" >
+	              <img src="/assets/images/boardgame_all_sortBname.png"
+	                   alt="Board game log screenshot">
+	              <figcaption>
+			A screenshot of a list of all games played sorted by name. Clicking on the header will reorder accordingly.
+		      </figcaption>
+	        </figure>
+          	<figure class="img-right" >
+	              <img src="/assets/images/boardgame_all_sortBrank.png"
+	                   alt="Board game log screenshot">
+	              <figcaption>
+			A screenshot of a list of all games played sorted by ranking. Clicking on the header will reorder accordingly.
+		      </figcaption>
+	        </figure>
+	        <h6><strong>Code Snippet: View all games sorted by rank or name. </strong></h6>
+       		<div class="code">
+		     <div class="html">
+                     {% highlight html %}
+                     {% include boardgame_all_games.html %}
                      {% endhighlight %}
        		     </div>
        		</div>
