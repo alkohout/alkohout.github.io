@@ -175,6 +175,7 @@ permalink: /projects/board_game_logger/
 			A screenshot of a list of all games played sorted by ranking. Clicking on the header will reorder accordingly.
 		      </figcaption>
 	        </figure>
+	        <br>
 	        <h6><strong>Code Snippet: View all games sorted by rank or name. </strong></h6>
        		<div class="code">
 		     <div class="html">
