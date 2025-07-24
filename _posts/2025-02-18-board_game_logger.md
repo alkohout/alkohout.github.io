@@ -156,9 +156,9 @@ permalink: /projects/board_game_logger/
        		</div>
        		<div class="code">
 		     <div class="html">
-                     {% highlight html %}
+                     {% raw %}
                      {% include boardgame_overview.html %}
-                     {% endhighlight %}
+                     {% endraw %}
        		     </div>
        		</div>
           	<figure class="img-right" >
