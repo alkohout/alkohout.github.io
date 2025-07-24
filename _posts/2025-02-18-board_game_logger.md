@@ -124,7 +124,7 @@ permalink: /projects/board_game_logger/
 			Screenshot of an example search result.
 		      </figcaption>
 	        </figure>
-	        <p><strong>Code Snippet: Searching the database the database</strong></p>
+	        <h6><strong>Code Snippet: Searching the database </strong></h6>
        		<div class="code">
 		     <div class="python">
                      {% highlight python %}
