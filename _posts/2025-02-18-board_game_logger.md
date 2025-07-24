@@ -77,7 +77,6 @@ permalink: /projects/board_game_logger/
 		The application provides detailed statistics, highlighting top played games and game counts by week, month, and year. 
 		Users can access averages and identify the most played games over various time frames.
 		</p>
-	        <p><strong>Code Snippet: Played board game statistics</strong></p>
           	<figure class="img-right">
 	              <img src="/assets/images/boardgame_stats.png"
 	                   alt="Board game log screenshot">
@@ -85,6 +84,14 @@ permalink: /projects/board_game_logger/
 			Screenshot of the board game logger.
 		      </figcaption>
 	        </figure>
+	        <p><strong>Code Snippet: Played board game statistics</strong></p>
+       		<div class="code">
+		     <div class="html">
+                     {% highlight python %}
+                     {% include boardgame_stats.py %}
+                     {% endhighlight %}
+       		     </div>
+       		</div>
        		<div class="code">
 		     <div class="html">
                      {% highlight html %}
@@ -92,6 +99,7 @@ permalink: /projects/board_game_logger/
                      {% endhighlight %}
        		     </div>
        		</div>
+
 
           <h3>Advanced Search Functionality</h3>
 		<p>
