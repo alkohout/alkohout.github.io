@@ -539,7 +539,7 @@ h6 {
 
 /* Desktop styles */
 @media (min-width: 769px) {
-  .img-right {
+  .img-right, .img-left {
     max-width: 35%;
   }
 }
