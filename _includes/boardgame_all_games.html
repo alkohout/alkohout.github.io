@@ -11,12 +11,12 @@
                 </tr>
             </thead>
             <tbody id="gameTableBody">
-                {% for game, rank, count, note in all_games %}
-                <tr data-rank="{{rank}}" data-game="{{game}}" data-count="{{count}}" data-note="{{note}}">
-                    <td>{{ rank }}</td>
-                    <td>{{ game }}</td>
-                    <td>{{ count }}</td>
-                    <td>{{ note }}</td>
+                {% for game in all_games %}
+                <tr data-rank="{{game.rank}}" data-game="{{game.game}}" data-count="{{game.count}}" data-note="{{game.note}}">
+                    <td>{{ game.rank }}</td>
+                    <td>{{ game.game }}</td>
+                    <td>{{ game.count }}</td>
+                    <td>{{ game.note }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
