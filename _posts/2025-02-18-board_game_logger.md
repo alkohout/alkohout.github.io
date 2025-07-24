@@ -106,16 +106,25 @@ permalink: /projects/board_game_logger/
 		With powerful search capabilities, users can find game data by title or other criteria. 
 		Specialized routes cater to game-specific tracking, such as the "Sleeping Gods" and "Imperium" games.
 		</p>
+          	<figure class="img-left" >
+		      <p>
+		      </p>
+	              <img src="/assets/images/boardgame_extra.png"
+	                   alt="Board game log screenshot">
+	              <figcaption>
+			Screenshot of the board game search capability.
+		      </figcaption>
+	        </figure>
           	<figure class="img-right" >
 		      <p>
 		      </p>
 	              <img src="/assets/images/boardgame_search.png"
 	                   alt="Board game log screenshot">
 	              <figcaption>
-			Screenshot of the board game search capability.
+			Screenshot of an example search result.
 		      </figcaption>
 	        </figure>
-	        <p><strong>Code Snippet: Adding a played game to the database</strong></p>
+	        <p><strong>Code Snippet: Searching the database the database</strong></p>
        		<div class="code">
 		     <div class="python">
                      {% highlight python %}
