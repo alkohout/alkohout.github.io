@@ -118,7 +118,7 @@ permalink: /projects/board_game_logger/
        		<div class="code">
 		     <div class="html">
                      {% highlight html %}
-                     {% include boardgame_search.html %}
+                     {% include boardgame_extra.html %}
                      {% endhighlight %}
        		     </div>
        		</div>
