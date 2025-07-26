@@ -47,7 +47,7 @@ permalink: /projects/board_game_logger/
 		Users can seamlessly input game details including date played, game title, notes, results, and various scores. 
 		This data is securely stored and managed using a PostgreSQL database.
 		</p>
-          	<figure class="img-right" >
+          	<figure class="img-centre" >
 		      <p>
 		      </p>
 	              <img src="/assets/images/boardgame_log.png"
@@ -77,7 +77,7 @@ permalink: /projects/board_game_logger/
 		The application provides detailed statistics, highlighting top played games and game counts by week, month, and year. 
 		Users can access averages and identify the most played games over various time frames.
 		</p>
-          	<figure class="img-right">
+          	<figure class="img-centre">
 	              <img src="/assets/images/boardgame_stats.png"
 	                   alt="Board game log screenshot">
 	              <figcaption>
@@ -106,7 +106,7 @@ permalink: /projects/board_game_logger/
 		With powerful search capabilities, users can find game data by title or other criteria. 
 		Specialized routes cater to game-specific tracking, such as the "Sleeping Gods" and "Imperium" games.
 		</p>
-          	<figure class="img-right" >
+          	<figure class="img-centre" >
 		      <p>
 		      </p>
 	              <img src="/assets/images/boardgame_extra.png"
@@ -115,7 +115,7 @@ permalink: /projects/board_game_logger/
 			Screenshot of the board game search capability.
 		      </figcaption>
 	        </figure>
-          	<figure class="img-right" >
+          	<figure class="img-centre" >
 		      <p>
 		      </p>
 	              <img src="/assets/images/boardgame_search.png"
@@ -139,7 +139,7 @@ permalink: /projects/board_game_logger/
                      {% endhighlight %}
        		     </div>
        		</div>
-          	<figure class="img-right" >
+          	<figure class="img-centre" >
 	              <img src="/assets/images/boardgame_overview.png"
 	                   alt="Board game log screenshot">
 	              <figcaption>
@@ -161,14 +161,14 @@ permalink: /projects/board_game_logger/
                      {% endhighlight %}
        		     </div>
        		</div>
-          	<figure class="img-right"  style="max-width: 30%>
+          	<figure class="img-centre" >
 	              <img src="/assets/images/boardgame_all_sortBname.png"
 	                   alt="Board game log screenshot">
 	              <figcaption>
 			A screenshot of a list of all games played sorted by name. Clicking on the header will reorder accordingly.
 		      </figcaption>
 	        </figure>
-          	<figure class="img-right"  style="max-width: 30%>
+          	<figure class="img-centre" >
 	              <img src="/assets/images/boardgame_all_sortBrank.png"
 	                   alt="Board game log screenshot">
 	              <figcaption>
