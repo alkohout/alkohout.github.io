@@ -38,8 +38,14 @@ permalink: /projects/board_game_logger/
           <h2>Board Game Logger</h2>
           <h3>Overview</h3>
 		<p>
-		The SQL Logger is a dynamic web application developed using Flask and PostgreSQL, designed to track and analyze board game data. 
-		This project showcases my skills in web development and database management, offering valuable insights into gameplay trends.
+		This project highlights my analytical mindset. 
+		Seeking to enhance the efficienty of logging my board games, I developed a comprehensive data system that tracks gameplay and reveals performance patterns.
+
+		By leveraging AI prompting techniques, I identified Flask and PostgreSQL as suitable technologies for building a functional local web application. 
+		I then successfully implemented this solution despite having no previous web development background and only recently encountering SQL.
+
+		This achievement demonstrates my capacity to rapidly acquire new technical skills and tackle intricate challenges. 
+		More importantly, it marked a pivotal realization for me: with AI assistance complementing my abilities, my only limit is my imagination.
 		</p>
 
           <h3>Data Entry and Management</h3>
