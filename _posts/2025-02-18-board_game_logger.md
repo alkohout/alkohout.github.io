@@ -37,10 +37,10 @@ permalink: /projects/board_game_logger/
     </header>
 
     <main>
-    <section class="topics">
+    <section class="topics" id="home">
       <div class="topic-list">
         <div class="topic inverse">
-          <h2 id="home">Board Game Logger </h2>
+          <h2>Board Game Logger </h2>
           <h3>Overview</h3>
 		<p>
 		Seeking to enhance the efficienty of logging my board games, I developed a comprehensive data system that tracks gameplay and reveals performance patterns.
@@ -51,7 +51,13 @@ permalink: /projects/board_game_logger/
 		This achievement demonstrates my capacity to rapidly acquire new technical skills and tackle intricate challenges. 
 		More importantly, it marked an exciting and pivotal realization for me: with AI assistance complementing my abilities, my only limit is my imagination.
 		</p>
+	</div>
+      </div>
+    </section>
 
+    <section class="topics" id="data_entry">
+      <div class="topic-list">
+        <div class="topic inverse">
           <h3>Data Entry and Management</h3>
 		<p>
 		Users can seamlessly input game details including date played, game title, notes, results, and various scores. 
@@ -82,7 +88,13 @@ permalink: /projects/board_game_logger/
                      {% endhighlight %}
        		     </div>
        		</div>
+	</div>
+      </div>
+    </section>
 
+    <section class="topics" id="analysis">
+      <div class="topic-list">
+        <div class="topic inverse">
           <h3>Comprehensive Analysis</h3>
 		<p>
 		The application provides detailed statistics, highlighting top played games and game counts by week, month, and year. 
@@ -112,7 +124,13 @@ permalink: /projects/board_game_logger/
        		     </div>
        		</div>
 
+	</div>
+      </div>
+    </section>
 
+    <section class="topics" id="search">
+      <div class="topic-list">
+        <div class="topic inverse">
           <h3>Advanced Search Functionality</h3>
 		<p>
 		With powerful search capabilities, users can find game data by title or other criteria. 
@@ -198,6 +216,13 @@ permalink: /projects/board_game_logger/
                      {% endhighlight %}
        		     </div>
        		</div>
+	</div>
+      </div>
+    </section>
+
+    <section class="topics" id="special_features">
+      <div class="topic-list">
+        <div class="topic inverse">
 
           <h3>Special Features for Enthusiasts</h3>
 		<p>
