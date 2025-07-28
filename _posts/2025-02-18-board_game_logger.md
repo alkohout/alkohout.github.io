@@ -248,7 +248,7 @@ permalink: /projects/board_game_logger/
        		<div class="code">
 		     <div class="html">
                      {% highlight html %}
-                     {% include boardgame_impmerium_stats.html %}
+                     {% include boardgame_imperium_stats.html %}
                      {% endhighlight %}
        		     </div>
        		</div>
