@@ -38,14 +38,13 @@ permalink: /projects/board_game_logger/
           <h2>Board Game Logger</h2>
           <h3>Overview</h3>
 		<p>
-		This project highlights my analytical mindset. 
 		Seeking to enhance the efficienty of logging my board games, I developed a comprehensive data system that tracks gameplay and reveals performance patterns.
 
 		By leveraging AI prompting techniques, I identified Flask and PostgreSQL as suitable technologies for building a functional local web application. 
 		I then successfully implemented this solution despite having no previous web development background and only recently encountering SQL.
 
 		This achievement demonstrates my capacity to rapidly acquire new technical skills and tackle intricate challenges. 
-		More importantly, it marked a pivotal realization for me: with AI assistance complementing my abilities, my only limit is my imagination.
+		More importantly, it marked an exciting and pivotal realization for me: with AI assistance complementing my abilities, my only limit is my imagination.
 		</p>
 
           <h3>Data Entry and Management</h3>
@@ -201,6 +200,13 @@ permalink: /projects/board_game_logger/
 		<p>
 		The project includes targeted features for "Sleeping Gods," including totem tracking and resource management, as well as detailed win/loss statistics for the "Imperium" game—appealing to dedicated gamers.
 		</p>
+          	<figure class="img-centre" >
+	              <img src="/assets/images/boardgame_imperium_stats.png"
+	                   alt="Board game log screenshot">
+	              <figcaption>
+			A screenshot of a list of win/loss statistics for Imperium. This page helps me decide which civilisation pair to attempt next.
+		      </figcaption>
+	        </figure>
 
           <h3>Database Interaction</h3>
 		<p>
