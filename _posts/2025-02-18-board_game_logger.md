@@ -58,7 +58,8 @@ permalink: /projects/board_game_logger/
 	              <img src="/assets/images/boardgame_log.png"
 	                   alt="Board game log screenshot">
 	              <figcaption>
-			Screenshot of the board game logger.
+			Screenshot of the board game logger.  
+			Background image credited to © Ryan Laukat / Red Raven Games.
 		      </figcaption>
 	        </figure>
 	        <p><strong>Code Snippet: Adding a played game to the database</strong></p>
@@ -87,6 +88,7 @@ permalink: /projects/board_game_logger/
 	                   alt="Board game log screenshot">
 	              <figcaption>
 			Screenshot of basic board game statistics.
+			Background image credited to © Ryan Laukat / Red Raven Games.
 		      </figcaption>
 	        </figure>
 	        <p><strong>Code Snippet: Played board game statistics</strong></p>
@@ -118,6 +120,7 @@ permalink: /projects/board_game_logger/
 	                   alt="Board game log screenshot">
 	              <figcaption>
 			Screenshot of the board game search capability.
+			Background image credited to © Ryan Laukat / Red Raven Games.
 		      </figcaption>
 	        </figure>
           	<figure class="img-centre" >
@@ -127,6 +130,7 @@ permalink: /projects/board_game_logger/
 	                   alt="Board game log screenshot">
 	              <figcaption>
 			Screenshot of an example search result.
+			Background image credited to © Ryan Laukat / Red Raven Games.
 		      </figcaption>
 	        </figure>
 	        <h6><strong>Code Snippet: Searching the database </strong></h6>
@@ -200,13 +204,16 @@ permalink: /projects/board_game_logger/
 	              <figcaption>
 			A screenshot of all the logged details for the board game Sleeping Gods. Sleeping Gods is an adventure game about exploring a world.
 			Keeping notes as you play is an essential aspect of the game.
+			Background image credited to © Ryan Laukat / Red Raven Games.
 		      </figcaption>
 	        </figure>
           	<figure class="img-centre" >
 	              <img src="/assets/images/boardgame_sleepinggods_search.png"
 	                   alt="Board game log screenshot">
 	              <figcaption>
-			A screenshot of the search options specifically developed for the board game Sleeping Gods. This is an essential tool for the adventure board game to help you make decisions about where to go and what to do.
+			A screenshot of the search options specifically developed for the board game Sleeping Gods. 
+			This is an essential tool for the adventure board game to help you make decisions about where to go and what to do.
+			Background image credited to © Ryan Laukat / Red Raven Games.
 		      </figcaption>
 	        </figure>
 	        <h6><strong>Code Snippet: Tracking games in Sleeping Gods </strong></h6>
