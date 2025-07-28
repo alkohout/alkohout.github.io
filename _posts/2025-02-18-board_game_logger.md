@@ -201,12 +201,57 @@ permalink: /projects/board_game_logger/
 		The project includes targeted features for "Sleeping Gods," including totem tracking and resource management, as well as detailed win/loss statistics for the "Imperium" game—appealing to dedicated gamers.
 		</p>
           	<figure class="img-centre" >
+	              <img src="/assets/images/boardgame_sleepinggods_log.png"
+	                   alt="Board game log screenshot">
+	              <figcaption>
+			A screenshot of all the logged details for the board game Sleeping Gods. Sleeping Gods is an adventure game about exploring a world.
+			Keeping notes as you play is an essential aspect of the game.
+		      </figcaption>
+	        </figure>
+          	<figure class="img-centre" >
+	              <img src="/assets/images/boardgame_sleepinggods_search.png"
+	                   alt="Board game log screenshot">
+	              <figcaption>
+			A screenshot of the search options specifically developed for the board game Sleeping Gods. This is an essential tool for the adventure board game helping you make decisions about where to go and what to do.
+		      </figcaption>
+	        </figure>
+	        <h6><strong>Code Snippet: Tracking games in Sleeping Gods </strong></h6>
+       		<div class="code">
+		     <div class="python">
+                     {% highlight python %}
+                     {% include boardgame_sleepinggods.py %}
+                     {% endhighlight %}
+       		     </div>
+       		</div>
+       		<div class="code">
+		     <div class="html">
+                     {% highlight html %}
+                     {% include boardgame_sleepinggods.html %}
+                     {% endhighlight %}
+       		     </div>
+       		</div>
+          	<figure class="img-centre" >
 	              <img src="/assets/images/boardgame_imperium_stats.png"
 	                   alt="Board game log screenshot">
 	              <figcaption>
 			A screenshot of a list of win/loss statistics for Imperium. This page helps me decide which civilisation pair to attempt next.
 		      </figcaption>
 	        </figure>
+	        <h6><strong>Code Snippet: Win / loss statistics for the board game Imperium </strong></h6>
+       		<div class="code">
+		     <div class="python">
+                     {% highlight python %}
+                     {% include boardgame_imperium_stats.py %}
+                     {% endhighlight %}
+       		     </div>
+       		</div>
+       		<div class="code">
+		     <div class="html">
+                     {% highlight html %}
+                     {% include boardgame_impmerium_stats.html %}
+                     {% endhighlight %}
+       		     </div>
+       		</div>
 
           <h3>Database Interaction</h3>
 		<p>
