@@ -86,7 +86,7 @@ permalink: /projects/board_game_logger/
 	              <img src="/assets/images/boardgame_stats.png"
 	                   alt="Board game log screenshot">
 	              <figcaption>
-			Screenshot of the board game logger.
+			Screenshot of basic board game statistics.
 		      </figcaption>
 	        </figure>
 	        <p><strong>Code Snippet: Played board game statistics</strong></p>
@@ -109,7 +109,7 @@ permalink: /projects/board_game_logger/
           <h3>Advanced Search Functionality</h3>
 		<p>
 		With powerful search capabilities, users can find game data by title or other criteria. 
-		Specialized routes cater to game-specific tracking, such as the "Sleeping Gods" and "Imperium" games.
+		Specialized routes cater to game-specific tracking, such as the Sleeping Gods and Imperium games.
 		</p>
           	<figure class="img-centre" >
 		      <p>
@@ -190,15 +190,9 @@ permalink: /projects/board_game_logger/
        		     </div>
        		</div>
 
-          <h3>Interactive Updates</h3>
-		<p>
-		Users can update game notes and scores dynamically, allowing for current data and insights. 
-		The application supports data updates and deletions through secure endpoints.
-		</p>
-
           <h3>Special Features for Enthusiasts</h3>
 		<p>
-		The project includes targeted features for "Sleeping Gods," including totem tracking and resource management, as well as detailed win/loss statistics for the "Imperium" game—appealing to dedicated gamers.
+		The project includes targeted features for Sleeping Gods, including totem tracking and resource management, as well as detailed win/loss statistics for the Imperium game—appealing to dedicated gamers.
 		</p>
           	<figure class="img-centre" >
 	              <img src="/assets/images/boardgame_sleepinggods_log.png"
@@ -212,7 +206,7 @@ permalink: /projects/board_game_logger/
 	              <img src="/assets/images/boardgame_sleepinggods_search.png"
 	                   alt="Board game log screenshot">
 	              <figcaption>
-			A screenshot of the search options specifically developed for the board game Sleeping Gods. This is an essential tool for the adventure board game helping you make decisions about where to go and what to do.
+			A screenshot of the search options specifically developed for the board game Sleeping Gods. This is an essential tool for the adventure board game to help you make decisions about where to go and what to do.
 		      </figcaption>
 	        </figure>
 	        <h6><strong>Code Snippet: Tracking games in Sleeping Gods </strong></h6>
@@ -252,11 +246,6 @@ permalink: /projects/board_game_logger/
                      {% endhighlight %}
        		     </div>
        		</div>
-
-          <h3>Database Interaction</h3>
-		<p>
-		Utilizes psycopg2 for efficient and secure database connections, ensuring seamless data handling and user experiences.
-		</p>
 
         </div>
       </div>
