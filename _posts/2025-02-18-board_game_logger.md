@@ -28,7 +28,6 @@ permalink: /projects/board_game_logger/
         <div class="brand">
           <a href="https://alkohout.github.io" class="home-link">
             <img src="your-photo.jpg" alt="Alison Kohout" class="profile-img">
-            <div class="name">Alison Kohout</div>
           </a>
           <span class="project-title">Board Game Analytics Project</span>
         </div>
