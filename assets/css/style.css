@@ -60,6 +60,24 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav a:hover {
+    color: #002A5F;
+    text-decoration: underline; 
+}
+
+nav ul li a {
+    color: #DDDDDD;
+    text-decoration: none;
+    padding: 5px 10px; /* Add padding for hover area */
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFFFFF; /* Just brighten the text */
+    text-decoration: underline; /* Add underline on hover */
+}
+
 /* Media query for smaller screens */
 @media (max-width: 412px) {
     nav ul {
