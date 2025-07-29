@@ -593,12 +593,6 @@ h6 {
   display: block;
   clear: both;
 }
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-}
 
 .brand {
   display: flex;
@@ -634,13 +628,6 @@ html {
   scroll-padding-top: 100px; /* Adjust this to your header height + some extra space */
 }
 
-.header-content {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  padding: 10px 20px;
-}
-
 .brand {
   display: flex;
   align-items: center;
@@ -656,18 +643,6 @@ nav {
   display: flex;
   justify-content: flex-end;
   gap: 15px;
-}
-
-.contact-icon {
-  width: 24px;
-  height: 24px;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  filter: brightness(0) invert(1); /* Makes dark icons white */
-}
-
-.contact-icon:hover {
-  opacity: 1;
-  transform: translateY(-2px);
 }
 
 /* Mobile responsive */
@@ -691,20 +666,74 @@ nav {
     order: -1; /* Puts contact links at top on mobile */
   }
 }
-/* Remove any background from contact links */
+
+/* Remove the duplicate .header-content and .contact-icon rules, and use this consolidated version: */
+
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.home-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #DDDDDD;  /* Changed from #333 to match header */
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #DDDDDD;  /* Added to make text light */
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid rgba(221, 221, 221, 0.3);  /* Made border lighter */
+}
+
+nav {
+  grid-column: 2;
+}
+
+.contact-links {
+  grid-column: 3;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+/* Clean contact link styling */
 .contact-links a {
-  background: none !important;
-  background-color: transparent !important;
+  background: transparent !important;
   border: none;
   outline: none;
+  display: inline-flex;  /* Helps with alignment */
+  align-items: center;
 }
 
 .contact-icon {
   width: 24px;
   height: 24px;
-  stroke: #DDDDDD;
-  background: transparent;
+  fill: #DDDDDD;    /* For filled icons */
+  stroke: #DDDDDD;  /* For outline icons */
   transition: all 0.3s ease;
+  /* Remove the filter line - it can cause issues */
 }
 
 .contact-icon:hover {
