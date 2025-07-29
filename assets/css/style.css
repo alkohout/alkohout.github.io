@@ -616,3 +616,7 @@ h6 {
   padding-left: 10px;
   border-left: 1px solid #ddd;
 }
+
+html {
+  scroll-padding-top: 80px; /* Adjust this to your header height + some extra space */
+}
