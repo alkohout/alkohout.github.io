@@ -633,3 +633,62 @@ h6 {
 html {
   scroll-padding-top: 100px; /* Adjust this to your header height + some extra space */
 }
+
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+nav {
+  grid-column: 2;
+}
+
+.contact-links {
+  grid-column: 3;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  filter: brightness(0) invert(1); /* Makes dark icons white */
+}
+
+.contact-icon:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .header-content {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .brand {
+    justify-content: center;
+  }
+  
+  nav {
+    grid-column: 1;
+  }
+  
+  .contact-links {
+    grid-column: 1;
+    justify-content: center;
+    order: -1; /* Puts contact links at top on mobile */
+  }
+}
