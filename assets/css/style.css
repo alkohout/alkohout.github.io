@@ -661,7 +661,6 @@ nav {
 .contact-icon {
   width: 24px;
   height: 24px;
-  opacity: 0.8;
   transition: opacity 0.3s ease, transform 0.3s ease;
   filter: brightness(0) invert(1); /* Makes dark icons white */
 }
@@ -691,4 +690,26 @@ nav {
     justify-content: center;
     order: -1; /* Puts contact links at top on mobile */
   }
+}
+/* Remove any background from contact links */
+.contact-links a {
+  background: none !important;
+  background-color: transparent !important;
+  border: none;
+  outline: none;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  fill: #DDDDDD;  /* Make icons light colored */
+  stroke: #DDDDDD;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.contact-icon:hover {
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+  transform: translateY(-2px);
 }
