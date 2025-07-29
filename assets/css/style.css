@@ -61,7 +61,8 @@ nav ul li a {
 }
 
 nav a:hover {
-  background-color: #f0f0f0;
+    color: #CCCCCC; 
+    text-decoration: underline; 
 }
 
 /* Media query for smaller screens */
