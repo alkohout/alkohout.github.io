@@ -29,11 +29,10 @@ permalink: /projects/board_game_logger/
           <a href="https://alkohout.github.io" class="home-link">
             <img src="/assets/images/kohout.jpeg" alt="Alison Kohout" class="profile-img">
           </a>
-          <span class="project-title">Board Game Analytics Project</span>
+          <span class="project-title">Board Game Logger Project</span>
         </div>
         <nav>
             <ul>
-                <li><a href="https://alkohout.github.io">Alison Kohout</a></li>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#data_entry">Data Entry</a></li>
                 <li><a href="#analysis">Analysis</a></li>
@@ -48,7 +47,6 @@ permalink: /projects/board_game_logger/
     <section class="topics" id="home">
       <div class="topic-list">
         <div class="topic inverse">
-          <h2>Board Game Logger </h2>
           <h3>Overview</h3>
 		<p>
 		Seeking to enhance the efficienty of logging my board games, I developed a comprehensive data system that tracks gameplay and reveals performance patterns.
