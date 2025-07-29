@@ -60,11 +60,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav a:hover {
-    color: #002A5F;
-    text-decoration: underline; 
-}
-
 /* Media query for smaller screens */
 @media (max-width: 412px) {
     nav ul {
