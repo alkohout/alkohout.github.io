@@ -24,9 +24,15 @@ tags:
 </head>
 <body>
     <header>
+      <div class="header-content">
+        <div class="brand">
+          <a href="https://alkohout.github.io" class="home-link">
+            <img src="/assets/images/kohout.jpeg" alt="Alison Kohout" class="profile-img">
+          </a>
+          <span class="project-title">Waves in Ice Project</span>
+        </div>
         <nav>
             <ul>
-                <li><a href="https://alkohout.github.io">Alison Kohout</a></li>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="https://alkohout.github.io/projects/waves-in-ice/WIIOS/">Sensor Design</a></li>
                 <li><a href="https://alkohout.github.io/projects/waves-in-ice/data_collection/">Data Collection</a></li>
@@ -34,6 +40,18 @@ tags:
                 <li><a href="#publications">Publications</a></li>
             </ul>
         </nav>
+        <div class="contact-links">
+          <a href="mailto:kohoutal@gmail.com" aria-label="Email">
+            <img src="/assets/images/mail_white.svg" alt="Email" class="contact-icon">
+          </a>
+          <a href="https://linkedin.com/in/alisonkohout" target="_blank" aria-label="LinkedIn">
+            <img src="/assets/images/linkedin-White.png" alt="LinkedIn" class="contact-icon">
+          </a>
+          <a href="https://github.com/alkohout/" target="_blank" aria-label="GitHub">
+            <img src="/assets/images/github-mark-white.png" alt="GitHub" class="contact-icon">
+          </a>
+        </div>
+        </div>
     </header>
 
     <main>

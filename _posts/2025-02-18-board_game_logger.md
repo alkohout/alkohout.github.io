@@ -10,7 +10,6 @@ tags:
   - python
 permalink: /projects/board_game_logger/
 ---
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -40,6 +39,17 @@ permalink: /projects/board_game_logger/
                 <li><a href="#special_features">Special Features</a></li>
             </ul>
         </nav>
+        <div class="contact-links"> 
+          <a href="mailto:kohoutal@gmail.com" aria-label="Email"> 
+            <img src="/assets/images/mail_white.svg" alt="Email" class="contact-icon">
+          </a>
+          <a href="https://linkedin.com/in/alisonkohout" target="_blank" aria-label="LinkedIn">
+            <img src="/assets/images/linkedin-White.png" alt="LinkedIn" class="contact-icon">
+          </a>
+          <a href="https://github.com/alkohout/" target="_blank" aria-label="GitHub">
+            <img src="/assets/images/github-mark-white.png" alt="GitHub" class="contact-icon">
+          </a>
+        </div>
       </div>
     </header>
 
@@ -49,7 +59,7 @@ permalink: /projects/board_game_logger/
         <div class="topic inverse">
           <h3>Overview</h3>
 		<p>
-		Seeking to enhance the efficienty of logging my board games, I developed a comprehensive data system that tracks gameplay and reveals performance patterns.
+		Seeking to enhance the efficiency of logging my board games, I developed a comprehensive data system that tracks gameplay and reveals performance patterns.
 
 		By leveraging AI prompting techniques, I identified Flask and PostgreSQL as suitable technologies for building a functional local web application. 
 		I then successfully implemented this solution despite having no previous web development background and only recently encountering SQL.
@@ -303,5 +313,6 @@ permalink: /projects/board_game_logger/
 
 </body>
 </html>
+
 
 
