@@ -702,7 +702,6 @@ nav {
 .contact-icon {
   width: 24px;
   height: 24px;
-  fill: #DDDDDD;  /* Make icons light colored */
   stroke: #DDDDDD;
   background: transparent;
   transition: all 0.3s ease;
