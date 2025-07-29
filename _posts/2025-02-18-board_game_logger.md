@@ -57,6 +57,9 @@ permalink: /projects/board_game_logger/
 		This achievement demonstrates my capacity to rapidly acquire new technical skills and tackle intricate challenges. 
 		More importantly, it marked an exciting and pivotal realization for me: with AI assistance complementing my abilities, my only limit is my imagination.
 		</p>
+<p>
+        <a href="https://github.com/yourusername/board-game-logger" target="_blank">View the project on GitHub →</a>
+      </p>
 	</div>
       </div>
     </section>
