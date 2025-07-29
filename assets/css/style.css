@@ -676,20 +676,6 @@ nav {
   padding: 10px 20px;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.home-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: #DDDDDD;  /* Changed from #333 to match header */
-}
-
 .profile-img {
   width: 50px;
   height: 50px;
@@ -730,8 +716,6 @@ nav {
 .contact-icon {
   width: 24px;
   height: 24px;
-  fill: #DDDDDD;    /* For filled icons */
-  stroke: #DDDDDD;  /* For outline icons */
   transition: all 0.3s ease;
   /* Remove the filter line - it can cause issues */
 }
