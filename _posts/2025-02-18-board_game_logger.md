@@ -68,7 +68,7 @@ permalink: /projects/board_game_logger/
 		More importantly, it marked an exciting and pivotal realization for me: with AI assistance complementing my abilities, my only limit is my imagination.
 		</p>
 <p>
-        <a href="https://github.com/yourusername/board-game-logger" target="_blank">View the project on GitHub →</a>
+        <a href="https://github.com/alkohout/board_game_logger" target="_blank">[GitHub →]</a>
       </p>
 	</div>
       </div>
