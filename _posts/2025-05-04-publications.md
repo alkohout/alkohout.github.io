@@ -60,6 +60,7 @@ permalink: /projects/waves-in-ice/publications/
       <div class="topic-list">
         <div class="topic inverse">
           <h2>Publications</h2>
+          <a href="https://orcid.org/0000-0001-7193-8977" target="_blank">[ORCID →]</a>
           <ul>
 	    <li>
 	    <a href="https://tc.copernicus.org/articles/16/2325/2022/" target="_blank">Brouwer, J., Fraser, A. D., Murphy, D. J., Wongpan, P., Alberello, A., Kohout, A. L., Horvat, C., Witherspoon, S., Massom, R., Cartwright, J., Williams, G. D. Altimetric observations of wave attenuation through the Antarctic marginal ice zone using ICESat-2. <em>The Cryosphere</em>, <strong>16</strong>, 2325-2353 (2022).</a><br><br>
