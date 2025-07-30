@@ -66,7 +66,7 @@ tags:
         <div class="topic inverse">
           <h2>Waves in Ice</h2>
           <p>
-Welcome to my site, where I delve into the impact of ocean waves on sea ice using cutting-edge sensor technology and data analysis.
+Welcome to my waves-in-ice site, where I explore the impact of ocean waves on sea ice using custom-built sensor technology and tailored data analysis.
 
 Sea ice, found in both polar regions, plays a crucial role in regulating our global climate. Its size changes with the seasons, mainly due to shifts in air temperature. However, the intricate interactions among sea ice, the atmosphere, and the ocean also influence these changes. Among these interactions, the effect of ocean waves on sea ice is one of the least understood and often ignored in climate models. Yet, explorers have long known that waves can break sea ice.
 
