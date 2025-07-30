@@ -59,7 +59,7 @@ permalink: /projects/waves-in-ice/publications/
     <section class="topics">
       <div class="topic-list">
         <div class="topic inverse">
-          <h2>Publications</h2>
+          <h2>Relevant Publications</h2>
           <a href="https://orcid.org/0000-0001-7193-8977" target="_blank">[ORCID →]</a>
           <ul>
 	    <li>
@@ -98,6 +98,20 @@ permalink: /projects/waves-in-ice/publications/
           </ul>
 
           <h2>Media</h2>
+	  <li>
+	  Kohout, A. L. A mathematical perspective on a (not so simple) equation: Ocean waves + sea ice. Conference on the mathematics of sea ice. Vancouver, Canada. (Plenary) (2015).
+	  <li>
+	  Langhorne, P., Rack, W., Kohout, A. L. Ice Fest public lecture, ‘The Frozen Ocean: Secrets of Sea Ice’ (2014). 
+	  </li>
+	  <li>
+	  Langhorne, P., Rack, W., Kohout, A. L. National Radio Interview. Our Changing World with Veronica Meduna. http://www.radionz.co.nz/national/programmes/ourchangingworld/20141002 (2014) .
+	  </li>
+	  <li>
+	  Kohout, A. L. ABC TV Australia. Live interview with Emma Pearce (2014).
+	  <li>
+	  Kohout, A. L. Various press releases around the globe including BBC and Science Magazine (2014).
+	  </li>
+
 
         </div>
       </div>
