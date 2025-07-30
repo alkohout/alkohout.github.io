@@ -101,6 +101,7 @@ permalink: /projects/waves-in-ice/publications/
           <ul>
 	  <li>
 	  Kohout, A. L. A mathematical perspective on a (not so simple) equation: Ocean waves + sea ice. Conference on the mathematics of sea ice. Vancouver, Canada. (Plenary) (2015).<br><br>
+	  </li>
 	  <li>
 	  Langhorne, P., Rack, W., Kohout, A. L. Ice Fest public lecture, ‘The Frozen Ocean: Secrets of Sea Ice’ (2014). <br><br>
 	  </li>
