@@ -108,7 +108,7 @@ permalink: /projects/food_body_connection/
 	    The Food–Body Connection app allows users to log foods and symptoms and receive personalized analytical reports.
 	  </p>
 
-	  <a href="https://alkohout.github.io/food-body-app/"
+	  <a href="https://alkohout.github.io/food_body_connection/"
 	     class="cta-button">
 	     Launch App
 	  </a>
