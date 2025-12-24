@@ -102,6 +102,17 @@ permalink: /projects/food_body_connection/
 	    <li>Expanded food categorization and allergen grouping</li>
 	  </ul>
 	</div>
+	<div class="topic inverse">
+	  <h2>Try the app</h2>
+	  <p>
+	    The Food–Body Connection app allows users to log foods and symptoms and receive personalized analytical reports.
+	  </p>
+
+	  <a href="https://alkohout.github.io/food-body-app/"
+	     class="cta-button">
+	     Launch App
+	  </a>
+	</div>
 
        </div>
     </section>

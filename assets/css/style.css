@@ -725,3 +725,19 @@ nav {
   stroke: #FFFFFF;
   transform: translateY(-2px);
 }
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 12px 20px;
+  background-color: #2b6cb0;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.cta-button:hover {
+  background-color: #2c5282;
+}
+
