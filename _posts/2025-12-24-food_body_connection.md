@@ -55,10 +55,54 @@ permalink: /projects/food_body_connection/
     <section id="home" class="topics">
        <div class="topic-list">
         <div class="topic inverse">
-          <h1></h1>
-          <p>
-          </p>
+	<h1>Food–Body Connection</h1>
+	<p>
+	I developed a full-stack health analytics application that allows users to log foods they eat and symptoms they experience. 
+	The system stores the data in a relational database, performs analytical processing to identify potential trigger relationships, 
+	and generates a personalized report highlighting patterns between diet and symptoms.
+</p>
         </div>
+	<div class="topic inverse">
+	  <h2>What the app does</h2>
+	  <ul>
+	    <li>Allows users to log foods, quantities, and timestamps</li>
+	    <li>Allows users to log symptoms and symptom intensity over time</li>
+	    <li>Stores structured health data in a PostgreSQL database (AWS RDS)</li>
+	    <li>Analyzes relationships between foods and symptoms</li>
+	    <li>Generates a personalized report highlighting potential trigger foods</li>
+	  </ul>
+	</div>
+	<div class="topic inverse">
+	  <h2>Technology stack</h2>
+	  <ul>
+	    <li><strong>Backend:</strong> FastAPI (Python)</li>
+	    <li><strong>Database:</strong> PostgreSQL on AWS RDS</li>
+	    <li><strong>ORM:</strong> SQLAlchemy</li>
+	    <li><strong>Authentication:</strong> JWT-based user authentication</li>
+	    <li><strong>Analysis:</strong> Statistical analysis & machine learning techniques</li>
+	    <li><strong>Frontend:</strong> Static frontend hosted on GitHub Pages</li>
+	  </ul>
+	</div>
+
+	<div class="topic inverse">
+	  <h2>Why this project matters</h2>
+	  <p>
+	  Food-related symptom triggers are often difficult to identify due to delayed effects, overlapping foods, 
+	  and noisy real-world data. This project explores how structured data collection and analysis can help 
+	  surface meaningful patterns that are not obvious through manual tracking alone.
+	  </p>
+	</div>
+
+	<div class="topic inverse">
+	  <h2>Future development</h2>
+	  <ul>
+	    <li>Improved statistical modeling of delayed symptom onset</li>
+	    <li>Visualization of symptom and food timelines</li>
+	    <li>Personalized model tuning per user</li>
+	    <li>Expanded food categorization and allergen grouping</li>
+	  </ul>
+	</div>
+
        </div>
     </section>
     </main>
