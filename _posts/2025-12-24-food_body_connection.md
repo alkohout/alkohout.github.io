@@ -203,7 +203,7 @@ permalink: /projects/food_body_connection/
        class="cta-button">
        Launch App
     </a>
-    <figure class="img-right" style="max-width: 30%">
+    <figure class="img-right" style="max-width: 10%">
         <img src="/assets/images/QR.png"
              alt="QR code">
     </figure>
