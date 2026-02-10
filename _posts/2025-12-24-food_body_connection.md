@@ -73,6 +73,10 @@ permalink: /projects/food_body_connection/
       candidate trigger foods to investigate further and provides structured insights that can
       be discussed with healthcare professionals.
     </p>
+    <figure class="img-right" style="max-width: 10%">
+        <img src="/assets/images/background_iphone.png"
+             alt="QR code">
+    </figure>
   </div>
 
   <!-- What the App Does -->
