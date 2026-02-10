@@ -135,7 +135,7 @@ permalink: /projects/food_body_connection/
       <li><strong>ORM:</strong> SQLAlchemy</li>
       <li><strong>Authentication:</strong> JWT‑based authentication</li>
       <li><strong>Analysis:</strong> Statistical modeling and supervised machine learning</li>
-      <li><strong>Frontend:</strong> Static site hosted on GitHub Pages</li>
+      <li><strong>Frontend:</strong> Static site hosted on <a href="https://github.com/alkohout/food_body_connection" target="_blank" rel="noopener noreferrer">GitHub Pages</a></li>
     </ul>
   </div>
 
@@ -143,7 +143,7 @@ permalink: /projects/food_body_connection/
   <div class="topic inverse">
     <h2>System architecture</h2>
     <p>
-      Static Frontend (GitHub Pages) → HTTPS (JWT‑authenticated API calls) →
+      Static Frontend (<a href="https://github.com/alkohout/food_body_connection" target="_blank" rel="noopener noreferrer">GitHub Pages</a>) → HTTPS (JWT‑authenticated API calls) →
       FastAPI Backend (AWS) → PostgreSQL Database (AWS RDS)
     </p>
     <p>
