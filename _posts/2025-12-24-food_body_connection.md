@@ -184,12 +184,31 @@ permalink: /projects/food_body_connection/
   <!-- Future Work -->
   <div class="topic inverse">
     <h2>Future development</h2>
-    <ul>
-      <li>Unsupervised pattern discovery</li>
-      <li>Improved visual explanations of model outputs</li>
-      <li>Enhanced time‑series visualizations</li>
-      <li>Expanded allergen grouping and feature engineering</li>
-    </ul>
+
+	<p><strong>Planned Analysis Enhancements</strong></p>
+	<ul>
+	  <li>Identify and analyze recurring patterns in symptom occurrence</li>
+	  <li>Enable analysis across user‑selected date ranges</li>
+	  <li>Support logging of multiple allergens and symptoms within a single event</li>
+	</ul>
+
+	<p><strong>Data Management Improvements</strong></p>
+	<ul>
+	  <li>Introduce a dedicated Food table with automatic allergen assignment</li>
+	  <li>Add an editable data view allowing users to modify or delete logged entries</li>
+	  <li>Provide access to raw data for greater transparency and control</li>
+	</ul>
+
+	<p><strong>Reporting & Sharing</strong></p>
+	<ul>
+	  <li> Enable optional email delivery of generated reports</li>
+	</ul>
+
+	<p><strong>Architecture & Scalability</strong></p>
+	<ul>
+	  <li>Migrate to an alternative system architecture to support long‑term growth and scalability</li>
+	</ul>
+
   </div>
 
   <!-- CTA -->
