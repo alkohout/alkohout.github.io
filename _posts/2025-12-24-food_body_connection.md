@@ -67,16 +67,15 @@ permalink: /projects/food_body_connection/
       identify potential food or environmental allergens associated with adverse symptoms.
       Users log exposures and symptoms over time, and the system applies statistical analysis
       and interpretable machine‑learning models to surface meaningful patterns.
-    </p>
-    <p>
+
       The goal is <strong>decision support — not diagnosis</strong>. The application highlights
       candidate trigger foods to investigate further and provides structured insights that can
       be discussed with healthcare professionals.
-    </p>
     <figure class="img-right" style="max-width: 10%">
         <img src="/assets/images/background_iphone.png"
              alt="QR code">
     </figure>
+    </p>
   </div>
 
   <!-- What the App Does -->
@@ -221,7 +220,6 @@ permalink: /projects/food_body_connection/
     <p>
       The Food–Body Connection app allows users to log foods and symptoms
       and receive personalised analytical reports.
-    </p>
     <a href="https://alkohout.github.io/food_body_connection/"
        class="cta-button">
        Launch App
@@ -230,6 +228,7 @@ permalink: /projects/food_body_connection/
         <img src="/assets/images/QR.png"
              alt="QR code">
     </figure>
+    </p>
   </div>
 
 </div>
