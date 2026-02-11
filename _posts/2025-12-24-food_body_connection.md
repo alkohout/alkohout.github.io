@@ -63,6 +63,10 @@ permalink: /projects/food_body_connection/
   <div class="topic inverse">
    <div class="topic inverse">
     <h1>Food–Body Connection</h1>
+    <figure class="img-right" style="max-width: 10%">
+        <img src="/assets/images/background_iphone.png"
+             alt="QR code">
+    </figure>
     <p>
       Food–Body Connection is a full‑stack health analytics application designed to help users
       identify potential food or environmental allergens associated with adverse symptoms.
@@ -74,10 +78,6 @@ permalink: /projects/food_body_connection/
       candidate trigger foods to investigate further and provides structured insights that can
       be discussed with healthcare professionals.
     </p>
-    <figure class="img-right" style="max-width: 10%">
-        <img src="/assets/images/background_iphone.png"
-             alt="QR code">
-    </figure>
    </div>
   </div>
 
