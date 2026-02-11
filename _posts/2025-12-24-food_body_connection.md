@@ -62,7 +62,7 @@ permalink: /projects/food_body_connection/
   <!-- Overview -->
   <div class="topic inverse">
    <div class="topic inverse">
-    <figure class="img-right" style="max-width: 20%">
+    <figure class="img-right" style="max-width: 30%">
         <img src="/assets/images/background_iphone.png"
              alt="ICON">
     </figure>
