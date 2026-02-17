@@ -5,7 +5,6 @@ date: 2025-12-24
 categories:
   - projects 
 tags:
-  - AWS RDS 
   - SQL
   - Machine Learning
   - FastAPI
@@ -136,7 +135,7 @@ permalink: /projects/food_body_connection/
     </p>
     <ul>
       <li><strong>Backend:</strong> FastAPI (Python)</li>
-      <li><strong>Database:</strong> PostgreSQL on AWS RDS</li>
+      <li><strong>Database:</strong> PostgreSQL on NEON</li>
       <li><strong>ORM:</strong> SQLAlchemy</li>
       <li><strong>Authentication:</strong> JWT‑based authentication</li>
       <li><strong>Analysis:</strong> Statistical modeling and supervised machine learning</li>
@@ -149,7 +148,7 @@ permalink: /projects/food_body_connection/
     <h2>System architecture</h2>
     <p>
       Static Frontend (<a href="https://github.com/alkohout/food_body_connection" target="_blank" rel="noopener noreferrer">GitHub Pages</a>) → HTTPS (JWT‑authenticated API calls) →
-      FastAPI Backend (AWS) → PostgreSQL Database (AWS RDS)
+      FastAPI Backend (AWS) → PostgreSQL Database (NEON)
     </p>
     <p>
       The backend exposes REST endpoints for data logging, triggering analyses,
