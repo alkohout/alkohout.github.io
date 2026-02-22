@@ -218,10 +218,6 @@ permalink: /projects/food_body_connection/
   <!-- CTA -->
   <div class="topic inverse">
     <h2>Try the app</h2>
-    <figure class="img-right" style="max-width: 10%">
-        <img src="/assets/images/QR.png"
-             alt="QR code">
-    </figure>
     <p>
       The Food–Body Connection app allows users to log foods and symptoms
       and receive personalised analytical reports.
