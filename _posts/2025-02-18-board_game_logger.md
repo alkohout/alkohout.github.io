@@ -69,6 +69,8 @@ permalink: /projects/board_game_logger/
 		</p>
 <p>
         <a href="https://github.com/alkohout/board_game_logger" target="_blank">[GitHub →]</a>
+        &nbsp;&nbsp;
+        <a href="https://alkohout.github.io/board_game_logger/dashboard.html" target="_blank">[Dashboard →]</a>
       </p>
 	</div>
       </div>
