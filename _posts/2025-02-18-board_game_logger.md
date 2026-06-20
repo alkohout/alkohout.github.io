@@ -8,6 +8,7 @@ tags:
   - board games 
   - SQL 
   - python
+  - Claude AI
 permalink: /projects/board_game_logger/
 ---
 <html lang="en">
@@ -37,6 +38,8 @@ permalink: /projects/board_game_logger/
                 <li><a href="#analysis">Analysis</a></li>
                 <li><a href="#search">Search</a></li>
                 <li><a href="#special_features">Special Features</a></li>
+                <li><a href="#selector">Game Selector</a></li>
+                <li><a href="#rules_assistant">Rules Assistant</a></li>
             </ul>
         </nav>
         <div class="contact-links"> 
@@ -64,8 +67,9 @@ permalink: /projects/board_game_logger/
 		By leveraging AI prompting techniques, I identified Flask and PostgreSQL as suitable technologies for building a functional local web application. 
 		I then successfully implemented this solution despite having no previous web development background and only recently encountering SQL.
 
-		This achievement demonstrates my capacity to rapidly acquire new technical skills and tackle intricate challenges. 
-		More importantly, it marked an exciting and pivotal realization for me: with AI assistance complementing my abilities, my only limit is my imagination.
+		The project has grown well beyond its origins: it now includes password-protected access, a weighted game selector for picking what to play, 
+		and an AI-powered rules assistant that answers questions using uploaded rulebook PDFs and BoardGameGeek forum content.
+		The frontend has been rebuilt as a static site deployed on GitHub Pages, communicating with the Flask backend via API calls.
 		</p>
 <p>
         <a href="https://github.com/alkohout/board_game_logger" target="_blank">[GitHub →]</a>
@@ -308,6 +312,43 @@ permalink: /projects/board_game_logger/
         </div>
       </div>
     </section>
+
+    <section class="topics" id="selector">
+      <div class="topic-list">
+        <div class="topic inverse">
+          <h3>Weighted Game Selector</h3>
+          <p>
+            Deciding what to play is half the battle. The game selector lets each player rank up to
+            three preferences — first, second, and third choice — and then picks a game at random
+            using weighted probabilities (first choice carries three times the weight of third choice).
+          </p>
+          <ul>
+            <li>Each player submits up to three ranked game preferences</li>
+            <li>A weighted random draw selects the game for the night</li>
+            <li>The pool can be cleared and rebuilt between sessions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="topics" id="rules_assistant">
+      <div class="topic-list">
+        <div class="topic inverse">
+          <h3>AI Rules Assistant</h3>
+          <p>
+            The rules assistant uses the Claude API (Anthropic) to answer rules questions in natural language,
+            grounded in the actual rulebook rather than relying solely on general training knowledge.
+          </p>
+          <ul>
+            <li>Upload a rulebook PDF once per game — stored in the database and reused for all future questions</li>
+            <li>Optionally paste BoardGameGeek forum threads as supplemental context, which are also cached per game</li>
+            <li>Ask any rules question and receive a direct, rulebook-grounded answer</li>
+            <li>Particularly useful mid-game when flipping through a rulebook is impractical</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     </main>
     <footer>
         <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
