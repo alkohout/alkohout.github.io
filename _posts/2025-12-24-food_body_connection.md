@@ -163,7 +163,7 @@ permalink: /projects/food_body_connection/
     <h2>System architecture</h2>
     <p>
       Static Frontend (<a href="https://github.com/alkohout/food_body_connection" target="_blank" rel="noopener noreferrer">GitHub Pages</a>) → HTTPS (JWT‑authenticated API calls) →
-      FastAPI Backend (AWS) → PostgreSQL Database (NEON)
+      FastAPI Backend (Oracle) → PostgreSQL Database (NEON)
     </p>
     <p>
       The backend exposes REST endpoints for data logging, triggering analyses,
