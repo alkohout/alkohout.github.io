@@ -8,6 +8,7 @@ tags:
   - SQL
   - Machine Learning
   - FastAPI
+  - Claude AI
 permalink: /projects/food_body_connection/
 ---
 
@@ -85,11 +86,15 @@ permalink: /projects/food_body_connection/
     <ul>
       <li>Logs allergen exposure events with quantities and timestamps</li>
       <li>Logs symptom events with severity and timing</li>
-      <li>Stores structured health data in a relational PostgreSQL database</li>
+      <li>Tracks twice-daily check-ins covering mood, sleep, fatigue, gut health, stress, and more</li>
+      <li>Logs medications and active regimens with dose and date tracking</li>
+      <li>Accepts uploaded health documents (PDF, DOCX, text) for contextual AI analysis</li>
+      <li>Stores structured health data in a relational PostgreSQL database with field-level encryption</li>
       <li>Aligns exposure and symptom events using time‑aware windows</li>
       <li>Analyzes relationships between allergens and symptoms</li>
-      <li>Generates personalized reports highlighting potential trigger foods</li>
+      <li>Generates personalized AI-powered reports highlighting potential trigger foods</li>
       <li>Supports elimination diets and long‑term tracking strategies</li>
+      <li>Installable as a Progressive Web App for offline access</li>
     </ul>
   </div>
 
@@ -124,6 +129,14 @@ permalink: /projects/food_body_connection/
       <li>Produces odds ratios with confidence intervals for exposure dose</li>
       <li>Supports sensitivity analysis across different post‑exposure time windows</li>
     </ul>
+
+    <h3>AI‑Powered Summary & Chat</h3>
+    <ul>
+      <li>Generates natural‑language health summaries using Claude (Anthropic API)</li>
+      <li>Provides a conversational chat interface grounded in the user's own tracking data</li>
+      <li>Incorporates uploaded health documents as additional context for responses</li>
+      <li>Clearly scoped to data interpretation — not medical diagnosis</li>
+    </ul>
   </div>
 
   <!-- Technology Stack -->
@@ -137,9 +150,11 @@ permalink: /projects/food_body_connection/
       <li><strong>Backend:</strong> FastAPI (Python)</li>
       <li><strong>Database:</strong> PostgreSQL on NEON</li>
       <li><strong>ORM:</strong> SQLAlchemy</li>
-      <li><strong>Authentication:</strong> JWT‑based authentication</li>
+      <li><strong>Authentication:</strong> JWT‑based authentication with password reset flow</li>
+      <li><strong>AI:</strong> Claude (Anthropic API) for health summaries and chat</li>
       <li><strong>Analysis:</strong> Statistical modeling and supervised machine learning</li>
-      <li><strong>Frontend:</strong> Static site hosted on <a href="https://github.com/alkohout/food_body_connection" target="_blank" rel="noopener noreferrer">GitHub Pages</a></li>
+      <li><strong>Data security:</strong> Field-level encryption on all sensitive health data</li>
+      <li><strong>Frontend:</strong> Static Progressive Web App hosted on <a href="https://github.com/alkohout/food_body_connection" target="_blank" rel="noopener noreferrer">GitHub Pages</a></li>
     </ul>
   </div>
 
@@ -161,16 +176,54 @@ permalink: /projects/food_body_connection/
     <h2>Database design</h2>
     <p>
       The relational schema tracks users, allergens, symptoms, exposure events,
-      and symptom events over time. All timestamps are stored in UTC, and
-      allergens and symptoms are scoped per user.
+      symptom events, medications, check-ins, and uploaded documents over time.
+      All timestamps are stored in UTC, sensitive fields are encrypted at rest,
+      and all health data is scoped per user.
     </p>
     <ul>
       <li><strong>Users:</strong> Account and authentication data</li>
       <li><strong>Allergens:</strong> User‑defined exposure categories</li>
       <li><strong>Units:</strong> Measurement units and conversions</li>
       <li><strong>Allergen logs:</strong> Timestamped exposure events</li>
-      <li><strong>Symptoms:</strong> User‑defined symptom definitions</li>
+      <li><strong>Symptoms:</strong> User‑defined symptom definitions with optional grouping</li>
       <li><strong>Symptom logs:</strong> Timestamped symptom events with severity</li>
+      <li><strong>Medications:</strong> User‑defined medication names</li>
+      <li><strong>Medication regimens:</strong> Dose, unit, and active date range per medication</li>
+      <li><strong>Daily check-ins:</strong> Twice-daily structured wellbeing records (morning / evening)</li>
+      <li><strong>User documents:</strong> Uploaded health documents with extracted text for AI context</li>
+      <li><strong>Password reset tokens:</strong> Secure, expiring tokens for account recovery</li>
+    </ul>
+  </div>
+
+  <!-- Daily Check-ins -->
+  <div class="topic inverse">
+    <h2>Daily check-ins & wellbeing tracking</h2>
+    <p>
+      Users complete structured morning and evening check-ins to build a continuous picture of
+      their wellbeing alongside allergen and symptom data.
+    </p>
+    <ul>
+      <li><strong>General variables:</strong> mood, sleep quality, fatigue, gut health, stress</li>
+      <li><strong>Extended variables:</strong> headache, overnight headache, brain fog, tinnitus, visual disturbance, training intensity, illness status</li>
+      <li>Check-in trends are visualized over time and can be cross-referenced with allergen and symptom events</li>
+      <li>Medication and check-in data can both be included in the unified time series view</li>
+    </ul>
+  </div>
+
+  <!-- Visualizations -->
+  <div class="topic inverse">
+    <h2>Visualizations</h2>
+    <p>The dashboard renders a range of interactive and static plots generated by the backend:</p>
+    <ul>
+      <li>Allergen importance ranking</li>
+      <li>Symptom grouping and EDA</li>
+      <li>Time series for allergens, symptoms, check-in variables, and medications</li>
+      <li>Symptom calendar heatmap</li>
+      <li>Check-in trend plots</li>
+      <li>Triptan usage and monthly analysis</li>
+      <li>Risk visualizations</li>
+      <li>Dose–response analysis with event series overlays</li>
+      <li>Model performance metrics page</li>
     </ul>
   </div>
 
