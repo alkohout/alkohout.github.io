@@ -1,53 +1,54 @@
 
-    <div class="form-container">
-        <h2>All Games</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th data-sort="rank">Rank</th>
-                    <th data-sort="game">Game</th>
-                    <th data-sort="count">Play Count</th>
-                    <th data-sort="note">Latest Note</th>
-                </tr>
-            </thead>
-            <tbody id="gameTableBody">
-                {% for game in all_games %}
-                <tr data-rank="{{game.rank}}" data-game="{{game.game}}" data-count="{{game.count}}" data-note="{{game.note}}">
-                    <td>{{ game.rank }}</td>
-                    <td>{{ game.game }}</td>
-                    <td>{{ game.count }}</td>
-                    <td>{{ game.note }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
-    <script>
-        const table = document.querySelector('.form-container table');
-        const tbody = document.getElementById('gameTableBody');
-        const headers = table.querySelectorAll('th');
+<!-- Sorting happens in the browser: the list is small, and re-sorting without
+     a round trip is instant. -->
+<script>
+    let games = [];
+    let sortKey = 'rank';
+    let ascending = true;
 
-        headers.forEach(header => {
-            header.addEventListener('click', () => {
-                const sortColumn = header.dataset.sort;
-                const sortDirection = header.dataset.direction === 'asc' ? 'desc' : 'asc';
-
-                header.dataset.direction = sortDirection;
-
-                const sortedRows = Array.from(tbody.querySelectorAll('tr')).sort((a, b) => {
-                    const aValue = a.dataset[sortColumn];
-                    const bValue = b.dataset[sortColumn];
-
-                    // Handle numerical and string sorting
-                    if (isNaN(aValue) || isNaN(bValue)) {
-                        return sortDirection === 'asc' ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
-                    } else {
-                        return sortDirection === 'asc' ? aValue - bValue : bValue - aValue;
-                    }
-                });
-
-                tbody.innerHTML = ''; //clear table
-                sortedRows.forEach(row => tbody.appendChild(row));
-            });
+    function render() {
+        const numeric = sortKey === 'rank' || sortKey === 'play_count';
+        const rows = [...games].sort((a, b) => {
+            const x = a[sortKey], y = b[sortKey];
+            if (numeric) return ascending ? x - y : y - x;
+            // Blank notes sort last either way, rather than clumping at the top.
+            const sx = (x || '').toString(), sy = (y || '').toString();
+            if (!sx && sy) return 1;
+            if (sx && !sy) return -1;
+            return ascending ? sx.localeCompare(sy) : sy.localeCompare(sx);
         });
-    </script>
+
+        document.querySelectorAll('#games-table th').forEach(th => {
+            const active = th.dataset.sort === sortKey;
+            th.innerHTML = th.textContent.replace(/[ ▲▼]+$/, '') +
+                (active ? ` <span class="arrow">${ascending ? '▲' : '▼'}</span>` : '');
+        });
+
+        document.getElementById('games-body').innerHTML = rows.map(g => `
+            <tr>
+                <td class="num">${g.rank}</td>
+                <td>${esc(g.game)}</td>
+                <td class="num">${g.play_count}</td>
+                <td class="note">${esc(g.latest_note)}</td>
+            </tr>`).join('');
+    }
+
+    document.querySelectorAll('#games-table th').forEach(th => {
+        th.addEventListener('click', () => {
+            const key = th.dataset.sort;
+            // Same column again reverses; a new column starts ascending,
+            // except the counts, where you almost always want most-first.
+            if (key === sortKey) ascending = !ascending;
+            else { sortKey = key; ascending = key !== 'play_count'; }
+            render();
+        });
+    });
+
+    async function load() {
+        const data = await apiGet('/api/all_games');
+        if (!data) return;
+        games = data;
+        render();
+    }
+    load();
+</script>

@@ -1,70 +1,46 @@
 
-<div class="form-container">
-    <h2>Games played</h2>
-    <table style="border-collapse: separate; border-spacing: 20px 0;">
-      <tr>
-        <th style="padding: 10px; text-align: left;"></th>
-        <th style="padding: 10px; text-align: left;">Week</th>
-        <th style="padding: 10px; text-align: left;">Month</th>
-        <th style="padding: 10px; text-align: left;">Year</th>
-      </tr>
-      <tr>
-        <td style="padding: 10px;">Current</td>
-        <td style="padding: 10px;">{{games_this_week}}</td>
-        <td style="padding: 10px;">{{games_this_month}}</td>
-        <td style="padding: 10px;">{{games_this_year}}</td>
-      </tr>
-      <tr>
-        <td style="padding: 10px;">Previous</td>
-        <td style="padding: 10px;">{{games_last_week}}</td>
-        <td style="padding: 10px;">{{games_last_month}}</td>
-        <td style="padding: 10px;">{{games_last_year}}</td>
-      </tr>
-      <tr>
-        <td style="padding: 10px;">Average</td>
-        <td style="padding: 10px;">{{weekly_avg}}</td>
-        <td style="padding: 10px;">{{monthly_avg}}</td>
-        <td style="padding: 10px;">{{yearly_avg}}</td>
-      </tr>
-    </table>
-
-    <h2>Most Played Games</h2>
-    <table style="border-collapse: separate; border-spacing: 20px 0;">
-      <tr>
-        <th style="padding: 10px; text-align: left;"></th>
-        <th style="padding: 10px; text-align: left;">Game</th>
-        <th style="padding: 10px; text-align: left;">Plays</th>
-      </tr>
-      <tr>
-        <td style="padding: 10px;">Current Week</td>
-        <td style="padding: 10px;">{{most_played_game_week}}</td>
-        <td style="padding: 10px;">{{week_play_count}}</td>
-      </tr>
-      <tr>
-        <td style="padding: 10px;">Previous Week</td>
-        <td style="padding: 10px;">{{most_played_game_last_week}}</td>
-        <td style="padding: 10px;">{{last_week_play_count}}</td>
-      </tr>
-      <tr>
-        <td style="padding: 10px;">Current Month</td>
-        <td style="padding: 10px;">{{most_played_game_month}}</td>
-        <td style="padding: 10px;">{{month_play_count}}</td>
-      </tr>
-      <tr>
-        <td style="padding: 10px;">Previous Month</td>
-        <td style="padding: 10px;">{{most_played_game_last_month}}</td>
-        <td style="padding: 10px;">{{last_month_play_count}}</td>
-      </tr>
-      <tr>
-        <td style="padding: 10px;">Current Year</td>
-        <td style="padding: 10px;">{{most_played_game_year}}</td>
-        <td style="padding: 10px;">{{year_play_count}}</td>
-      </tr>
-      <tr>
-        <td style="padding: 10px;">Previous Year</td>
-        <td style="padding: 10px;">{{most_played_game_last_year}}</td>
-        <td style="padding: 10px;">{{last_year_play_count}}</td>
-      </tr>
-    </table>
-
+<!-- The panel is static markup; one call fills every figure in it. -->
+<div class="stats-grid">
+    <div><span class="stat-label">Today</span><span id="s-td">—</span></div>
+    <div><span class="stat-label">Yesterday</span><span id="s-yd">—</span></div>
+    <div><span class="stat-label">Daily average</span><span id="s-ad">—</span></div>
+    <div><span class="stat-label">This week</span><span id="s-tw">—</span></div>
+    <div><span class="stat-label">This month</span><span id="s-tm">—</span></div>
+    <div><span class="stat-label">This year</span><span id="s-ty">—</span></div>
 </div>
+<h3>Most played</h3>
+<table id="most-played">
+    <tr><td>This week</td><td id="mp-tw-g">—</td><td id="mp-tw-c">0</td></tr>
+    <tr><td>Last week</td><td id="mp-lw-g">—</td><td id="mp-lw-c">0</td></tr>
+    <tr><td>This year</td><td id="mp-ty-g">—</td><td id="mp-ty-c">0</td></tr>
+</table>
+<ul id="top-games"></ul>
+
+<script>
+async function loadStats() {
+    // apiGet attaches the bearer token and bounces to the login page on a 401.
+    const d = await apiGet('/api/dashboard');
+    if (!d) return;
+
+    const gp = d.games_played;
+    document.getElementById('s-td').textContent = gp.today;
+    document.getElementById('s-yd').textContent = gp.yesterday;
+    document.getElementById('s-ad').textContent = gp.daily_avg;
+    document.getElementById('s-tw').textContent = gp.this_week;
+    document.getElementById('s-tm').textContent = gp.this_month;
+    document.getElementById('s-ty').textContent = gp.this_year;
+
+    const mp = d.most_played;
+    [['tw', mp.this_week], ['lw', mp.last_week], ['ty', mp.this_year]]
+        .forEach(([k, v]) => {
+            document.getElementById('mp-' + k + '-g').textContent = v.game || '—';
+            document.getElementById('mp-' + k + '-c').textContent = v.count || 0;
+        });
+
+    document.getElementById('top-games').innerHTML =
+        d.top_games.map(g => `<li>${escapeHtml(g.game)} — ${g.count}</li>`).join('');
+
+    renderRecords(d.records, gp);
+}
+loadStats();
+</script>

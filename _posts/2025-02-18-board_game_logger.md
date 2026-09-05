@@ -185,7 +185,7 @@ permalink: /projects/board_game_logger/
 			Background image credited to © Ryan Laukat / Red Raven Games.
 		      </figcaption>
 	        </figure>
-	        <h6><strong>Code Snippet: Searching the database </strong></h6>
+	        <h6><strong>Code Snippet: Search endpoints, and the autocomplete that calls them </strong></h6>
        		<div class="code">
 		     <div class="python">
                      {% highlight python %}
@@ -353,6 +353,14 @@ permalink: /projects/board_game_logger/
             <li>Views run with the caller's privileges, so a view over a secured table cannot leak around the policy on it</li>
             <li>An owner-only admin page approves, suspends, and removes accounts</li>
           </ul>
+          <h6><strong>Code Snippet: The shared fetch layer every page uses</strong></h6>
+          <div class="code">
+            <div class="javascript">
+            {% highlight javascript %}
+            {% include boardgame_api.js %}
+            {% endhighlight %}
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -436,6 +444,14 @@ permalink: /projects/board_game_logger/
             <li>If the app detects it is connected as a superuser — which would bypass those policies — the feature disables itself and says why</li>
             <li>Questions the schema cannot answer come back as an explicit refusal rather than a guess</li>
           </ul>
+          <h6><strong>Code Snippet: Validating and running model-written SQL</strong></h6>
+          <div class="code">
+            <div class="python">
+            {% highlight python %}
+            {% include boardgame_ask_database.py %}
+            {% endhighlight %}
+            </div>
+          </div>
         </div>
       </div>
     </section>
