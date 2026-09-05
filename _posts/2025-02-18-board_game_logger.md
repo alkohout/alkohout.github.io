@@ -92,16 +92,6 @@ permalink: /projects/board_game_logger/
 		Users can seamlessly input game details including date played, game title, notes, results, and various scores. 
 		This data is securely stored and managed using a PostgreSQL database.
 		</p>
-          	<figure class="img-centre" >
-		      <p>
-		      </p>
-	              <img src="/assets/images/boardgame_log.png"
-	                   alt="Board game log screenshot">
-	              <figcaption>
-			Screenshot of the board game logger.  
-			Background image credited to © Ryan Laukat / Red Raven Games.
-		      </figcaption>
-	        </figure>
 	        <p><strong>Code Snippet: Adding a played game to the database</strong></p>
        		<div class="code">
 		     <div class="python">
@@ -129,14 +119,6 @@ permalink: /projects/board_game_logger/
 		The application provides detailed statistics, highlighting top played games and game counts by week, month, and year. 
 		Users can access averages and identify the most played games over various time frames.
 		</p>
-          	<figure class="img-centre">
-	              <img src="/assets/images/boardgame_stats.png"
-	                   alt="Board game log screenshot">
-	              <figcaption>
-			Screenshot of basic board game statistics.
-			Background image credited to © Ryan Laukat / Red Raven Games.
-		      </figcaption>
-	        </figure>
 	        <p><strong>Code Snippet: Played board game statistics</strong></p>
        		<div class="code">
 		     <div class="html">
@@ -165,26 +147,6 @@ permalink: /projects/board_game_logger/
 		With powerful search capabilities, users can find game data by title or other criteria. 
 		Specialized routes cater to game-specific tracking, such as the Sleeping Gods and Imperium games.
 		</p>
-          	<figure class="img-centre" >
-		      <p>
-		      </p>
-	              <img src="/assets/images/boardgame_extra.png"
-	                   alt="Board game log screenshot">
-	              <figcaption>
-			Screenshot of the board game search capability.
-			Background image credited to © Ryan Laukat / Red Raven Games.
-		      </figcaption>
-	        </figure>
-          	<figure class="img-centre" >
-		      <p>
-		      </p>
-	              <img src="/assets/images/boardgame_search.png"
-	                   alt="Board game log screenshot">
-	              <figcaption>
-			Screenshot of an example search result.
-			Background image credited to © Ryan Laukat / Red Raven Games.
-		      </figcaption>
-	        </figure>
 	        <h6><strong>Code Snippet: Search endpoints, and the autocomplete that calls them </strong></h6>
        		<div class="code">
 		     <div class="python">
@@ -200,13 +162,6 @@ permalink: /projects/board_game_logger/
                      {% endhighlight %}
        		     </div>
        		</div>
-          	<figure class="img-centre" >
-	              <img src="/assets/images/boardgame_overview.png"
-	                   alt="Board game log screenshot">
-	              <figcaption>
-			A screenshot of an overview of games played.
-		      </figcaption>
-	        </figure>
 	        <h6><strong>Code Snippet: View an overview of the games played </strong></h6>
        		<div class="code">
 		     <div class="python">
@@ -222,21 +177,11 @@ permalink: /projects/board_game_logger/
                      {% endhighlight %}
        		     </div>
        		</div>
-          	<figure class="img-centre" >
-	              <img src="/assets/images/boardgame_all_sortBname.png"
-	                   alt="Board game log screenshot">
-	              <figcaption>
-			A screenshot of a list of all games played sorted by name. Clicking on the header will reorder accordingly.
-		      </figcaption>
-	        </figure>
-          	<figure class="img-centre" >
-	              <img src="/assets/images/boardgame_all_sortBrank.png"
-	                   alt="Board game log screenshot">
-	              <figcaption>
-			A screenshot of a list of all games played sorted by ranking. Clicking on the header will reorder accordingly.
-		      </figcaption>
-	        </figure>
-	        <br>
+		<p>
+		Every game played, ranked by how often. Clicking a column header reorders the
+		table — by name, by play count, or by the most recent note — without a round trip
+		to the server.
+		</p>
 	        <h6><strong>Code Snippet: View all games sorted by rank or name. </strong></h6>
        		<div class="code">
 		     <div class="html">
@@ -272,26 +217,11 @@ permalink: /projects/board_game_logger/
             and is excluded from win rates rather than dragging them down.
           </p>
 		<p>
-		The two oldest trackers are shown below as examples.
+		Sleeping Gods is the clearest case for this. It is an adventure game about exploring
+		a world, and keeping notes as you play is an essential part of it — where you have
+		been, what a location wanted, and what it gave you. The tracker below is that
+		notebook, made searchable.
 		</p>
-          	<figure class="img-centre" >
-	              <img src="/assets/images/boardgame_sleepinggods_log.png"
-	                   alt="Board game log screenshot">
-	              <figcaption>
-			A screenshot of all the logged details for the board game Sleeping Gods. Sleeping Gods is an adventure game about exploring a world.
-			Keeping notes as you play is an essential aspect of the game.
-			Background image credited to © Ryan Laukat / Red Raven Games.
-		      </figcaption>
-	        </figure>
-          	<figure class="img-centre" >
-	              <img src="/assets/images/boardgame_sleepinggods_search.png"
-	                   alt="Board game log screenshot">
-	              <figcaption>
-			A screenshot of the search options specifically developed for the board game Sleeping Gods. 
-			This is an essential tool for the adventure board game to help you make decisions about where to go and what to do.
-			Background image credited to © Ryan Laukat / Red Raven Games.
-		      </figcaption>
-	        </figure>
 	        <h6><strong>Code Snippet: Tracking games in Sleeping Gods </strong></h6>
        		<div class="code">
 		     <div class="python">
@@ -307,13 +237,6 @@ permalink: /projects/board_game_logger/
                      {% endhighlight %}
        		     </div>
        		</div>
-          	<figure class="img-centre" >
-	              <img src="/assets/images/boardgame_imperium_stats.png"
-	                   alt="Board game log screenshot">
-	              <figcaption>
-			A screenshot of a list of win/loss statistics for Imperium. This page helps me decide which civilisation pair to attempt next.
-		      </figcaption>
-	        </figure>
 	        <h6><strong>Code Snippet: Win / loss statistics for the board game Imperium </strong></h6>
        		<div class="code">
 		     <div class="python">
